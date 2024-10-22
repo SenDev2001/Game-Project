@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class M_ScoreManager : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class M_ScoreManager : MonoBehaviour
 
     public int Score { get; private set; }
 
-    public Text scoreText; // Assign this in the inspector
+    public TMP_Text scoreText; // Assign this in the inspector
 
     private void Awake()
     {
@@ -25,6 +26,11 @@ public class M_ScoreManager : MonoBehaviour
     }
 
     private void Start()
+    {
+        ResetScore(); // Ensure score starts at 0
+    }
+
+    public void ResetScore()
     {
         Score = 0;
         UpdateScoreText();
