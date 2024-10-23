@@ -10,7 +10,7 @@ public class M_ScoreManager : MonoBehaviour
 
     public int Score { get; private set; }
 
-    public TMP_Text scoreText; // Assign this in the inspector
+    public TMP_Text scoreText; 
 
     private void Awake()
     {
@@ -27,7 +27,7 @@ public class M_ScoreManager : MonoBehaviour
 
     private void Start()
     {
-        ResetScore(); // Ensure score starts at 0
+        ResetScore(); 
     }
 
     public void ResetScore()
@@ -47,6 +47,12 @@ public class M_ScoreManager : MonoBehaviour
         if (scoreText != null)
         {
             scoreText.text = "Score: " + Score.ToString();
+        }
+        else
+        {
+            scoreText = GameObject.Find("Score").GetComponent<TMP_Text>();
+            scoreText.text = "Score: " + Score.ToString();
+
         }
     }
 }

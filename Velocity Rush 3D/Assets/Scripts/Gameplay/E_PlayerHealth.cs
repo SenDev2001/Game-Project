@@ -16,18 +16,31 @@ namespace Gameplay
             currentHealth = maxHealth;
         }
 
-        private void OnCollisionEnter(Collision collision)
+        /*private void OnCollisionEnter(Collision collision)
         {
             if (collision.gameObject.CompareTag("Obstacle"))
             {
                 Die();
             }
-        }
+        }*/
 
-        private void Die()
+        public void Die()
         {
             Debug.Log("Player Died");
-            M_GameManager.Instance.ShowRestartUI();
+            M_GameManager gameManager = FindObjectOfType<M_GameManager>();
+            if (gameManager != null)
+            {
+                gameManager.ShowRestartUI();
+            }
+            else
+            {
+                Debug.LogError(" not found in the scene.");
+            }
         }
+        // obstacle script
+
+        // triggerenter
+        // if gameobject.comparetag(Player)
+        // player.Die
     }
 }
