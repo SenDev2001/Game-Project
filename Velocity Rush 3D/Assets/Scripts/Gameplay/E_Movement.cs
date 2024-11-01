@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 
 namespace Gameplay
@@ -8,26 +5,23 @@ namespace Gameplay
     [RequireComponent(typeof(Rigidbody))]
     public class E_Movement : MonoBehaviour
     {
-        private int _targetLane = 1;
+        private int _targetLane = 1; 
         private Vector3 _targetPosition;
         private Rigidbody _rb;
 
         public float laneDistance = 3f;
         public float leftrightSpeed = 9.5f;
         public float forwardSpeed = 20f;
-        public float jumpForce = 5.0f;
 
         private void Start()
         {
             _rb = GetComponent<Rigidbody>();
             _rb.constraints = RigidbodyConstraints.FreezeRotation;
-           
         }
 
         private void Update()
         {
             transform.Translate(Vector3.forward * forwardSpeed * Time.deltaTime);
-
 
             float targetX = (_targetLane - 1) * laneDistance;
             _targetPosition = new Vector3(targetX, transform.position.y, transform.position.z);
@@ -43,6 +37,15 @@ namespace Gameplay
         {
             if (_targetLane < 2) _targetLane++;
         }
+
+        public void MoveToMiddle()
+        {
+            if (_targetLane == 0)
+                _targetLane = 1; 
+            else if (_targetLane == 1)
+                _targetLane = 2; 
+        }
+
+        public int TargetLane => _targetLane; 
     }
 }
-

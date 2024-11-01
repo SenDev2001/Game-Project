@@ -8,7 +8,7 @@ public class M_RoadManager : MonoBehaviour
 
     private Transform playerTransform;
 
-    private float spawnZ = 0.0f;
+    private float spawnZ = 20f;
     private float roadLength = 50f;
     private int amnRoadOnScreen = 5;
 

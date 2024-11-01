@@ -1,30 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
 public class M_ScoreManager : MonoBehaviour
 {
-    public static M_ScoreManager Instance { get; private set; }
-
     public int Score { get; private set; }
-
-    public Text scoreText; // Assign this in the inspector
-
-    private void Awake()
-    {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
+    public TMP_Text scoreText;
 
     private void Start()
+    {
+        ResetScore();
+    }
+
+    public void ResetScore()
     {
         Score = 0;
         UpdateScoreText();
@@ -41,6 +30,14 @@ public class M_ScoreManager : MonoBehaviour
         if (scoreText != null)
         {
             scoreText.text = "Score: " + Score.ToString();
+        }
+        else
+        {
+            scoreText = GameObject.Find("Score").GetComponent<TMP_Text>();
+            if (scoreText != null)
+            {
+                scoreText.text = "Score: " + Score.ToString();
+            }
         }
     }
 }
