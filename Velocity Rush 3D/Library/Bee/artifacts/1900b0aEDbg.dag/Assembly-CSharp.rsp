@@ -381,6 +381,7 @@
 "Assets/Scripts/Gameplay/E_Slide.cs"
 "Assets/Scripts/Graphics/E_AnimController.cs"
 "Assets/Scripts/Graphics/M_GraphicsManager.cs"
+"Assets/Scripts/MainMenu.cs"
 -langversion:9.0
 /deterministic
 /optimize-
