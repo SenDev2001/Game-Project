@@ -94,8 +94,8 @@ namespace Gameplay
         {
             if (_swipeDetected) return;
 
-            float swipeDistance = (_currentTouchPosition - _startTouchPosition).magnitude;
-            if (swipeDistance > 50) 
+            float swipeDestance = (_currentTouchPosition - _startTouchPosition).magnitude;
+            if (swipeDestance > 0)
             {
                 _swipeDetected = true;
             }
