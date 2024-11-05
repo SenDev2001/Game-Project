@@ -2083,9 +2083,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roadPrefabs:
-  - {fileID: 1308255355402912302, guid: f90fdf3702798954a8632d8fac2aff4d, type: 3}
-  - {fileID: 5651243054673968087, guid: f69ed1cea08dde041bba85df7b9a55c8, type: 3}
-  - {fileID: 4269282971164379627, guid: 6c7812b2dab70e3459730b14a354239b, type: 3}
+  - {fileID: 5480911430641665307, guid: f90fdf3702798954a8632d8fac2aff4d, type: 3}
+  - {fileID: 4435365476098307856, guid: f69ed1cea08dde041bba85df7b9a55c8, type: 3}
+  - {fileID: 86862533128799917, guid: 6c7812b2dab70e3459730b14a354239b, type: 3}
 --- !u!1 &1382963852
 GameObject:
   m_ObjectHideFlags: 0

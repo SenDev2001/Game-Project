@@ -385,6 +385,7 @@
 "Assets/Scripts/Gameplay/E_Obstacle.cs"
 "Assets/Scripts/Gameplay/E_PlayerHealth.cs"
 "Assets/Scripts/Gameplay/E_Slide.cs"
+"Assets/Scripts/Gameplay/VehicleMovement.cs"
 "Assets/Scripts/Graphics/E_AnimController.cs"
 "Assets/Scripts/Graphics/M_GraphicsManager.cs"
 "Assets/Scripts/MainMenu.cs"
