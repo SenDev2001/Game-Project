@@ -152,7 +152,7 @@ namespace UnityEditor.Rendering
 
                 if (GUILayout.Button(Styles.newAssetButtonLabel, Styles.buttonOptions))
                 {
-                    Create(useProjectSettingsFolder: false, activateAsset: true);
+                    Create(useProjectSettingsFolder: true, activateAsset: true);
                 }
 
                 bool guiEnabled = GUI.enabled;

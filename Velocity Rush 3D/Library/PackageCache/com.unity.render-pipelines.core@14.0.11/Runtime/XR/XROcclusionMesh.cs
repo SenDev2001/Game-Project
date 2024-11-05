@@ -39,7 +39,7 @@ namespace UnityEngine.Experimental.Rendering
             }
         }
 
-        internal void RenderOcclusionMesh(CommandBuffer cmd, float occlusionMeshScale, bool yFlip = false)
+        internal void RenderOcclusionMesh(CommandBuffer cmd)
         {
             if (IsOcclusionMeshSupported())
             {
@@ -47,27 +47,16 @@ namespace UnityEngine.Experimental.Rendering
                 {
                     if (m_Pass.singlePassEnabled)
                     {
-                        // Prefer multiview draw
-                        if (m_CombinedMesh != null && SystemInfo.supportsMultiview) 
-                        {
-                            // For the multiview code path, keep the multiview state on to propagate geometries to all eye texture slices
-                            cmd.EnableShaderKeyword("XR_OCCLUSION_MESH_COMBINED");
-                            Vector3 scale = new Vector3(occlusionMeshScale, yFlip? occlusionMeshScale : -occlusionMeshScale, 1.0f);
-                            cmd.DrawMesh(m_CombinedMesh, Matrix4x4.Scale(scale), m_Material);
-                            cmd.DisableShaderKeyword("XR_OCCLUSION_MESH_COMBINED");
-                        }
-                        else if (m_CombinedMesh != null && SystemInfo.supportsRenderTargetArrayIndexFromVertexShader)
+                        if (m_CombinedMesh != null && SystemInfo.supportsRenderTargetArrayIndexFromVertexShader)
                         {
                             m_Pass.StopSinglePass(cmd);
 
                             cmd.EnableShaderKeyword("XR_OCCLUSION_MESH_COMBINED");
-                            Vector3 scale = new Vector3(occlusionMeshScale, yFlip ? occlusionMeshScale : -occlusionMeshScale, 1.0f);
-                            cmd.DrawMesh(m_CombinedMesh, Matrix4x4.Scale(scale), m_Material);
+                            cmd.DrawMesh(m_CombinedMesh, Matrix4x4.identity, m_Material);
                             cmd.DisableShaderKeyword("XR_OCCLUSION_MESH_COMBINED");
 
                             m_Pass.StartSinglePass(cmd);
                         }
-
                     }
                     else
                     {

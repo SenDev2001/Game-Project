@@ -6,7 +6,7 @@ using UnityEditor;
 using UnityEngine;
 
 [ExecuteInEditMode]
-public class PRSAlignSceneView : MonoBehaviour
+public class AlignSceneView : MonoBehaviour
 {
 
     // Start is called before the first frame update
