@@ -184,7 +184,7 @@ namespace UnityEditor.Rendering
         public void DrawHull(bool filled)
         {
             Color previousColor = Handles.color;
-            if (filled && Event.current.type == EventType.Repaint)
+            if (filled)
             {
                 // Draw the hull
                 var xSize = new Vector3(size.z, size.y, 1f);

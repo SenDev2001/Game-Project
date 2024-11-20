@@ -13,7 +13,6 @@ namespace UnityEngine.Experimental.Rendering
         internal RenderTextureDescriptor renderTargetDesc;
         internal ScriptableCullingParameters cullingParameters;
         internal Material occlusionMeshMaterial;
-        internal float occlusionMeshScale;
         internal IntPtr foveatedRenderingInfo;
         internal int multipassId;
         internal int cullingPassId;
@@ -167,11 +166,6 @@ namespace UnityEngine.Experimental.Rendering
         }
 
         /// <summary>
-        /// Scaling factor used when drawing the occlusion mesh.
-        /// </summary>
-        public float occlusionMeshScale { get; private set; }
-
-        /// <summary>
         /// Returns the projection matrix for a given view.
         /// </summary>
         /// <param name="viewIndex"></param>
@@ -286,12 +280,10 @@ namespace UnityEngine.Experimental.Rendering
         /// where the corresponding view index is encoded into each vertex. The keyword
         /// "XR_OCCLUSION_MESH_COMBINED" is also enabled when rendering the combined mesh.
         /// </summary>
-        /// <param name="cmd">CommandBuffer to modify</param>
-        /// <param name="renderIntoTexture">Set to true when rendering into a render texture. Used for handling Unity yflip.</param>
-        public void RenderOcclusionMesh(CommandBuffer cmd, bool renderIntoTexture = false)
+        /// <param name="cmd"></param>
+        public void RenderOcclusionMesh(CommandBuffer cmd)
         {
-            if(occlusionMeshScale > 0)
-                m_OcclusionMesh.RenderOcclusionMesh(cmd, occlusionMeshScale, renderIntoTexture);
+            m_OcclusionMesh.RenderOcclusionMesh(cmd);
         }
 
         /// <summary>
@@ -352,7 +344,6 @@ namespace UnityEngine.Experimental.Rendering
             renderTarget = new RenderTargetIdentifier(createInfo.renderTarget, 0, CubemapFace.Unknown, -1);
             renderTargetDesc = createInfo.renderTargetDesc;
             m_OcclusionMesh.SetMaterial(createInfo.occlusionMeshMaterial);
-            occlusionMeshScale = createInfo.occlusionMeshScale;
             foveatedRenderingInfo = createInfo.foveatedRenderingInfo;
         }
 

@@ -37,9 +37,10 @@ public class MenuController : MonoBehaviour
 
     public void OnSaveButtonClicked()
     {
-        PlayerPrefs.SetString("PlayerName", playerName); 
+        PlayerPrefs.SetString("PlayerName", playerName);
+        Debug.Log("Player Name Saved: " + playerName);
 
-      
+
         saveButton.gameObject.SetActive(false);
         playButton.gameObject.SetActive(true);
         playerNameInputField.gameObject.SetActive(false);

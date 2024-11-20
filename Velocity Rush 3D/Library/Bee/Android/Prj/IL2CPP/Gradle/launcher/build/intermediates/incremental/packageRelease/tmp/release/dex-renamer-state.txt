@@ -1,4 +1,0 @@
-#Tue Nov 19 14:48:13 GMT 2024
-base.0=D\:\\Game-Project\\Velocity Rush 3D\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
-renamed.0=classes.dex
-path.0=classes.dex

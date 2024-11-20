@@ -34,7 +34,6 @@ namespace UnityEngine.Experimental.Rendering.RenderGraphModule
             }
         }
 
-        delegate bool ResourceCreateCallback(RenderGraphContext rgContext, IRenderGraphResource res);
         delegate void ResourceCallback(RenderGraphContext rgContext, IRenderGraphResource res);
 
         class RenderGraphResourcesData
@@ -42,7 +41,7 @@ namespace UnityEngine.Experimental.Rendering.RenderGraphModule
             public DynamicArray<IRenderGraphResource> resourceArray = new DynamicArray<IRenderGraphResource>();
             public int sharedResourcesCount;
             public IRenderGraphResourcePool pool;
-            public ResourceCreateCallback createResourceCallback;
+            public ResourceCallback createResourceCallback;
             public ResourceCallback releaseResourceCallback;
 
             public void Clear(bool onException, int frameIndex)
@@ -442,9 +441,8 @@ namespace UnityEngine.Experimental.Rendering.RenderGraphModule
             }
         }
 
-        internal bool CreatePooledResource(RenderGraphContext rgContext, int type, int index)
+        internal void CreatePooledResource(RenderGraphContext rgContext, int type, int index)
         {
-            bool? executedWork = false;
             var resource = m_RenderGraphResources[type].resourceArray[index];
             if (!resource.imported)
             {
@@ -453,17 +451,15 @@ namespace UnityEngine.Experimental.Rendering.RenderGraphModule
                 if (m_RenderGraphDebug.enableLogging)
                     resource.LogCreation(m_FrameInformationLogger);
 
-                executedWork = m_RenderGraphResources[type].createResourceCallback?.Invoke(rgContext, resource);
+                m_RenderGraphResources[type].createResourceCallback?.Invoke(rgContext, resource);
             }
-
-            return executedWork ?? false;
         }
-        internal bool CreatePooledResource(RenderGraphContext rgContext, ResourceHandle handle)
+        internal void CreatePooledResource(RenderGraphContext rgContext, ResourceHandle handle)
         {
-            return CreatePooledResource(rgContext, handle.iType, handle.index);
+            CreatePooledResource(rgContext, handle.iType, handle.index);
         }
 
-        bool CreateTextureCallback(RenderGraphContext rgContext, IRenderGraphResource res)
+        void CreateTextureCallback(RenderGraphContext rgContext, IRenderGraphResource res)
         {
             var resource = res as TextureResource;
 
@@ -475,7 +471,6 @@ namespace UnityEngine.Experimental.Rendering.RenderGraphModule
             }
 #endif
 
-            bool executedWork = false;
             if (resource.desc.clearBuffer || m_RenderGraphDebug.clearRenderTargetsAtCreation)
             {
                 bool debugClear = m_RenderGraphDebug.clearRenderTargetsAtCreation && !resource.desc.clearBuffer;
@@ -485,9 +480,7 @@ namespace UnityEngine.Experimental.Rendering.RenderGraphModule
                     var clearColor = debugClear ? Color.magenta : resource.desc.clearColor;
                     CoreUtils.SetRenderTarget(rgContext.cmd, resource.graphicsResource, clearFlag, clearColor);
                 }
-                executedWork = true;
             }
-            return executedWork;
         }
 
         internal void ReleasePooledResource(RenderGraphContext rgContext, int type, int index)
