@@ -83,6 +83,13 @@ public class M_GameManager : MonoBehaviour
 
     public void GoToMenu()
     {
+        Time.timeScale = 1;
+
+        M_ScoreManager scoreManager = FindObjectOfType<M_ScoreManager>();
+        if (scoreManager != null)
+        {
+            scoreManager.ResetScore();
+        }
         SceneManager.LoadScene("Menu");
     }
 }

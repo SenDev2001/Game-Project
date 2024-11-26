@@ -21,55 +21,47 @@ namespace Gameplay
 
         private void Update()
         {
-            HandleInput();
-        }
-
-        private void HandleInput()
-        {
             if (Input.touchCount > 0)
             {
-                Touch touch = Input.GetTouch(0);
-                switch (touch.phase)
-                {
-                    case TouchPhase.Began:
-                        _startTouchPosition = touch.position;
-                        _swipeDetected = false;
-                        break;
+                HandleTouchInput(Input.GetTouch(0));
+            }
+        }
 
-                    case TouchPhase.Moved:
-                        _currentTouchPosition = touch.position;
-                        DetectSwipe();
-                        break;
+        private void HandleTouchInput(Touch touch)
+        {
+            switch (touch.phase)
+            {
+                case TouchPhase.Began:
+                    OnTouchBegan(touch);
+                    break;
 
-                    case TouchPhase.Ended:
-                        if (_swipeDetected)
-                        {
-                            Vector2 swipeDirection = _currentTouchPosition - _startTouchPosition;
-                            if (Mathf.Abs(swipeDirection.x) > Mathf.Abs(swipeDirection.y))
-                            {
-                                if (swipeDirection.x > 0)
-                                {
-                                    if (_movement.TargetLane == 0)
-                                    {
-                                        _movement.MoveToMiddle();
-                                    }
-                                    else
-                                    {
-                                        _movement.MoveRight();
-                                    }
-                                }
-                                else
-                                {
-                                    _movement.MoveLeft();
-                                }
-                            }
-                            else
-                            {
-                                _jump.OnSwipe(swipeDirection.normalized);
-                            }
-                        }
-                        break;
-                }
+                case TouchPhase.Moved:
+                    OnTouchMoved(touch);
+                    break;
+
+                case TouchPhase.Ended:
+                    OnTouchEnded();
+                    break;
+            }
+        }
+
+        private void OnTouchBegan(Touch touch)
+        {
+            _startTouchPosition = touch.position;
+            _swipeDetected = false;
+        }
+
+        private void OnTouchMoved(Touch touch)
+        {
+            _currentTouchPosition = touch.position;
+            DetectSwipe();
+        }
+
+        private void OnTouchEnded()
+        {
+            if (_swipeDetected)
+            {
+                ProcessSwipe();
             }
         }
 
@@ -77,13 +69,44 @@ namespace Gameplay
         {
             if (_swipeDetected) return;
 
-            float swipeDestance = (_currentTouchPosition - _startTouchPosition).magnitude;
-            float swipeThreshold = 50f;
+            float swipeDistance = (_currentTouchPosition - _startTouchPosition).magnitude;
+            const float swipeThreshold = 50f; // Minimum distance for a swipe to be considered
 
-            if (swipeDestance > swipeThreshold)
+            if (swipeDistance > swipeThreshold)
             {
                 _swipeDetected = true;
             }
+        }
+
+        private void ProcessSwipe()
+        {
+            Vector2 swipeDirection = _currentTouchPosition - _startTouchPosition;
+
+            if (Mathf.Abs(swipeDirection.x) > Mathf.Abs(swipeDirection.y))
+            {
+                ProcessHorizontalSwipe(swipeDirection.x);
+            }
+            else
+            {
+                ProcessVerticalSwipe(swipeDirection.normalized);
+            }
+        }
+
+        private void ProcessHorizontalSwipe(float swipeDirectionX)
+        {
+            if (swipeDirectionX > 0)
+            {
+                _movement.MoveRight();
+            }
+            else
+            {
+                _movement.MoveLeft();
+            }
+        }
+
+        private void ProcessVerticalSwipe(Vector2 swipeDirection)
+        {
+            _jump.OnSwipe(swipeDirection);
         }
     }
 }

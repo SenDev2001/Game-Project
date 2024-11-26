@@ -2365,7 +2365,7 @@ struct U3CAddScoreToAPIU3Ed__14_t4C27A269D4C423C4092A2F8236351368F02806A8  : pub
 	M_ScoreManager_tC31D090147CB6ECD855A58116F9AE0B328F1CCDA* ___U3CU3E4__this;
 	UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* ___U3CrequestU3E5__2;
 };
-struct U3CGetLeaderboardU3Ed__15_tF2E1BA26C43A22FF7DA79E9C74E61788DD7E8CEB  : public RuntimeObject
+struct U3CGetLeaderboardU3Ed__16_t079D3152921898B0B1C2806E3B29EAC27340CA21  : public RuntimeObject
 {
 	int32_t ___U3CU3E1__state;
 	RuntimeObject* ___U3CU3E2__current;
@@ -23348,7 +23348,7 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5171[6] =
 	static_cast<int32_t>(offsetof(U3CAddScoreToAPIU3Ed__14_t4C27A269D4C423C4092A2F8236351368F02806A8, ___U3CU3E1__state)),static_cast<int32_t>(offsetof(U3CAddScoreToAPIU3Ed__14_t4C27A269D4C423C4092A2F8236351368F02806A8, ___U3CU3E2__current)),static_cast<int32_t>(offsetof(U3CAddScoreToAPIU3Ed__14_t4C27A269D4C423C4092A2F8236351368F02806A8, ___name)),static_cast<int32_t>(offsetof(U3CAddScoreToAPIU3Ed__14_t4C27A269D4C423C4092A2F8236351368F02806A8, ___score)),static_cast<int32_t>(offsetof(U3CAddScoreToAPIU3Ed__14_t4C27A269D4C423C4092A2F8236351368F02806A8, ___U3CU3E4__this)),static_cast<int32_t>(offsetof(U3CAddScoreToAPIU3Ed__14_t4C27A269D4C423C4092A2F8236351368F02806A8, ___U3CrequestU3E5__2)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5172[4] = 
 {
-	static_cast<int32_t>(offsetof(U3CGetLeaderboardU3Ed__15_tF2E1BA26C43A22FF7DA79E9C74E61788DD7E8CEB, ___U3CU3E1__state)),static_cast<int32_t>(offsetof(U3CGetLeaderboardU3Ed__15_tF2E1BA26C43A22FF7DA79E9C74E61788DD7E8CEB, ___U3CU3E2__current)),static_cast<int32_t>(offsetof(U3CGetLeaderboardU3Ed__15_tF2E1BA26C43A22FF7DA79E9C74E61788DD7E8CEB, ___U3CU3E4__this)),static_cast<int32_t>(offsetof(U3CGetLeaderboardU3Ed__15_tF2E1BA26C43A22FF7DA79E9C74E61788DD7E8CEB, ___U3CrequestU3E5__2)),};
+	static_cast<int32_t>(offsetof(U3CGetLeaderboardU3Ed__16_t079D3152921898B0B1C2806E3B29EAC27340CA21, ___U3CU3E1__state)),static_cast<int32_t>(offsetof(U3CGetLeaderboardU3Ed__16_t079D3152921898B0B1C2806E3B29EAC27340CA21, ___U3CU3E2__current)),static_cast<int32_t>(offsetof(U3CGetLeaderboardU3Ed__16_t079D3152921898B0B1C2806E3B29EAC27340CA21, ___U3CU3E4__this)),static_cast<int32_t>(offsetof(U3CGetLeaderboardU3Ed__16_t079D3152921898B0B1C2806E3B29EAC27340CA21, ___U3CrequestU3E5__2)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5173[6] = 
 {
 	static_cast<int32_t>(offsetof(M_ScoreManager_tC31D090147CB6ECD855A58116F9AE0B328F1CCDA, ___U3CScoreU3Ek__BackingField)),static_cast<int32_t>(offsetof(M_ScoreManager_tC31D090147CB6ECD855A58116F9AE0B328F1CCDA, ___scoreText)),static_cast<int32_t>(offsetof(M_ScoreManager_tC31D090147CB6ECD855A58116F9AE0B328F1CCDA, ___leaderboardText)),static_cast<int32_t>(offsetof(M_ScoreManager_tC31D090147CB6ECD855A58116F9AE0B328F1CCDA, ___addScoreUrl)),static_cast<int32_t>(offsetof(M_ScoreManager_tC31D090147CB6ECD855A58116F9AE0B328F1CCDA, ___leaderboardUrl)),static_cast<int32_t>(offsetof(M_ScoreManager_tC31D090147CB6ECD855A58116F9AE0B328F1CCDA, ___playerName)),};

@@ -17,8 +17,10 @@ namespace Gameplay
 
         void Update()
         {
+            // Check if the player is grounded
             _isGrounded = Physics.Raycast(transform.position, Vector3.down, 1.1f);
 
+            // Allow jumping with space or W key when grounded
             if (_isGrounded && (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W)))
             {
                 Jump();
@@ -27,16 +29,22 @@ namespace Gameplay
 
         void FixedUpdate()
         {
+            // Apply custom gravity
             _rb.AddForce(Physics.gravity * gravityScale, ForceMode.Acceleration);
         }
 
         public void OnSwipe(Vector2 swipeDirection)
         {
-            Jump();
+            // Check if swipe is upwards and the player is grounded
+            if (_isGrounded && swipeDirection.y > 0)
+            {
+                Jump();
+            }
         }
 
         private void Jump()
         {
+            // Set vertical velocity to the jump force while maintaining the current horizontal velocity
             _rb.velocity = new Vector3(_rb.velocity.x, jumpForce, _rb.velocity.z);
         }
 
