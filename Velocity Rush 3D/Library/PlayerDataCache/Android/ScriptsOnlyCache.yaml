@@ -100,11 +100,15 @@ ScriptsOnlyBuild:
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.ContentSizeFitter
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
     - UnityEngine.UI.LayoutElement
+    - UnityEngine.UI.Mask
     - UnityEngine.UI.RectMask2D
+    - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Slider
+    - UnityEngine.UI.VerticalLayoutGroup
   serializedClasses:
     Unity.RenderPipelines.Core.Runtime:
     - UnityEngine.Rendering.UI.DebugUIPrefabBundle
@@ -239,13 +243,15 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 16704}
+    - Class: 114
       Script: {instanceID: 16708}
     - Class: 114
       Script: {instanceID: 16710}
     - Class: 114
-      Script: {instanceID: 16778}
+      Script: {instanceID: 16712}
     - Class: 114
-      Script: {instanceID: 16966}
+      Script: {instanceID: 16778}
     - Class: 114
       Script: {instanceID: 17882}
     - Class: 114
@@ -265,17 +271,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 20118}
     - Class: 114
-      Script: {instanceID: 20384}
+      Script: {instanceID: 20172}
     - Class: 114
-      Script: {instanceID: 20518}
+      Script: {instanceID: 20384}
     - Class: 114
       Script: {instanceID: 20760}
     - Class: 114
       Script: {instanceID: 20928}
     - Class: 114
       Script: {instanceID: 21134}
-    - Class: 114
-      Script: {instanceID: 21722}
     - Class: 114
       Script: {instanceID: 22010}
     - Class: 114
@@ -291,10 +295,10 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 23578}
     - Class: 114
+      Script: {instanceID: 24182}
+    - Class: 114
       Script: {instanceID: 24396}
     - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
@@ -2200,4 +2204,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Game.unity
-  playerPath: D:/Projects/VR.apk
+  playerPath: D:/UCA Projects/VR.apk

@@ -26,66 +26,49 @@ namespace Gameplay
 
         private void HandleInput()
         {
-            if (_jump.IsGrounded())
+            if (Input.touchCount > 0)
             {
-                // Keyboard controls for left/right movement
-                if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
+                Touch touch = Input.GetTouch(0);
+                switch (touch.phase)
                 {
-                    _movement.MoveLeft();
-                }
-                else if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
-                {
-                    _movement.MoveRight();
-                }
+                    case TouchPhase.Began:
+                        _startTouchPosition = touch.position;
+                        _swipeDetected = false;
+                        break;
 
-                // Touch input for swipe detection
-                if (Input.touchCount > 0)
-                {
-                    Touch touch = Input.GetTouch(0);
-                    switch (touch.phase)
-                    {
-                        case TouchPhase.Began:
-                            _startTouchPosition = touch.position;
-                            _swipeDetected = false;
-                            break;
+                    case TouchPhase.Moved:
+                        _currentTouchPosition = touch.position;
+                        DetectSwipe();
+                        break;
 
-                        case TouchPhase.Moved:
-                            _currentTouchPosition = touch.position;
-                            DetectSwipe();
-                            break;
-
-                        case TouchPhase.Ended:
-                            if (_swipeDetected)
+                    case TouchPhase.Ended:
+                        if (_swipeDetected)
+                        {
+                            Vector2 swipeDirection = _currentTouchPosition - _startTouchPosition;
+                            if (Mathf.Abs(swipeDirection.x) > Mathf.Abs(swipeDirection.y))
                             {
-                                Vector2 swipeDirection = _currentTouchPosition - _startTouchPosition;
-                                if (Mathf.Abs(swipeDirection.x) > Mathf.Abs(swipeDirection.y))
+                                if (swipeDirection.x > 0)
                                 {
-                                    // Horizontal swipe
-                                    if (swipeDirection.x > 0)
+                                    if (_movement.TargetLane == 0)
                                     {
-                                        // Move right if in left lane
-                                        if (_movement.TargetLane == 0)
-                                        {
-                                            _movement.MoveToMiddle();
-                                        }
-                                        else
-                                        {
-                                            _movement.MoveRight();
-                                        }
+                                        _movement.MoveToMiddle();
                                     }
                                     else
                                     {
-                                        _movement.MoveLeft();
+                                        _movement.MoveRight();
                                     }
                                 }
                                 else
                                 {
-                                    // Vertical swipe
-                                    _jump.OnSwipe(swipeDirection.normalized);
+                                    _movement.MoveLeft();
                                 }
                             }
-                            break;
-                    }
+                            else
+                            {
+                                _jump.OnSwipe(swipeDirection.normalized);
+                            }
+                        }
+                        break;
                 }
             }
         }
@@ -95,7 +78,9 @@ namespace Gameplay
             if (_swipeDetected) return;
 
             float swipeDestance = (_currentTouchPosition - _startTouchPosition).magnitude;
-            if (swipeDestance > 0)
+            float swipeThreshold = 50f;
+
+            if (swipeDestance > swipeThreshold)
             {
                 _swipeDetected = true;
             }

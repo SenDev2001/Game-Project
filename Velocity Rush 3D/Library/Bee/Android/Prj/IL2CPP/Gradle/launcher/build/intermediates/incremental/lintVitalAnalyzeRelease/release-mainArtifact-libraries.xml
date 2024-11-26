@@ -1,0 +1,19 @@
+<libraries>
+  <library
+      name="D:\UCA Projects\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle@@:unityLibrary::release"
+      jars="D:\UCA Projects\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\.transforms\64a2359c6f9c93e91fc55b76b6928ecb\transformed\out\jars\classes.jar;D:\UCA Projects\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\.transforms\64a2359c6f9c93e91fc55b76b6928ecb\transformed\out\jars\libs\R.jar;D:\UCA Projects\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\.transforms\64a2359c6f9c93e91fc55b76b6928ecb\transformed\out\jars\libs\unity-classes.jar"
+      resolved="Gradle:unityLibrary:unspecified"
+      folder="D:\UCA Projects\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\.transforms\64a2359c6f9c93e91fc55b76b6928ecb\transformed\out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="__local_aars__:D:\UCA Projects\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\libs\unity-classes.jar:unspecified@jar"
+      jars="D:\UCA Projects\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\libs\unity-classes.jar"
+      resolved="__local_aars__:D:\UCA Projects\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\libs\unity-classes.jar:unspecified"/>
+</libraries>

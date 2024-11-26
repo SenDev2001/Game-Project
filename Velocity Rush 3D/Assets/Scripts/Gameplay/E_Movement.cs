@@ -5,7 +5,7 @@ namespace Gameplay
     [RequireComponent(typeof(Rigidbody))]
     public class E_Movement : MonoBehaviour
     {
-        private int _targetLane = 1; 
+        private int _targetLane = 1;
         private Vector3 _targetPosition;
         private Rigidbody _rb;
 
@@ -41,11 +41,11 @@ namespace Gameplay
         public void MoveToMiddle()
         {
             if (_targetLane == 0)
-                _targetLane = 1; 
+                _targetLane = 1;
             else if (_targetLane == 1)
-                _targetLane = 2; 
+                _targetLane = 2;
         }
 
-        public int TargetLane => _targetLane; 
+        public int TargetLane => _targetLane;
     }
 }

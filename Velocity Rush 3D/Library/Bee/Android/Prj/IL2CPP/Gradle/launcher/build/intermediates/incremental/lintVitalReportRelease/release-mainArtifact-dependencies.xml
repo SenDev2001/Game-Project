@@ -1,0 +1,17 @@
+<dependencies>
+  <compile
+      roots="D:\UCA Projects\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle@@:unityLibrary::release">
+    <dependency
+        name="D:\UCA Projects\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle@@:unityLibrary::release"
+        simpleName="Gradle:unityLibrary"/>
+  </compile>
+  <package
+      roots="D:\UCA Projects\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle@@:unityLibrary::release,__local_aars__:D:\UCA Projects\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\libs\unity-classes.jar:unspecified@jar">
+    <dependency
+        name="D:\UCA Projects\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle@@:unityLibrary::release"
+        simpleName="Gradle:unityLibrary"/>
+    <dependency
+        name="__local_aars__:D:\UCA Projects\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\libs\unity-classes.jar:unspecified@jar"
+        simpleName="__local_aars__:D:\UCA Projects\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\libs\unity-classes.jar"/>
+  </package>
+</dependencies>

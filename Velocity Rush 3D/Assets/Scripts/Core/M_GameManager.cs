@@ -80,4 +80,9 @@ public class M_GameManager : MonoBehaviour
             scoreText.text = "Score: " + score;
         }
     }
+
+    public void GoToMenu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
 }
