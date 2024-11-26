@@ -285,6 +285,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralC8A7CFD8AB12EAAA8B4233366A1996B6362896E1
 IL2CPP_EXTERN_C String_t* _stringLiteralCACAA6EFF73DD6413DCCC80D1E8AB2EB4676B2EF;
 IL2CPP_EXTERN_C String_t* _stringLiteralCAF8804297181FF007CA835529DD4477CFD94A70;
 IL2CPP_EXTERN_C String_t* _stringLiteralCD1C7105AD7EBCE5091E5D5D4AA78C039FE2892F;
+IL2CPP_EXTERN_C String_t* _stringLiteralD1328154D13824F45489391E4B884D3873CA1E59;
 IL2CPP_EXTERN_C String_t* _stringLiteralD1C9F4710BE3CD3F2D4FA8F6377624A416EEE861;
 IL2CPP_EXTERN_C String_t* _stringLiteralD9691C4FD8A1F6B09DB1147CA32B442772FB46A1;
 IL2CPP_EXTERN_C String_t* _stringLiteralDB640F25E2140505527B9C5BAECC243D0E8A3DA8;
@@ -6635,8 +6636,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool E_Jump_IsGrounded_m17784A342035216603F69
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void E_Jump__ctor_m663A2FE6135038F8CAE2BC91DFD21C14DE222951 (E_Jump_tB9E5B9EE5B7A49368251A3C4EE28C556491E9DD6* __this, const RuntimeMethod* method) 
 {
 	{
-		__this->___jumpForce = (18.0f);
-		__this->___gravityScale = (1.0f);
+		__this->___jumpForce = (10.0f);
+		__this->___gravityScale = (1.10000002f);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}
@@ -6919,19 +6920,39 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void E_Movement_IncreaseSpeed_m2060F572648A24
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral88744F008A78BA1D4278DA1A50ADFA8D9A952E20);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD1328154D13824F45489391E4B884D3873CA1E59);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
 		float L_0 = __this->___forwardSpeed;
-		float L_1 = __this->___speedIncreaseFactor;
-		__this->___forwardSpeed = ((float)il2cpp_codegen_multiply(L_0, L_1));
-		float* L_2 = (float*)(&__this->___forwardSpeed);
-		String_t* L_3;
-		L_3 = Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972(L_2, NULL);
+		if ((!(((float)L_0) < ((float)(20.0f)))))
+		{
+			goto IL_003b;
+		}
+	}
+	{
+		float L_1 = __this->___forwardSpeed;
+		float L_2 = __this->___speedIncreaseFactor;
+		__this->___forwardSpeed = ((float)il2cpp_codegen_multiply(L_1, L_2));
+		float* L_3 = (float*)(&__this->___forwardSpeed);
 		String_t* L_4;
-		L_4 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral88744F008A78BA1D4278DA1A50ADFA8D9A952E20, L_3, NULL);
+		L_4 = Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972(L_3, NULL);
+		String_t* L_5;
+		L_5 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral88744F008A78BA1D4278DA1A50ADFA8D9A952E20, L_4, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_4, NULL);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_5, NULL);
+		return;
+	}
+
+IL_003b:
+	{
+		float* L_6 = (float*)(&__this->___forwardSpeed);
+		String_t* L_7;
+		L_7 = Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972(L_6, NULL);
+		String_t* L_8;
+		L_8 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralD1328154D13824F45489391E4B884D3873CA1E59, L_7, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_8, NULL);
 		return;
 	}
 }
@@ -6993,7 +7014,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void E_Movement__ctor_mEA5B97F762F4EFEF50581D
 		__this->___leftrightSpeed = (9.5f);
 		__this->___forwardSpeed = (10.0f);
 		__this->___roadsPerSpeedIncrease = 3;
-		__this->___speedIncreaseFactor = (1.20000005f);
+		__this->___speedIncreaseFactor = (1.10000002f);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}

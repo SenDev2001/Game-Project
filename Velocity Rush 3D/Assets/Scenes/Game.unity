@@ -402,7 +402,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fcda7d4f4e70ce4f9e19354150f8724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 12
+  jumpForce: 10
   gravityScale: 1
 --- !u!114 &258908439
 MonoBehaviour:
@@ -418,9 +418,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laneDistance: 2.39
   leftrightSpeed: 10
-  forwardSpeed: 12
+  forwardSpeed: 10
   roadsPerSpeedIncrease: 3
-  speedIncreaseFactor: 1
+  speedIncreaseFactor: 1.1
 --- !u!114 &258908440
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -15,7 +15,7 @@ namespace Gameplay
 
         private int roadCounter = 0;
         public int roadsPerSpeedIncrease = 3;
-        public float speedIncreaseFactor = 1f;
+        public float speedIncreaseFactor = 1.1f;
 
         private void Start()
         {
@@ -125,9 +125,17 @@ namespace Gameplay
 
         private void IncreaseSpeed()
         {
-            forwardSpeed *= speedIncreaseFactor;
-            Debug.Log("Speed increased! New speed: " + forwardSpeed);
+            if (forwardSpeed < 20f) 
+            {
+                forwardSpeed *= speedIncreaseFactor;
+                Debug.Log("Speed increased! New speed: " + forwardSpeed);
+            }
+            else
+            {
+                Debug.Log("Max speed reached: " + forwardSpeed);
+            }
         }
+
 
         private void ResetRoadCounter()
         {
