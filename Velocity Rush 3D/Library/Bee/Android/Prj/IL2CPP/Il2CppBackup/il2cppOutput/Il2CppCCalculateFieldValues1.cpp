@@ -15432,6 +15432,9 @@ struct E_Movement_t1F2081E7366D3A4A07B077AD1B63784BEA7C93CD  : public MonoBehavi
 	float ___laneDistance;
 	float ___leftrightSpeed;
 	float ___forwardSpeed;
+	int32_t ___roadCounter;
+	int32_t ___roadsPerSpeedIncrease;
+	float ___speedIncreaseFactor;
 };
 struct E_PlayerHealth_tAE90A456CAD02D98F80F8F4E9F4B3E2C406E2E59  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -23397,9 +23400,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5195[5] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5196[4] = 
 {
 	static_cast<int32_t>(offsetof(E_Jump_tB9E5B9EE5B7A49368251A3C4EE28C556491E9DD6, ___jumpForce)),static_cast<int32_t>(offsetof(E_Jump_tB9E5B9EE5B7A49368251A3C4EE28C556491E9DD6, ___gravityScale)),static_cast<int32_t>(offsetof(E_Jump_tB9E5B9EE5B7A49368251A3C4EE28C556491E9DD6, ____rb)),static_cast<int32_t>(offsetof(E_Jump_tB9E5B9EE5B7A49368251A3C4EE28C556491E9DD6, ____isGrounded)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5197[6] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5197[9] = 
 {
-	static_cast<int32_t>(offsetof(E_Movement_t1F2081E7366D3A4A07B077AD1B63784BEA7C93CD, ____targetLane)),static_cast<int32_t>(offsetof(E_Movement_t1F2081E7366D3A4A07B077AD1B63784BEA7C93CD, ____targetPosition)),static_cast<int32_t>(offsetof(E_Movement_t1F2081E7366D3A4A07B077AD1B63784BEA7C93CD, ____rb)),static_cast<int32_t>(offsetof(E_Movement_t1F2081E7366D3A4A07B077AD1B63784BEA7C93CD, ___laneDistance)),static_cast<int32_t>(offsetof(E_Movement_t1F2081E7366D3A4A07B077AD1B63784BEA7C93CD, ___leftrightSpeed)),static_cast<int32_t>(offsetof(E_Movement_t1F2081E7366D3A4A07B077AD1B63784BEA7C93CD, ___forwardSpeed)),};
+	static_cast<int32_t>(offsetof(E_Movement_t1F2081E7366D3A4A07B077AD1B63784BEA7C93CD, ____targetLane)),static_cast<int32_t>(offsetof(E_Movement_t1F2081E7366D3A4A07B077AD1B63784BEA7C93CD, ____targetPosition)),static_cast<int32_t>(offsetof(E_Movement_t1F2081E7366D3A4A07B077AD1B63784BEA7C93CD, ____rb)),static_cast<int32_t>(offsetof(E_Movement_t1F2081E7366D3A4A07B077AD1B63784BEA7C93CD, ___laneDistance)),static_cast<int32_t>(offsetof(E_Movement_t1F2081E7366D3A4A07B077AD1B63784BEA7C93CD, ___leftrightSpeed)),static_cast<int32_t>(offsetof(E_Movement_t1F2081E7366D3A4A07B077AD1B63784BEA7C93CD, ___forwardSpeed)),static_cast<int32_t>(offsetof(E_Movement_t1F2081E7366D3A4A07B077AD1B63784BEA7C93CD, ___roadCounter)),static_cast<int32_t>(offsetof(E_Movement_t1F2081E7366D3A4A07B077AD1B63784BEA7C93CD, ___roadsPerSpeedIncrease)),static_cast<int32_t>(offsetof(E_Movement_t1F2081E7366D3A4A07B077AD1B63784BEA7C93CD, ___speedIncreaseFactor)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5199[2] = 
 {
 	static_cast<int32_t>(offsetof(E_PlayerHealth_tAE90A456CAD02D98F80F8F4E9F4B3E2C406E2E59, ___maxHealth)),static_cast<int32_t>(offsetof(E_PlayerHealth_tAE90A456CAD02D98F80F8F4E9F4B3E2C406E2E59, ___currentHealth)),};

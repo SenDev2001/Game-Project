@@ -402,7 +402,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fcda7d4f4e70ce4f9e19354150f8724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 8
+  jumpForce: 12
   gravityScale: 1
 --- !u!114 &258908439
 MonoBehaviour:
@@ -418,7 +418,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laneDistance: 2.39
   leftrightSpeed: 10
-  forwardSpeed: 10
+  forwardSpeed: 12
+  roadsPerSpeedIncrease: 3
+  speedIncreaseFactor: 1
 --- !u!114 &258908440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -912,7 +914,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0.00061493856}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 98}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &600641929
 MonoBehaviour:
@@ -1681,7 +1683,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &955723651
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1885,9 +1887,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 600641928}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 420.6709, y: -49}
   m_SizeDelta: {x: 641.3418, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1118416350
@@ -2538,9 +2540,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roadPrefabs:
-  - {fileID: 5480911430641665307, guid: f90fdf3702798954a8632d8fac2aff4d, type: 3}
-  - {fileID: 4435365476098307856, guid: f69ed1cea08dde041bba85df7b9a55c8, type: 3}
-  - {fileID: 86862533128799917, guid: 6c7812b2dab70e3459730b14a354239b, type: 3}
+  - {fileID: 904403610897500, guid: f90fdf3702798954a8632d8fac2aff4d, type: 3}
+  - {fileID: 6182285786359101917, guid: f69ed1cea08dde041bba85df7b9a55c8, type: 3}
+  - {fileID: 6220203808808935204, guid: 6c7812b2dab70e3459730b14a354239b, type: 3}
 --- !u!1 &1382963852
 GameObject:
   m_ObjectHideFlags: 0

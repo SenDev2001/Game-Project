@@ -45165,6 +45165,9 @@ struct E_Movement_t1F2081E7366D3A4A07B077AD1B63784BEA7C93CD  : public MonoBehavi
 	float ___laneDistance;
 	float ___leftrightSpeed;
 	float ___forwardSpeed;
+	int32_t ___roadCounter;
+	int32_t ___roadsPerSpeedIncrease;
+	float ___speedIncreaseFactor;
 };
 struct E_Obstacle_tD651A812D65E60EF22DB944E9F3ACA892E6A5B0F  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {

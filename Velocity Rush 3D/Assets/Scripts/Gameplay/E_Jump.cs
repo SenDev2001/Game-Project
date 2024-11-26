@@ -4,8 +4,8 @@ namespace Gameplay
 {
     public class E_Jump : MonoBehaviour
     {
-        public float jumpForce = 18.0f;
-        public float gravityScale = 1.0f;
+        public float jumpForce = 10.0f;
+        public float gravityScale = 1.1f;
 
         private Rigidbody _rb;
         private bool _isGrounded;
