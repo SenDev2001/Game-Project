@@ -16,7 +16,6 @@ ScriptsOnlyBuild:
     - M_OptionsManager
     - M_RoadManager
     - M_ScoreManager
-    - MainMenu
     - MenuController
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.InputSettings
@@ -73,8 +72,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -199,6 +200,9 @@ ScriptsOnlyBuild:
   - assembly: Unity.RenderPipelines.Core.Runtime
     fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerPanel
     methodName: ResetDebugManager
+  - assembly: Assembly-CSharp
+    fullTypeName: M_GameManager
+    methodName: GoToMenu
   - assembly: Assembly-CSharp
     fullTypeName: M_GameManager
     methodName: RestartGame
@@ -359,8 +363,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 16778}
     - Class: 114
       Script: {instanceID: 16966}
-    - Class: 114
-      Script: {instanceID: 17154}
     - Class: 114
       Script: {instanceID: 17506}
     - Class: 114
@@ -726,7 +728,7 @@ ScriptsOnlyBuild:
     className: M_AudioManager
   - hash:
       serializedVersion: 2
-      Hash: 0400dc0038baecf6f796f4e11a758e22
+      Hash: d03f5b4ac1ee457a180eebefaa7934b0
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: MenuController

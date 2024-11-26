@@ -8,7 +8,7 @@ public class MenuController : MonoBehaviour
     public TMP_InputField playerNameInputField;   
     public Button saveButton;                      
     public Button playButton;
-    public Button QuitButton;
+    public Button quitButton;
 
     private string playerName;
 
@@ -17,7 +17,7 @@ public class MenuController : MonoBehaviour
        
         saveButton.gameObject.SetActive(false);
         playButton.gameObject.SetActive(false);
-        QuitButton.gameObject.SetActive(false);
+        quitButton.gameObject.SetActive(false);
 
        
         playerNameInputField.onValueChanged.AddListener(OnNameEntered);
@@ -25,7 +25,7 @@ public class MenuController : MonoBehaviour
       
         saveButton.onClick.AddListener(OnSaveButtonClicked);
         playButton.onClick.AddListener(OnPlayButtonClicked);
-        QuitButton.onClick.AddListener(OnQuitButtonClicked);
+        quitButton.onClick.AddListener(OnQuitButtonClicked);
     }
 
    
@@ -46,13 +46,17 @@ public class MenuController : MonoBehaviour
 
         saveButton.gameObject.SetActive(false);
         playButton.gameObject.SetActive(true);
-        QuitButton.gameObject.SetActive(true);
+        quitButton.gameObject.SetActive(true);
         playerNameInputField.gameObject.SetActive(false);
+
+        playButton.onClick.RemoveAllListeners(); 
+        playButton.onClick.AddListener(OnPlayButtonClicked);
     }
 
    
     public void OnPlayButtonClicked()
     {
+        Debug.Log("Play button clicked!");
         SceneManager.LoadScene("Game");
     }
 

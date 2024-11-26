@@ -15532,6 +15532,7 @@ struct MenuController_t17F68C6A3294916109B163214554B7F97C7E8427  : public MonoBe
 	TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* ___playerNameInputField;
 	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___saveButton;
 	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___playButton;
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___quitButton;
 	String_t* ___playerName;
 };
 struct ProbeTouchupVolume_tBBB66556DBE3CBB0FE0A3F870598511AA61CE796  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
@@ -23375,9 +23376,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5183[2] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5184[5] = 
 {
 	static_cast<int32_t>(offsetof(VehicleMovement_tCB53C509C6994E1CDBF2AA4F58678DDB8F058EC2, ___player)),static_cast<int32_t>(offsetof(VehicleMovement_tCB53C509C6994E1CDBF2AA4F58678DDB8F058EC2, ___moveSpeed)),static_cast<int32_t>(offsetof(VehicleMovement_tCB53C509C6994E1CDBF2AA4F58678DDB8F058EC2, ___detectionRadius)),static_cast<int32_t>(offsetof(VehicleMovement_tCB53C509C6994E1CDBF2AA4F58678DDB8F058EC2, ___maxDistance)),static_cast<int32_t>(offsetof(VehicleMovement_tCB53C509C6994E1CDBF2AA4F58678DDB8F058EC2, ___isFollowingPlayer)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5188[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5188[5] = 
 {
-	static_cast<int32_t>(offsetof(MenuController_t17F68C6A3294916109B163214554B7F97C7E8427, ___playerNameInputField)),static_cast<int32_t>(offsetof(MenuController_t17F68C6A3294916109B163214554B7F97C7E8427, ___saveButton)),static_cast<int32_t>(offsetof(MenuController_t17F68C6A3294916109B163214554B7F97C7E8427, ___playButton)),static_cast<int32_t>(offsetof(MenuController_t17F68C6A3294916109B163214554B7F97C7E8427, ___playerName)),};
+	static_cast<int32_t>(offsetof(MenuController_t17F68C6A3294916109B163214554B7F97C7E8427, ___playerNameInputField)),static_cast<int32_t>(offsetof(MenuController_t17F68C6A3294916109B163214554B7F97C7E8427, ___saveButton)),static_cast<int32_t>(offsetof(MenuController_t17F68C6A3294916109B163214554B7F97C7E8427, ___playButton)),static_cast<int32_t>(offsetof(MenuController_t17F68C6A3294916109B163214554B7F97C7E8427, ___quitButton)),static_cast<int32_t>(offsetof(MenuController_t17F68C6A3294916109B163214554B7F97C7E8427, ___playerName)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5189[1] = 
 {
 	static_cast<int32_t>(offsetof(GamePlayActions_t0418C1DE007D5BAD201B4B5B57DDE603384D008A, ___m_Wrapper)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
