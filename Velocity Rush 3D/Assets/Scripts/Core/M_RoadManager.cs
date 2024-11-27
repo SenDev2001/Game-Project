@@ -13,7 +13,7 @@ public class M_RoadManager : MonoBehaviour
     private int amnRoadOnScreen = 5;
 
    
-    private int[] prefabOrder = { 0, 1, 2 }; 
+    private int[] prefabOrder = { 0, 1, 2, 3 }; 
     private int currentPrefabIndex = 0;
 
     private void Start()
