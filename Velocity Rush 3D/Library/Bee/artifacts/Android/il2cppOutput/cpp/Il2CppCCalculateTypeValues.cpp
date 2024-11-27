@@ -7609,7 +7609,7 @@ struct U3CAddScoreToAPIU3Ed__14_t4C27A269D4C423C4092A2F8236351368F02806A8  : pub
 	M_ScoreManager_tC31D090147CB6ECD855A58116F9AE0B328F1CCDA* ___U3CU3E4__this;
 	UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* ___U3CrequestU3E5__2;
 };
-struct U3CGetLeaderboardU3Ed__16_t079D3152921898B0B1C2806E3B29EAC27340CA21  : public RuntimeObject
+struct U3CGetLeaderboardU3Ed__15_tF2E1BA26C43A22FF7DA79E9C74E61788DD7E8CEB  : public RuntimeObject
 {
 	int32_t ___U3CU3E1__state;
 	RuntimeObject* ___U3CU3E2__current;
@@ -64483,7 +64483,7 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize5170 = { sizeof(M_RoadManage
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5171;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize5171 = { sizeof(U3CAddScoreToAPIU3Ed__14_t4C27A269D4C423C4092A2F8236351368F02806A8), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5172;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5172 = { sizeof(U3CGetLeaderboardU3Ed__16_t079D3152921898B0B1C2806E3B29EAC27340CA21), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5172 = { sizeof(U3CGetLeaderboardU3Ed__15_tF2E1BA26C43A22FF7DA79E9C74E61788DD7E8CEB), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5173;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize5173 = { sizeof(M_ScoreManager_tC31D090147CB6ECD855A58116F9AE0B328F1CCDA), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5174;
