@@ -4,9 +4,9 @@ using TMPro;
 
 public class M_GameManager : MonoBehaviour
 {
-    public GameObject restartUI;     
-    public TMP_Text scoreText;        
-    public TMP_Text playerNameText;   
+    public GameObject restartUI;
+    public TMP_Text scoreText;
+    public TMP_Text playerNameText;
     private int score = 0;
 
     private string playerName;
@@ -18,38 +18,38 @@ public class M_GameManager : MonoBehaviour
             restartUI.SetActive(false);
         }
 
-        
+
         playerName = PlayerPrefs.GetString("PlayerName", "Guest");
 
-        
+
         UpdateScoreText();
     }
 
     public void ShowRestartUI()
     {
-        
+
         if (restartUI != null)
         {
             restartUI.SetActive(true);
             Time.timeScale = 0;
         }
 
-       
+
         if (playerNameText != null)
         {
-            playerNameText.text = "Player: " + playerName; 
+            playerNameText.text = "Player: " + playerName;
         }
 
         if (scoreText != null)
         {
-            scoreText.text = "Score: " + score; 
+            scoreText.text = "Score: " + score;
         }
 
-       
+
         M_ScoreManager scoreManager = FindObjectOfType<M_ScoreManager>();
         if (scoreManager != null)
         {
-            scoreManager.SubmitScore();  
+            scoreManager.SubmitScore();
         }
     }
 
@@ -63,7 +63,7 @@ public class M_GameManager : MonoBehaviour
             scoreManager.ResetScore();
         }
 
-      
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
@@ -90,6 +90,20 @@ public class M_GameManager : MonoBehaviour
         {
             scoreManager.ResetScore();
         }
-            SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("Menu");
+    }
+
+    public void quitGame()
+    {
+
+        {
+            Debug.Log("Quitting the game...");
+            Application.Quit();
+
+#if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+#endif
+
+        }
     }
 }
