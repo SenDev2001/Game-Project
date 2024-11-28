@@ -1,9 +1,9 @@
 <libraries>
   <library
-      name="D:\uca\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle@@:unityLibrary::release"
-      jars="D:\uca\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\.transforms\63eb32f08eec62f25c69163f29f87396\transformed\out\jars\classes.jar;D:\uca\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\.transforms\63eb32f08eec62f25c69163f29f87396\transformed\out\jars\libs\unity-classes.jar"
+      name="D:\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle@@:unityLibrary::release"
+      jars="D:\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\.transforms\7d8018f678fb12aba34a8a513530fd64\transformed\out\jars\classes.jar;D:\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\.transforms\7d8018f678fb12aba34a8a513530fd64\transformed\out\jars\libs\R.jar;D:\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\.transforms\7d8018f678fb12aba34a8a513530fd64\transformed\out\jars\libs\unity-classes.jar"
       resolved="Gradle:unityLibrary:unspecified"
-      folder="D:\uca\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\.transforms\63eb32f08eec62f25c69163f29f87396\transformed\out"
+      folder="D:\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\.transforms\7d8018f678fb12aba34a8a513530fd64\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -13,7 +13,7 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="__local_aars__:D:\uca\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\libs\unity-classes.jar:unspecified@jar"
-      jars="D:\uca\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\libs\unity-classes.jar"
-      resolved="__local_aars__:D:\uca\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\libs\unity-classes.jar:unspecified"/>
+      name="__local_aars__:D:\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\libs\unity-classes.jar:unspecified@jar"
+      jars="D:\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\libs\unity-classes.jar"
+      resolved="__local_aars__:D:\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\libs\unity-classes.jar:unspecified"/>
 </libraries>

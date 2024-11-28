@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\uca\\Game-Project\\Velocity Rush 3D\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-v28\\values-v28.xml",
+            "outputFile": "com.SenDev.VelocityRush.launcher-mergeReleaseResources-3:/values-v28/values-v28.xml",
             "map": [
                 {
-                    "source": "D:\\uca\\Game-Project\\Velocity Rush 3D\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\unityLibrary\\build\\intermediates\\packaged_res\\release\\values-v28\\values-v28.xml",
+                    "source": "D:\\Game-Project\\Velocity Rush 3D\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\unityLibrary\\build\\intermediates\\packaged_res\\release\\values-v28\\values-v28.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

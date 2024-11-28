@@ -393,6 +393,7 @@ IL2CPP_EXTERN_C RuntimeClass* UInt16_tF4C148C876015C212FD72652D0B6ED8CC247A455_i
 IL2CPP_EXTERN_C RuntimeClass* UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* UnauthorizedAccessException_t8FC1F1DE7AA62456E9E25EFDFC658A623A626791_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823_____timeOfDay_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t9FFB0BEB067161CE52A63D5857FEA61F74F17A50____5857EE4CE98BFABBD62B385C1098507DD0052FF3951043AAD6A1DABD495F18AA_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t9FFB0BEB067161CE52A63D5857FEA61F74F17A50____801494072CDD59E61F9AA9345A80D045378705DFDCE94902C22EAEAE049BE780_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t9FFB0BEB067161CE52A63D5857FEA61F74F17A50____C9830DF6956357ACE51CE1F82298578B36EB45A0CFDB8AEC5B9FDA7DB17E8063_FieldInfo_var;
@@ -14922,12 +14923,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AdjustmentRule__ctor_m2E09EC98FE32A2C1FD
 #endif
 IL2CPP_EXTERN_C void TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823_marshal_pinvoke(const TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823& unmarshaled, TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ____timeOfDayException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '_timeOfDay' of type 'TransitionTime'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823_____timeOfDay_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ____timeOfDayException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823_____timeOfDay_FieldInfo_var, TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(____timeOfDayException, NULL);
 }
 IL2CPP_EXTERN_C void TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823_marshal_pinvoke_back(const TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823_marshaled_pinvoke& marshaled, TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823& unmarshaled)
 {
-	Exception_t* ____timeOfDayException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '_timeOfDay' of type 'TransitionTime'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823_____timeOfDay_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ____timeOfDayException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823_____timeOfDay_FieldInfo_var, TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(____timeOfDayException, NULL);
 }
 IL2CPP_EXTERN_C void TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823_marshal_pinvoke_cleanup(TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823_marshaled_pinvoke& marshaled)
@@ -14935,12 +14950,26 @@ IL2CPP_EXTERN_C void TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823_ma
 }
 IL2CPP_EXTERN_C void TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823_marshal_com(const TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823& unmarshaled, TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823_marshaled_com& marshaled)
 {
-	Exception_t* ____timeOfDayException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '_timeOfDay' of type 'TransitionTime'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823_____timeOfDay_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ____timeOfDayException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823_____timeOfDay_FieldInfo_var, TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(____timeOfDayException, NULL);
 }
 IL2CPP_EXTERN_C void TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823_marshal_com_back(const TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823_marshaled_com& marshaled, TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823& unmarshaled)
 {
-	Exception_t* ____timeOfDayException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '_timeOfDay' of type 'TransitionTime'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823_____timeOfDay_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ____timeOfDayException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823_____timeOfDay_FieldInfo_var, TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(____timeOfDayException, NULL);
 }
 IL2CPP_EXTERN_C void TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823_marshal_com_cleanup(TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823_marshaled_com& marshaled)

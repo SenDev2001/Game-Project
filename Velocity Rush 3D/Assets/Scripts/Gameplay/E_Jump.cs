@@ -4,8 +4,8 @@ namespace Gameplay
 {
     public class E_Jump : MonoBehaviour
     {
-        public float jumpForce = 10.0f;
-        public float gravityScale = 1.1f;
+        public float jumpForce = 5.0f;  // Reduced jump force for controlled jump
+        public float gravityScale = 3.0f;  // Increased gravity to make the player fall faster
         public float groundCheckDistance = 1.1f;
 
         private Rigidbody _rb;
@@ -19,17 +19,13 @@ namespace Gameplay
 
         void Update()
         {
-            _isGrounded = Physics.Raycast(transform.position, Vector3.down, groundCheckDistance);
-
-            if (_isGrounded && (_canJump && (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W))))
-            {
-                Jump();
-            }
+            CheckGroundStatus();
+            HandleJumpInput();
         }
 
         void FixedUpdate()
         {
-            _rb.AddForce(Physics.gravity * gravityScale, ForceMode.Acceleration);
+            ApplyCustomGravity();
         }
 
         public void OnSwipe(Vector2 swipeDirection)
@@ -37,11 +33,30 @@ namespace Gameplay
             Jump();
         }
 
+        private void CheckGroundStatus()
+        {
+            _isGrounded = Physics.Raycast(transform.position, Vector3.down, groundCheckDistance);
+        }
+
+        private void HandleJumpInput()
+        {
+            if (_isGrounded && _canJump && (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W)))
+            {
+                Jump();
+            }
+        }
+
+        private void ApplyCustomGravity()
+        {
+            _rb.AddForce(Physics.gravity * gravityScale, ForceMode.Acceleration);
+        }
+
         private void Jump()
         {
             if (_isGrounded)
             {
-                _rb.velocity = new Vector3(_rb.velocity.x, jumpForce, _rb.velocity.z);
+                // Set velocity to jump only vertically, no horizontal movement
+                _rb.velocity = new Vector3(0, jumpForce, 0);
                 _canJump = false;
             }
         }

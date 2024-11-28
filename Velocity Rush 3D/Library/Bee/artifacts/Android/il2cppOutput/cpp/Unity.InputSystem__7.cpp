@@ -456,6 +456,16 @@ IL2CPP_EXTERN_C RuntimeClass* UsagePage_t6EF545F107AB1DED99B07C377BD0B8457DC6F7B
 IL2CPP_EXTERN_C RuntimeClass* Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* ButtonState_tC90005D9F1E87688352A8F97B40400D0319CFC69____m_PressRaycast_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* GlobalState_t11A6C6C3EF611D00EF34976903A48BCABCD6C9D3____allUserData_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* HIDDeviceDescriptor_tC52CF92386ACA63743BEFB7776A8C1E152A6DB59____elements_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* HIDElementDescriptor_t18CA9618F730F541BA1C873745A1AE71823D4CED____usageMin_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* NavigationModel_t6B51B0BA26B0D874FF92F039259B0E6B74E427C2____eventData_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* OnScreenDeviceInfo_t2C7BB082C4486C5F8F0FE55F0BFA772B454AD0AC____device_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* OngoingAccountSelection_t8471F20105109B19CE04657B1C72EB8D23976956____device_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* PointerModel_t6E979AA49D01ACA529A68AF8F48624E73484CD42____leftButton_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* RaycastHitData_t5EAB266730389AB27715962670C2512800451841____U3CgraphicU3Ek__BackingField_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* UserData_t0F7AA24AC638FDFB7CF552415A75CAE057C2D42C____platformUserAccountHandle_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral00032B1154D85E6088156594EF2EC18E5E8A0589;
 IL2CPP_EXTERN_C String_t* _stringLiteral01307903F44575A70252B32F5F1793F041A89DDF;
 IL2CPP_EXTERN_C String_t* _stringLiteral0399D80508248FE79E861357AE2D6C04A1491904;
@@ -704,9 +714,19 @@ IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3CSortedRaycastGraphicsU3Eb__25_0_
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass13_0_U3COnFindLayoutForDeviceU3Eb__0_mBF9CB9BEA632DA9346DF855202A5FDCC23BBCEBD_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* VirtualMouseInput_OnAfterInputUpdate_m63DEBA7D5C55BB42BE1708FA27B8777D032A5769_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* VirtualMouseInput_OnButtonActionTriggered_m3DA61809F2E7D1B0FB3A4A025A62E606404AEF27_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeType* ButtonState_tC90005D9F1E87688352A8F97B40400D0319CFC69_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* GlobalState_t11A6C6C3EF611D00EF34976903A48BCABCD6C9D3_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* HIDDeviceDescriptor_tC52CF92386ACA63743BEFB7776A8C1E152A6DB59_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* HIDElementDescriptor_t18CA9618F730F541BA1C873745A1AE71823D4CED_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* HID_tD20AF18A69B6D30C004B7AC49142DAC24946FC3D_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* Joystick_t2235B6B58C2C6BC3755C8E5852BC6BA9CFD0981C_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* NavigationModel_t6B51B0BA26B0D874FF92F039259B0E6B74E427C2_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* OnScreenDeviceInfo_t2C7BB082C4486C5F8F0FE55F0BFA772B454AD0AC_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* OngoingAccountSelection_t8471F20105109B19CE04657B1C72EB8D23976956_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* PointerModel_t6E979AA49D01ACA529A68AF8F48624E73484CD42_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* RaycastHitData_t5EAB266730389AB27715962670C2512800451841_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* UserData_t0F7AA24AC638FDFB7CF552415A75CAE057C2D42C_0_0_0_var;
 struct ActionMapIndices_t013BEFD76B7FE52E413C5DBF5C7CDA4194800CBD;
 struct BindingState_t69D9579E13933436EAF3A3886EAED220DFD696EA;
 struct ButtonState_tC90005D9F1E87688352A8F97B40400D0319CFC69;;
@@ -6776,12 +6796,26 @@ IL2CPP_EXTERN_C  ControlSchemeChangeSyntax_t9404A96FCF05CEC5952D1086EC398E02236D
 
 IL2CPP_EXTERN_C void UserData_t0F7AA24AC638FDFB7CF552415A75CAE057C2D42C_marshal_pinvoke(const UserData_t0F7AA24AC638FDFB7CF552415A75CAE057C2D42C& unmarshaled, UserData_t0F7AA24AC638FDFB7CF552415A75CAE057C2D42C_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___platformUserAccountHandleException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'platformUserAccountHandle' of type 'UserData'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UserData_t0F7AA24AC638FDFB7CF552415A75CAE057C2D42C_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UserData_t0F7AA24AC638FDFB7CF552415A75CAE057C2D42C____platformUserAccountHandle_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___platformUserAccountHandleException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", UserData_t0F7AA24AC638FDFB7CF552415A75CAE057C2D42C____platformUserAccountHandle_FieldInfo_var, UserData_t0F7AA24AC638FDFB7CF552415A75CAE057C2D42C_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___platformUserAccountHandleException, NULL);
 }
 IL2CPP_EXTERN_C void UserData_t0F7AA24AC638FDFB7CF552415A75CAE057C2D42C_marshal_pinvoke_back(const UserData_t0F7AA24AC638FDFB7CF552415A75CAE057C2D42C_marshaled_pinvoke& marshaled, UserData_t0F7AA24AC638FDFB7CF552415A75CAE057C2D42C& unmarshaled)
 {
-	Exception_t* ___platformUserAccountHandleException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'platformUserAccountHandle' of type 'UserData'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UserData_t0F7AA24AC638FDFB7CF552415A75CAE057C2D42C_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UserData_t0F7AA24AC638FDFB7CF552415A75CAE057C2D42C____platformUserAccountHandle_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___platformUserAccountHandleException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", UserData_t0F7AA24AC638FDFB7CF552415A75CAE057C2D42C____platformUserAccountHandle_FieldInfo_var, UserData_t0F7AA24AC638FDFB7CF552415A75CAE057C2D42C_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___platformUserAccountHandleException, NULL);
 }
 IL2CPP_EXTERN_C void UserData_t0F7AA24AC638FDFB7CF552415A75CAE057C2D42C_marshal_pinvoke_cleanup(UserData_t0F7AA24AC638FDFB7CF552415A75CAE057C2D42C_marshaled_pinvoke& marshaled)
@@ -6791,12 +6825,26 @@ IL2CPP_EXTERN_C void UserData_t0F7AA24AC638FDFB7CF552415A75CAE057C2D42C_marshal_
 
 IL2CPP_EXTERN_C void UserData_t0F7AA24AC638FDFB7CF552415A75CAE057C2D42C_marshal_com(const UserData_t0F7AA24AC638FDFB7CF552415A75CAE057C2D42C& unmarshaled, UserData_t0F7AA24AC638FDFB7CF552415A75CAE057C2D42C_marshaled_com& marshaled)
 {
-	Exception_t* ___platformUserAccountHandleException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'platformUserAccountHandle' of type 'UserData'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UserData_t0F7AA24AC638FDFB7CF552415A75CAE057C2D42C_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UserData_t0F7AA24AC638FDFB7CF552415A75CAE057C2D42C____platformUserAccountHandle_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___platformUserAccountHandleException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", UserData_t0F7AA24AC638FDFB7CF552415A75CAE057C2D42C____platformUserAccountHandle_FieldInfo_var, UserData_t0F7AA24AC638FDFB7CF552415A75CAE057C2D42C_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___platformUserAccountHandleException, NULL);
 }
 IL2CPP_EXTERN_C void UserData_t0F7AA24AC638FDFB7CF552415A75CAE057C2D42C_marshal_com_back(const UserData_t0F7AA24AC638FDFB7CF552415A75CAE057C2D42C_marshaled_com& marshaled, UserData_t0F7AA24AC638FDFB7CF552415A75CAE057C2D42C& unmarshaled)
 {
-	Exception_t* ___platformUserAccountHandleException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'platformUserAccountHandle' of type 'UserData'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UserData_t0F7AA24AC638FDFB7CF552415A75CAE057C2D42C_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UserData_t0F7AA24AC638FDFB7CF552415A75CAE057C2D42C____platformUserAccountHandle_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___platformUserAccountHandleException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", UserData_t0F7AA24AC638FDFB7CF552415A75CAE057C2D42C____platformUserAccountHandle_FieldInfo_var, UserData_t0F7AA24AC638FDFB7CF552415A75CAE057C2D42C_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___platformUserAccountHandleException, NULL);
 }
 IL2CPP_EXTERN_C void UserData_t0F7AA24AC638FDFB7CF552415A75CAE057C2D42C_marshal_com_cleanup(UserData_t0F7AA24AC638FDFB7CF552415A75CAE057C2D42C_marshaled_com& marshaled)
@@ -7115,12 +7163,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Nullable_1_tFEEAB31DE57F94E8B9494F3454060FE03
 #endif
 IL2CPP_EXTERN_C void OngoingAccountSelection_t8471F20105109B19CE04657B1C72EB8D23976956_marshal_pinvoke(const OngoingAccountSelection_t8471F20105109B19CE04657B1C72EB8D23976956& unmarshaled, OngoingAccountSelection_t8471F20105109B19CE04657B1C72EB8D23976956_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___deviceException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'device' of type 'OngoingAccountSelection': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&OngoingAccountSelection_t8471F20105109B19CE04657B1C72EB8D23976956_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&OngoingAccountSelection_t8471F20105109B19CE04657B1C72EB8D23976956____device_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___deviceException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", OngoingAccountSelection_t8471F20105109B19CE04657B1C72EB8D23976956____device_FieldInfo_var, OngoingAccountSelection_t8471F20105109B19CE04657B1C72EB8D23976956_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___deviceException, NULL);
 }
 IL2CPP_EXTERN_C void OngoingAccountSelection_t8471F20105109B19CE04657B1C72EB8D23976956_marshal_pinvoke_back(const OngoingAccountSelection_t8471F20105109B19CE04657B1C72EB8D23976956_marshaled_pinvoke& marshaled, OngoingAccountSelection_t8471F20105109B19CE04657B1C72EB8D23976956& unmarshaled)
 {
-	Exception_t* ___deviceException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'device' of type 'OngoingAccountSelection': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&OngoingAccountSelection_t8471F20105109B19CE04657B1C72EB8D23976956_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&OngoingAccountSelection_t8471F20105109B19CE04657B1C72EB8D23976956____device_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___deviceException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", OngoingAccountSelection_t8471F20105109B19CE04657B1C72EB8D23976956____device_FieldInfo_var, OngoingAccountSelection_t8471F20105109B19CE04657B1C72EB8D23976956_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___deviceException, NULL);
 }
 IL2CPP_EXTERN_C void OngoingAccountSelection_t8471F20105109B19CE04657B1C72EB8D23976956_marshal_pinvoke_cleanup(OngoingAccountSelection_t8471F20105109B19CE04657B1C72EB8D23976956_marshaled_pinvoke& marshaled)
@@ -7128,12 +7190,26 @@ IL2CPP_EXTERN_C void OngoingAccountSelection_t8471F20105109B19CE04657B1C72EB8D23
 }
 IL2CPP_EXTERN_C void OngoingAccountSelection_t8471F20105109B19CE04657B1C72EB8D23976956_marshal_com(const OngoingAccountSelection_t8471F20105109B19CE04657B1C72EB8D23976956& unmarshaled, OngoingAccountSelection_t8471F20105109B19CE04657B1C72EB8D23976956_marshaled_com& marshaled)
 {
-	Exception_t* ___deviceException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'device' of type 'OngoingAccountSelection': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&OngoingAccountSelection_t8471F20105109B19CE04657B1C72EB8D23976956_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&OngoingAccountSelection_t8471F20105109B19CE04657B1C72EB8D23976956____device_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___deviceException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", OngoingAccountSelection_t8471F20105109B19CE04657B1C72EB8D23976956____device_FieldInfo_var, OngoingAccountSelection_t8471F20105109B19CE04657B1C72EB8D23976956_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___deviceException, NULL);
 }
 IL2CPP_EXTERN_C void OngoingAccountSelection_t8471F20105109B19CE04657B1C72EB8D23976956_marshal_com_back(const OngoingAccountSelection_t8471F20105109B19CE04657B1C72EB8D23976956_marshaled_com& marshaled, OngoingAccountSelection_t8471F20105109B19CE04657B1C72EB8D23976956& unmarshaled)
 {
-	Exception_t* ___deviceException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'device' of type 'OngoingAccountSelection': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&OngoingAccountSelection_t8471F20105109B19CE04657B1C72EB8D23976956_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&OngoingAccountSelection_t8471F20105109B19CE04657B1C72EB8D23976956____device_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___deviceException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", OngoingAccountSelection_t8471F20105109B19CE04657B1C72EB8D23976956____device_FieldInfo_var, OngoingAccountSelection_t8471F20105109B19CE04657B1C72EB8D23976956_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___deviceException, NULL);
 }
 IL2CPP_EXTERN_C void OngoingAccountSelection_t8471F20105109B19CE04657B1C72EB8D23976956_marshal_com_cleanup(OngoingAccountSelection_t8471F20105109B19CE04657B1C72EB8D23976956_marshaled_com& marshaled)
@@ -7151,12 +7227,26 @@ IL2CPP_EXTERN_C void OngoingAccountSelection_t8471F20105109B19CE04657B1C72EB8D23
 
 IL2CPP_EXTERN_C void GlobalState_t11A6C6C3EF611D00EF34976903A48BCABCD6C9D3_marshal_pinvoke(const GlobalState_t11A6C6C3EF611D00EF34976903A48BCABCD6C9D3& unmarshaled, GlobalState_t11A6C6C3EF611D00EF34976903A48BCABCD6C9D3_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___allUserDataException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'allUserData' of type 'GlobalState'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GlobalState_t11A6C6C3EF611D00EF34976903A48BCABCD6C9D3_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GlobalState_t11A6C6C3EF611D00EF34976903A48BCABCD6C9D3____allUserData_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___allUserDataException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", GlobalState_t11A6C6C3EF611D00EF34976903A48BCABCD6C9D3____allUserData_FieldInfo_var, GlobalState_t11A6C6C3EF611D00EF34976903A48BCABCD6C9D3_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___allUserDataException, NULL);
 }
 IL2CPP_EXTERN_C void GlobalState_t11A6C6C3EF611D00EF34976903A48BCABCD6C9D3_marshal_pinvoke_back(const GlobalState_t11A6C6C3EF611D00EF34976903A48BCABCD6C9D3_marshaled_pinvoke& marshaled, GlobalState_t11A6C6C3EF611D00EF34976903A48BCABCD6C9D3& unmarshaled)
 {
-	Exception_t* ___allUserDataException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'allUserData' of type 'GlobalState'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GlobalState_t11A6C6C3EF611D00EF34976903A48BCABCD6C9D3_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GlobalState_t11A6C6C3EF611D00EF34976903A48BCABCD6C9D3____allUserData_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___allUserDataException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", GlobalState_t11A6C6C3EF611D00EF34976903A48BCABCD6C9D3____allUserData_FieldInfo_var, GlobalState_t11A6C6C3EF611D00EF34976903A48BCABCD6C9D3_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___allUserDataException, NULL);
 }
 IL2CPP_EXTERN_C void GlobalState_t11A6C6C3EF611D00EF34976903A48BCABCD6C9D3_marshal_pinvoke_cleanup(GlobalState_t11A6C6C3EF611D00EF34976903A48BCABCD6C9D3_marshaled_pinvoke& marshaled)
@@ -7166,12 +7256,26 @@ IL2CPP_EXTERN_C void GlobalState_t11A6C6C3EF611D00EF34976903A48BCABCD6C9D3_marsh
 
 IL2CPP_EXTERN_C void GlobalState_t11A6C6C3EF611D00EF34976903A48BCABCD6C9D3_marshal_com(const GlobalState_t11A6C6C3EF611D00EF34976903A48BCABCD6C9D3& unmarshaled, GlobalState_t11A6C6C3EF611D00EF34976903A48BCABCD6C9D3_marshaled_com& marshaled)
 {
-	Exception_t* ___allUserDataException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'allUserData' of type 'GlobalState'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GlobalState_t11A6C6C3EF611D00EF34976903A48BCABCD6C9D3_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GlobalState_t11A6C6C3EF611D00EF34976903A48BCABCD6C9D3____allUserData_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___allUserDataException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", GlobalState_t11A6C6C3EF611D00EF34976903A48BCABCD6C9D3____allUserData_FieldInfo_var, GlobalState_t11A6C6C3EF611D00EF34976903A48BCABCD6C9D3_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___allUserDataException, NULL);
 }
 IL2CPP_EXTERN_C void GlobalState_t11A6C6C3EF611D00EF34976903A48BCABCD6C9D3_marshal_com_back(const GlobalState_t11A6C6C3EF611D00EF34976903A48BCABCD6C9D3_marshaled_com& marshaled, GlobalState_t11A6C6C3EF611D00EF34976903A48BCABCD6C9D3& unmarshaled)
 {
-	Exception_t* ___allUserDataException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'allUserData' of type 'GlobalState'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GlobalState_t11A6C6C3EF611D00EF34976903A48BCABCD6C9D3_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GlobalState_t11A6C6C3EF611D00EF34976903A48BCABCD6C9D3____allUserData_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___allUserDataException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", GlobalState_t11A6C6C3EF611D00EF34976903A48BCABCD6C9D3____allUserData_FieldInfo_var, GlobalState_t11A6C6C3EF611D00EF34976903A48BCABCD6C9D3_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___allUserDataException, NULL);
 }
 IL2CPP_EXTERN_C void GlobalState_t11A6C6C3EF611D00EF34976903A48BCABCD6C9D3_marshal_com_cleanup(GlobalState_t11A6C6C3EF611D00EF34976903A48BCABCD6C9D3_marshaled_com& marshaled)
@@ -16713,12 +16817,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiplayerEventSystem__ctor_m2ED3C81DA9
 #endif
 IL2CPP_EXTERN_C void NavigationModel_t6B51B0BA26B0D874FF92F039259B0E6B74E427C2_marshal_pinvoke(const NavigationModel_t6B51B0BA26B0D874FF92F039259B0E6B74E427C2& unmarshaled, NavigationModel_t6B51B0BA26B0D874FF92F039259B0E6B74E427C2_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___eventDataException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'eventData' of type 'NavigationModel': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NavigationModel_t6B51B0BA26B0D874FF92F039259B0E6B74E427C2_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NavigationModel_t6B51B0BA26B0D874FF92F039259B0E6B74E427C2____eventData_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___eventDataException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", NavigationModel_t6B51B0BA26B0D874FF92F039259B0E6B74E427C2____eventData_FieldInfo_var, NavigationModel_t6B51B0BA26B0D874FF92F039259B0E6B74E427C2_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___eventDataException, NULL);
 }
 IL2CPP_EXTERN_C void NavigationModel_t6B51B0BA26B0D874FF92F039259B0E6B74E427C2_marshal_pinvoke_back(const NavigationModel_t6B51B0BA26B0D874FF92F039259B0E6B74E427C2_marshaled_pinvoke& marshaled, NavigationModel_t6B51B0BA26B0D874FF92F039259B0E6B74E427C2& unmarshaled)
 {
-	Exception_t* ___eventDataException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'eventData' of type 'NavigationModel': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NavigationModel_t6B51B0BA26B0D874FF92F039259B0E6B74E427C2_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NavigationModel_t6B51B0BA26B0D874FF92F039259B0E6B74E427C2____eventData_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___eventDataException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", NavigationModel_t6B51B0BA26B0D874FF92F039259B0E6B74E427C2____eventData_FieldInfo_var, NavigationModel_t6B51B0BA26B0D874FF92F039259B0E6B74E427C2_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___eventDataException, NULL);
 }
 IL2CPP_EXTERN_C void NavigationModel_t6B51B0BA26B0D874FF92F039259B0E6B74E427C2_marshal_pinvoke_cleanup(NavigationModel_t6B51B0BA26B0D874FF92F039259B0E6B74E427C2_marshaled_pinvoke& marshaled)
@@ -16726,12 +16844,26 @@ IL2CPP_EXTERN_C void NavigationModel_t6B51B0BA26B0D874FF92F039259B0E6B74E427C2_m
 }
 IL2CPP_EXTERN_C void NavigationModel_t6B51B0BA26B0D874FF92F039259B0E6B74E427C2_marshal_com(const NavigationModel_t6B51B0BA26B0D874FF92F039259B0E6B74E427C2& unmarshaled, NavigationModel_t6B51B0BA26B0D874FF92F039259B0E6B74E427C2_marshaled_com& marshaled)
 {
-	Exception_t* ___eventDataException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'eventData' of type 'NavigationModel': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NavigationModel_t6B51B0BA26B0D874FF92F039259B0E6B74E427C2_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NavigationModel_t6B51B0BA26B0D874FF92F039259B0E6B74E427C2____eventData_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___eventDataException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", NavigationModel_t6B51B0BA26B0D874FF92F039259B0E6B74E427C2____eventData_FieldInfo_var, NavigationModel_t6B51B0BA26B0D874FF92F039259B0E6B74E427C2_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___eventDataException, NULL);
 }
 IL2CPP_EXTERN_C void NavigationModel_t6B51B0BA26B0D874FF92F039259B0E6B74E427C2_marshal_com_back(const NavigationModel_t6B51B0BA26B0D874FF92F039259B0E6B74E427C2_marshaled_com& marshaled, NavigationModel_t6B51B0BA26B0D874FF92F039259B0E6B74E427C2& unmarshaled)
 {
-	Exception_t* ___eventDataException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'eventData' of type 'NavigationModel': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NavigationModel_t6B51B0BA26B0D874FF92F039259B0E6B74E427C2_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NavigationModel_t6B51B0BA26B0D874FF92F039259B0E6B74E427C2____eventData_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___eventDataException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", NavigationModel_t6B51B0BA26B0D874FF92F039259B0E6B74E427C2____eventData_FieldInfo_var, NavigationModel_t6B51B0BA26B0D874FF92F039259B0E6B74E427C2_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___eventDataException, NULL);
 }
 IL2CPP_EXTERN_C void NavigationModel_t6B51B0BA26B0D874FF92F039259B0E6B74E427C2_marshal_com_cleanup(NavigationModel_t6B51B0BA26B0D874FF92F039259B0E6B74E427C2_marshaled_com& marshaled)
@@ -16769,12 +16901,26 @@ IL2CPP_EXTERN_C  void NavigationModel_Reset_mAE7A5C315561EEEC5B399A05D5DE4F88BD6
 
 IL2CPP_EXTERN_C void PointerModel_t6E979AA49D01ACA529A68AF8F48624E73484CD42_marshal_pinvoke(const PointerModel_t6E979AA49D01ACA529A68AF8F48624E73484CD42& unmarshaled, PointerModel_t6E979AA49D01ACA529A68AF8F48624E73484CD42_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___leftButtonException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'leftButton' of type 'PointerModel'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PointerModel_t6E979AA49D01ACA529A68AF8F48624E73484CD42_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PointerModel_t6E979AA49D01ACA529A68AF8F48624E73484CD42____leftButton_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___leftButtonException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", PointerModel_t6E979AA49D01ACA529A68AF8F48624E73484CD42____leftButton_FieldInfo_var, PointerModel_t6E979AA49D01ACA529A68AF8F48624E73484CD42_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___leftButtonException, NULL);
 }
 IL2CPP_EXTERN_C void PointerModel_t6E979AA49D01ACA529A68AF8F48624E73484CD42_marshal_pinvoke_back(const PointerModel_t6E979AA49D01ACA529A68AF8F48624E73484CD42_marshaled_pinvoke& marshaled, PointerModel_t6E979AA49D01ACA529A68AF8F48624E73484CD42& unmarshaled)
 {
-	Exception_t* ___leftButtonException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'leftButton' of type 'PointerModel'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PointerModel_t6E979AA49D01ACA529A68AF8F48624E73484CD42_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PointerModel_t6E979AA49D01ACA529A68AF8F48624E73484CD42____leftButton_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___leftButtonException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", PointerModel_t6E979AA49D01ACA529A68AF8F48624E73484CD42____leftButton_FieldInfo_var, PointerModel_t6E979AA49D01ACA529A68AF8F48624E73484CD42_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___leftButtonException, NULL);
 }
 IL2CPP_EXTERN_C void PointerModel_t6E979AA49D01ACA529A68AF8F48624E73484CD42_marshal_pinvoke_cleanup(PointerModel_t6E979AA49D01ACA529A68AF8F48624E73484CD42_marshaled_pinvoke& marshaled)
@@ -16788,12 +16934,26 @@ IL2CPP_EXTERN_C void PointerModel_t6E979AA49D01ACA529A68AF8F48624E73484CD42_mars
 
 IL2CPP_EXTERN_C void PointerModel_t6E979AA49D01ACA529A68AF8F48624E73484CD42_marshal_com(const PointerModel_t6E979AA49D01ACA529A68AF8F48624E73484CD42& unmarshaled, PointerModel_t6E979AA49D01ACA529A68AF8F48624E73484CD42_marshaled_com& marshaled)
 {
-	Exception_t* ___leftButtonException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'leftButton' of type 'PointerModel'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PointerModel_t6E979AA49D01ACA529A68AF8F48624E73484CD42_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PointerModel_t6E979AA49D01ACA529A68AF8F48624E73484CD42____leftButton_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___leftButtonException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", PointerModel_t6E979AA49D01ACA529A68AF8F48624E73484CD42____leftButton_FieldInfo_var, PointerModel_t6E979AA49D01ACA529A68AF8F48624E73484CD42_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___leftButtonException, NULL);
 }
 IL2CPP_EXTERN_C void PointerModel_t6E979AA49D01ACA529A68AF8F48624E73484CD42_marshal_com_back(const PointerModel_t6E979AA49D01ACA529A68AF8F48624E73484CD42_marshaled_com& marshaled, PointerModel_t6E979AA49D01ACA529A68AF8F48624E73484CD42& unmarshaled)
 {
-	Exception_t* ___leftButtonException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'leftButton' of type 'PointerModel'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PointerModel_t6E979AA49D01ACA529A68AF8F48624E73484CD42_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PointerModel_t6E979AA49D01ACA529A68AF8F48624E73484CD42____leftButton_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___leftButtonException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", PointerModel_t6E979AA49D01ACA529A68AF8F48624E73484CD42____leftButton_FieldInfo_var, PointerModel_t6E979AA49D01ACA529A68AF8F48624E73484CD42_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___leftButtonException, NULL);
 }
 IL2CPP_EXTERN_C void PointerModel_t6E979AA49D01ACA529A68AF8F48624E73484CD42_marshal_com_cleanup(PointerModel_t6E979AA49D01ACA529A68AF8F48624E73484CD42_marshaled_com& marshaled)
@@ -17342,12 +17502,26 @@ IL2CPP_EXTERN_C  void PointerModel_CopyTouchOrPenStateFrom_m6A8129CB28591B2599BB
 
 IL2CPP_EXTERN_C void ButtonState_tC90005D9F1E87688352A8F97B40400D0319CFC69_marshal_pinvoke(const ButtonState_tC90005D9F1E87688352A8F97B40400D0319CFC69& unmarshaled, ButtonState_tC90005D9F1E87688352A8F97B40400D0319CFC69_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___m_PressRaycastException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_PressRaycast' of type 'ButtonState'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ButtonState_tC90005D9F1E87688352A8F97B40400D0319CFC69_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ButtonState_tC90005D9F1E87688352A8F97B40400D0319CFC69____m_PressRaycast_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_PressRaycastException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", ButtonState_tC90005D9F1E87688352A8F97B40400D0319CFC69____m_PressRaycast_FieldInfo_var, ButtonState_tC90005D9F1E87688352A8F97B40400D0319CFC69_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_PressRaycastException, NULL);
 }
 IL2CPP_EXTERN_C void ButtonState_tC90005D9F1E87688352A8F97B40400D0319CFC69_marshal_pinvoke_back(const ButtonState_tC90005D9F1E87688352A8F97B40400D0319CFC69_marshaled_pinvoke& marshaled, ButtonState_tC90005D9F1E87688352A8F97B40400D0319CFC69& unmarshaled)
 {
-	Exception_t* ___m_PressRaycastException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_PressRaycast' of type 'ButtonState'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ButtonState_tC90005D9F1E87688352A8F97B40400D0319CFC69_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ButtonState_tC90005D9F1E87688352A8F97B40400D0319CFC69____m_PressRaycast_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_PressRaycastException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", ButtonState_tC90005D9F1E87688352A8F97B40400D0319CFC69____m_PressRaycast_FieldInfo_var, ButtonState_tC90005D9F1E87688352A8F97B40400D0319CFC69_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_PressRaycastException, NULL);
 }
 IL2CPP_EXTERN_C void ButtonState_tC90005D9F1E87688352A8F97B40400D0319CFC69_marshal_pinvoke_cleanup(ButtonState_tC90005D9F1E87688352A8F97B40400D0319CFC69_marshaled_pinvoke& marshaled)
@@ -17357,12 +17531,26 @@ IL2CPP_EXTERN_C void ButtonState_tC90005D9F1E87688352A8F97B40400D0319CFC69_marsh
 
 IL2CPP_EXTERN_C void ButtonState_tC90005D9F1E87688352A8F97B40400D0319CFC69_marshal_com(const ButtonState_tC90005D9F1E87688352A8F97B40400D0319CFC69& unmarshaled, ButtonState_tC90005D9F1E87688352A8F97B40400D0319CFC69_marshaled_com& marshaled)
 {
-	Exception_t* ___m_PressRaycastException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_PressRaycast' of type 'ButtonState'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ButtonState_tC90005D9F1E87688352A8F97B40400D0319CFC69_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ButtonState_tC90005D9F1E87688352A8F97B40400D0319CFC69____m_PressRaycast_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_PressRaycastException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", ButtonState_tC90005D9F1E87688352A8F97B40400D0319CFC69____m_PressRaycast_FieldInfo_var, ButtonState_tC90005D9F1E87688352A8F97B40400D0319CFC69_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_PressRaycastException, NULL);
 }
 IL2CPP_EXTERN_C void ButtonState_tC90005D9F1E87688352A8F97B40400D0319CFC69_marshal_com_back(const ButtonState_tC90005D9F1E87688352A8F97B40400D0319CFC69_marshaled_com& marshaled, ButtonState_tC90005D9F1E87688352A8F97B40400D0319CFC69& unmarshaled)
 {
-	Exception_t* ___m_PressRaycastException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_PressRaycast' of type 'ButtonState'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ButtonState_tC90005D9F1E87688352A8F97B40400D0319CFC69_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ButtonState_tC90005D9F1E87688352A8F97B40400D0319CFC69____m_PressRaycast_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_PressRaycastException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", ButtonState_tC90005D9F1E87688352A8F97B40400D0319CFC69____m_PressRaycast_FieldInfo_var, ButtonState_tC90005D9F1E87688352A8F97B40400D0319CFC69_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_PressRaycastException, NULL);
 }
 IL2CPP_EXTERN_C void ButtonState_tC90005D9F1E87688352A8F97B40400D0319CFC69_marshal_com_cleanup(ButtonState_tC90005D9F1E87688352A8F97B40400D0319CFC69_marshaled_com& marshaled)
@@ -18669,12 +18857,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackedDeviceRaycaster__cctor_m4F1DBF542
 #endif
 IL2CPP_EXTERN_C void RaycastHitData_t5EAB266730389AB27715962670C2512800451841_marshal_pinvoke(const RaycastHitData_t5EAB266730389AB27715962670C2512800451841& unmarshaled, RaycastHitData_t5EAB266730389AB27715962670C2512800451841_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___U3CgraphicU3Ek__BackingFieldException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '<graphic>k__BackingField' of type 'RaycastHitData': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RaycastHitData_t5EAB266730389AB27715962670C2512800451841_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RaycastHitData_t5EAB266730389AB27715962670C2512800451841____U3CgraphicU3Ek__BackingField_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___U3CgraphicU3Ek__BackingFieldException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", RaycastHitData_t5EAB266730389AB27715962670C2512800451841____U3CgraphicU3Ek__BackingField_FieldInfo_var, RaycastHitData_t5EAB266730389AB27715962670C2512800451841_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___U3CgraphicU3Ek__BackingFieldException, NULL);
 }
 IL2CPP_EXTERN_C void RaycastHitData_t5EAB266730389AB27715962670C2512800451841_marshal_pinvoke_back(const RaycastHitData_t5EAB266730389AB27715962670C2512800451841_marshaled_pinvoke& marshaled, RaycastHitData_t5EAB266730389AB27715962670C2512800451841& unmarshaled)
 {
-	Exception_t* ___U3CgraphicU3Ek__BackingFieldException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '<graphic>k__BackingField' of type 'RaycastHitData': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RaycastHitData_t5EAB266730389AB27715962670C2512800451841_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RaycastHitData_t5EAB266730389AB27715962670C2512800451841____U3CgraphicU3Ek__BackingField_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___U3CgraphicU3Ek__BackingFieldException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", RaycastHitData_t5EAB266730389AB27715962670C2512800451841____U3CgraphicU3Ek__BackingField_FieldInfo_var, RaycastHitData_t5EAB266730389AB27715962670C2512800451841_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___U3CgraphicU3Ek__BackingFieldException, NULL);
 }
 IL2CPP_EXTERN_C void RaycastHitData_t5EAB266730389AB27715962670C2512800451841_marshal_pinvoke_cleanup(RaycastHitData_t5EAB266730389AB27715962670C2512800451841_marshaled_pinvoke& marshaled)
@@ -18682,12 +18884,26 @@ IL2CPP_EXTERN_C void RaycastHitData_t5EAB266730389AB27715962670C2512800451841_ma
 }
 IL2CPP_EXTERN_C void RaycastHitData_t5EAB266730389AB27715962670C2512800451841_marshal_com(const RaycastHitData_t5EAB266730389AB27715962670C2512800451841& unmarshaled, RaycastHitData_t5EAB266730389AB27715962670C2512800451841_marshaled_com& marshaled)
 {
-	Exception_t* ___U3CgraphicU3Ek__BackingFieldException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '<graphic>k__BackingField' of type 'RaycastHitData': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RaycastHitData_t5EAB266730389AB27715962670C2512800451841_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RaycastHitData_t5EAB266730389AB27715962670C2512800451841____U3CgraphicU3Ek__BackingField_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___U3CgraphicU3Ek__BackingFieldException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", RaycastHitData_t5EAB266730389AB27715962670C2512800451841____U3CgraphicU3Ek__BackingField_FieldInfo_var, RaycastHitData_t5EAB266730389AB27715962670C2512800451841_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___U3CgraphicU3Ek__BackingFieldException, NULL);
 }
 IL2CPP_EXTERN_C void RaycastHitData_t5EAB266730389AB27715962670C2512800451841_marshal_com_back(const RaycastHitData_t5EAB266730389AB27715962670C2512800451841_marshaled_com& marshaled, RaycastHitData_t5EAB266730389AB27715962670C2512800451841& unmarshaled)
 {
-	Exception_t* ___U3CgraphicU3Ek__BackingFieldException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '<graphic>k__BackingField' of type 'RaycastHitData': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RaycastHitData_t5EAB266730389AB27715962670C2512800451841_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RaycastHitData_t5EAB266730389AB27715962670C2512800451841____U3CgraphicU3Ek__BackingField_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___U3CgraphicU3Ek__BackingFieldException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", RaycastHitData_t5EAB266730389AB27715962670C2512800451841____U3CgraphicU3Ek__BackingField_FieldInfo_var, RaycastHitData_t5EAB266730389AB27715962670C2512800451841_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___U3CgraphicU3Ek__BackingFieldException, NULL);
 }
 IL2CPP_EXTERN_C void RaycastHitData_t5EAB266730389AB27715962670C2512800451841_marshal_com_cleanup(RaycastHitData_t5EAB266730389AB27715962670C2512800451841_marshaled_com& marshaled)
@@ -21318,12 +21534,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OnScreenControl__ctor_m12E85AA38DE86EE8D
 #endif
 IL2CPP_EXTERN_C void OnScreenDeviceInfo_t2C7BB082C4486C5F8F0FE55F0BFA772B454AD0AC_marshal_pinvoke(const OnScreenDeviceInfo_t2C7BB082C4486C5F8F0FE55F0BFA772B454AD0AC& unmarshaled, OnScreenDeviceInfo_t2C7BB082C4486C5F8F0FE55F0BFA772B454AD0AC_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___deviceException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'device' of type 'OnScreenDeviceInfo': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&OnScreenDeviceInfo_t2C7BB082C4486C5F8F0FE55F0BFA772B454AD0AC_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&OnScreenDeviceInfo_t2C7BB082C4486C5F8F0FE55F0BFA772B454AD0AC____device_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___deviceException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", OnScreenDeviceInfo_t2C7BB082C4486C5F8F0FE55F0BFA772B454AD0AC____device_FieldInfo_var, OnScreenDeviceInfo_t2C7BB082C4486C5F8F0FE55F0BFA772B454AD0AC_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___deviceException, NULL);
 }
 IL2CPP_EXTERN_C void OnScreenDeviceInfo_t2C7BB082C4486C5F8F0FE55F0BFA772B454AD0AC_marshal_pinvoke_back(const OnScreenDeviceInfo_t2C7BB082C4486C5F8F0FE55F0BFA772B454AD0AC_marshaled_pinvoke& marshaled, OnScreenDeviceInfo_t2C7BB082C4486C5F8F0FE55F0BFA772B454AD0AC& unmarshaled)
 {
-	Exception_t* ___deviceException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'device' of type 'OnScreenDeviceInfo': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&OnScreenDeviceInfo_t2C7BB082C4486C5F8F0FE55F0BFA772B454AD0AC_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&OnScreenDeviceInfo_t2C7BB082C4486C5F8F0FE55F0BFA772B454AD0AC____device_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___deviceException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", OnScreenDeviceInfo_t2C7BB082C4486C5F8F0FE55F0BFA772B454AD0AC____device_FieldInfo_var, OnScreenDeviceInfo_t2C7BB082C4486C5F8F0FE55F0BFA772B454AD0AC_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___deviceException, NULL);
 }
 IL2CPP_EXTERN_C void OnScreenDeviceInfo_t2C7BB082C4486C5F8F0FE55F0BFA772B454AD0AC_marshal_pinvoke_cleanup(OnScreenDeviceInfo_t2C7BB082C4486C5F8F0FE55F0BFA772B454AD0AC_marshaled_pinvoke& marshaled)
@@ -21331,12 +21561,26 @@ IL2CPP_EXTERN_C void OnScreenDeviceInfo_t2C7BB082C4486C5F8F0FE55F0BFA772B454AD0A
 }
 IL2CPP_EXTERN_C void OnScreenDeviceInfo_t2C7BB082C4486C5F8F0FE55F0BFA772B454AD0AC_marshal_com(const OnScreenDeviceInfo_t2C7BB082C4486C5F8F0FE55F0BFA772B454AD0AC& unmarshaled, OnScreenDeviceInfo_t2C7BB082C4486C5F8F0FE55F0BFA772B454AD0AC_marshaled_com& marshaled)
 {
-	Exception_t* ___deviceException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'device' of type 'OnScreenDeviceInfo': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&OnScreenDeviceInfo_t2C7BB082C4486C5F8F0FE55F0BFA772B454AD0AC_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&OnScreenDeviceInfo_t2C7BB082C4486C5F8F0FE55F0BFA772B454AD0AC____device_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___deviceException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", OnScreenDeviceInfo_t2C7BB082C4486C5F8F0FE55F0BFA772B454AD0AC____device_FieldInfo_var, OnScreenDeviceInfo_t2C7BB082C4486C5F8F0FE55F0BFA772B454AD0AC_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___deviceException, NULL);
 }
 IL2CPP_EXTERN_C void OnScreenDeviceInfo_t2C7BB082C4486C5F8F0FE55F0BFA772B454AD0AC_marshal_com_back(const OnScreenDeviceInfo_t2C7BB082C4486C5F8F0FE55F0BFA772B454AD0AC_marshaled_com& marshaled, OnScreenDeviceInfo_t2C7BB082C4486C5F8F0FE55F0BFA772B454AD0AC& unmarshaled)
 {
-	Exception_t* ___deviceException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'device' of type 'OnScreenDeviceInfo': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&OnScreenDeviceInfo_t2C7BB082C4486C5F8F0FE55F0BFA772B454AD0AC_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&OnScreenDeviceInfo_t2C7BB082C4486C5F8F0FE55F0BFA772B454AD0AC____device_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___deviceException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", OnScreenDeviceInfo_t2C7BB082C4486C5F8F0FE55F0BFA772B454AD0AC____device_FieldInfo_var, OnScreenDeviceInfo_t2C7BB082C4486C5F8F0FE55F0BFA772B454AD0AC_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___deviceException, NULL);
 }
 IL2CPP_EXTERN_C void OnScreenDeviceInfo_t2C7BB082C4486C5F8F0FE55F0BFA772B454AD0AC_marshal_com_cleanup(OnScreenDeviceInfo_t2C7BB082C4486C5F8F0FE55F0BFA772B454AD0AC_marshaled_com& marshaled)
@@ -25013,12 +25257,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* U3CU3Ec_U3CBuildU3Eb__4_2_m9DAE2533
 #endif
 IL2CPP_EXTERN_C void HIDElementDescriptor_t18CA9618F730F541BA1C873745A1AE71823D4CED_marshal_pinvoke(const HIDElementDescriptor_t18CA9618F730F541BA1C873745A1AE71823D4CED& unmarshaled, HIDElementDescriptor_t18CA9618F730F541BA1C873745A1AE71823D4CED_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___usageMinException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'usageMin' of type 'HIDElementDescriptor'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HIDElementDescriptor_t18CA9618F730F541BA1C873745A1AE71823D4CED_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HIDElementDescriptor_t18CA9618F730F541BA1C873745A1AE71823D4CED____usageMin_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___usageMinException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", HIDElementDescriptor_t18CA9618F730F541BA1C873745A1AE71823D4CED____usageMin_FieldInfo_var, HIDElementDescriptor_t18CA9618F730F541BA1C873745A1AE71823D4CED_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___usageMinException, NULL);
 }
 IL2CPP_EXTERN_C void HIDElementDescriptor_t18CA9618F730F541BA1C873745A1AE71823D4CED_marshal_pinvoke_back(const HIDElementDescriptor_t18CA9618F730F541BA1C873745A1AE71823D4CED_marshaled_pinvoke& marshaled, HIDElementDescriptor_t18CA9618F730F541BA1C873745A1AE71823D4CED& unmarshaled)
 {
-	Exception_t* ___usageMinException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'usageMin' of type 'HIDElementDescriptor'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HIDElementDescriptor_t18CA9618F730F541BA1C873745A1AE71823D4CED_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HIDElementDescriptor_t18CA9618F730F541BA1C873745A1AE71823D4CED____usageMin_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___usageMinException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", HIDElementDescriptor_t18CA9618F730F541BA1C873745A1AE71823D4CED____usageMin_FieldInfo_var, HIDElementDescriptor_t18CA9618F730F541BA1C873745A1AE71823D4CED_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___usageMinException, NULL);
 }
 IL2CPP_EXTERN_C void HIDElementDescriptor_t18CA9618F730F541BA1C873745A1AE71823D4CED_marshal_pinvoke_cleanup(HIDElementDescriptor_t18CA9618F730F541BA1C873745A1AE71823D4CED_marshaled_pinvoke& marshaled)
@@ -25026,12 +25284,26 @@ IL2CPP_EXTERN_C void HIDElementDescriptor_t18CA9618F730F541BA1C873745A1AE71823D4
 }
 IL2CPP_EXTERN_C void HIDElementDescriptor_t18CA9618F730F541BA1C873745A1AE71823D4CED_marshal_com(const HIDElementDescriptor_t18CA9618F730F541BA1C873745A1AE71823D4CED& unmarshaled, HIDElementDescriptor_t18CA9618F730F541BA1C873745A1AE71823D4CED_marshaled_com& marshaled)
 {
-	Exception_t* ___usageMinException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'usageMin' of type 'HIDElementDescriptor'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HIDElementDescriptor_t18CA9618F730F541BA1C873745A1AE71823D4CED_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HIDElementDescriptor_t18CA9618F730F541BA1C873745A1AE71823D4CED____usageMin_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___usageMinException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", HIDElementDescriptor_t18CA9618F730F541BA1C873745A1AE71823D4CED____usageMin_FieldInfo_var, HIDElementDescriptor_t18CA9618F730F541BA1C873745A1AE71823D4CED_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___usageMinException, NULL);
 }
 IL2CPP_EXTERN_C void HIDElementDescriptor_t18CA9618F730F541BA1C873745A1AE71823D4CED_marshal_com_back(const HIDElementDescriptor_t18CA9618F730F541BA1C873745A1AE71823D4CED_marshaled_com& marshaled, HIDElementDescriptor_t18CA9618F730F541BA1C873745A1AE71823D4CED& unmarshaled)
 {
-	Exception_t* ___usageMinException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'usageMin' of type 'HIDElementDescriptor'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HIDElementDescriptor_t18CA9618F730F541BA1C873745A1AE71823D4CED_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HIDElementDescriptor_t18CA9618F730F541BA1C873745A1AE71823D4CED____usageMin_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___usageMinException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", HIDElementDescriptor_t18CA9618F730F541BA1C873745A1AE71823D4CED____usageMin_FieldInfo_var, HIDElementDescriptor_t18CA9618F730F541BA1C873745A1AE71823D4CED_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___usageMinException, NULL);
 }
 IL2CPP_EXTERN_C void HIDElementDescriptor_t18CA9618F730F541BA1C873745A1AE71823D4CED_marshal_com_cleanup(HIDElementDescriptor_t18CA9618F730F541BA1C873745A1AE71823D4CED_marshaled_com& marshaled)
@@ -26686,12 +26958,26 @@ IL2CPP_EXTERN_C  void HIDElementDescriptor_AddChildControls_m95CF40C85D197EFC17D
 
 IL2CPP_EXTERN_C void HIDDeviceDescriptor_tC52CF92386ACA63743BEFB7776A8C1E152A6DB59_marshal_pinvoke(const HIDDeviceDescriptor_tC52CF92386ACA63743BEFB7776A8C1E152A6DB59& unmarshaled, HIDDeviceDescriptor_tC52CF92386ACA63743BEFB7776A8C1E152A6DB59_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___elementsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'elements' of type 'HIDDeviceDescriptor'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HIDDeviceDescriptor_tC52CF92386ACA63743BEFB7776A8C1E152A6DB59_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HIDDeviceDescriptor_tC52CF92386ACA63743BEFB7776A8C1E152A6DB59____elements_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___elementsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", HIDDeviceDescriptor_tC52CF92386ACA63743BEFB7776A8C1E152A6DB59____elements_FieldInfo_var, HIDDeviceDescriptor_tC52CF92386ACA63743BEFB7776A8C1E152A6DB59_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___elementsException, NULL);
 }
 IL2CPP_EXTERN_C void HIDDeviceDescriptor_tC52CF92386ACA63743BEFB7776A8C1E152A6DB59_marshal_pinvoke_back(const HIDDeviceDescriptor_tC52CF92386ACA63743BEFB7776A8C1E152A6DB59_marshaled_pinvoke& marshaled, HIDDeviceDescriptor_tC52CF92386ACA63743BEFB7776A8C1E152A6DB59& unmarshaled)
 {
-	Exception_t* ___elementsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'elements' of type 'HIDDeviceDescriptor'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HIDDeviceDescriptor_tC52CF92386ACA63743BEFB7776A8C1E152A6DB59_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HIDDeviceDescriptor_tC52CF92386ACA63743BEFB7776A8C1E152A6DB59____elements_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___elementsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", HIDDeviceDescriptor_tC52CF92386ACA63743BEFB7776A8C1E152A6DB59____elements_FieldInfo_var, HIDDeviceDescriptor_tC52CF92386ACA63743BEFB7776A8C1E152A6DB59_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___elementsException, NULL);
 }
 IL2CPP_EXTERN_C void HIDDeviceDescriptor_tC52CF92386ACA63743BEFB7776A8C1E152A6DB59_marshal_pinvoke_cleanup(HIDDeviceDescriptor_tC52CF92386ACA63743BEFB7776A8C1E152A6DB59_marshaled_pinvoke& marshaled)
@@ -26701,12 +26987,26 @@ IL2CPP_EXTERN_C void HIDDeviceDescriptor_tC52CF92386ACA63743BEFB7776A8C1E152A6DB
 
 IL2CPP_EXTERN_C void HIDDeviceDescriptor_tC52CF92386ACA63743BEFB7776A8C1E152A6DB59_marshal_com(const HIDDeviceDescriptor_tC52CF92386ACA63743BEFB7776A8C1E152A6DB59& unmarshaled, HIDDeviceDescriptor_tC52CF92386ACA63743BEFB7776A8C1E152A6DB59_marshaled_com& marshaled)
 {
-	Exception_t* ___elementsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'elements' of type 'HIDDeviceDescriptor'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HIDDeviceDescriptor_tC52CF92386ACA63743BEFB7776A8C1E152A6DB59_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HIDDeviceDescriptor_tC52CF92386ACA63743BEFB7776A8C1E152A6DB59____elements_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___elementsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", HIDDeviceDescriptor_tC52CF92386ACA63743BEFB7776A8C1E152A6DB59____elements_FieldInfo_var, HIDDeviceDescriptor_tC52CF92386ACA63743BEFB7776A8C1E152A6DB59_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___elementsException, NULL);
 }
 IL2CPP_EXTERN_C void HIDDeviceDescriptor_tC52CF92386ACA63743BEFB7776A8C1E152A6DB59_marshal_com_back(const HIDDeviceDescriptor_tC52CF92386ACA63743BEFB7776A8C1E152A6DB59_marshaled_com& marshaled, HIDDeviceDescriptor_tC52CF92386ACA63743BEFB7776A8C1E152A6DB59& unmarshaled)
 {
-	Exception_t* ___elementsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'elements' of type 'HIDDeviceDescriptor'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HIDDeviceDescriptor_tC52CF92386ACA63743BEFB7776A8C1E152A6DB59_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HIDDeviceDescriptor_tC52CF92386ACA63743BEFB7776A8C1E152A6DB59____elements_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___elementsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", HIDDeviceDescriptor_tC52CF92386ACA63743BEFB7776A8C1E152A6DB59____elements_FieldInfo_var, HIDDeviceDescriptor_tC52CF92386ACA63743BEFB7776A8C1E152A6DB59_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___elementsException, NULL);
 }
 IL2CPP_EXTERN_C void HIDDeviceDescriptor_tC52CF92386ACA63743BEFB7776A8C1E152A6DB59_marshal_com_cleanup(HIDDeviceDescriptor_tC52CF92386ACA63743BEFB7776A8C1E152A6DB59_marshaled_com& marshaled)
