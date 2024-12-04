@@ -10192,27 +10192,27 @@ IL_0013:
 		bool L_3 = V_0;
 		if (!L_3)
 		{
-			goto IL_006b;
+			goto IL_0077;
 		}
 	}
 	{
-		bool L_4 = __this->___m_Value;
-		V_1 = L_4;
-		bool L_5 = ___0_value;
-		VirtualActionInvoker1< bool >::Invoke(117, __this, L_5);
-		BaseField_1_set_showMixedValue_m8ED9E71370B301EE8B05CB3448E6196D4C8AAC1A(__this, (bool)0, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
+		BaseField_1_set_showMixedValue_m8ED9E71370B301EE8B05CB3448E6196D4C8AAC1A(__this, (bool)0, il2cpp_rgctx_method(method->klass->rgctx_data, 7));
 		NullCheck((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)__this);
-		RuntimeObject* L_6;
-		L_6 = VisualElement_get_panel_m44AEFA3041785E57641AA3F895D11215C841BED1((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)__this, NULL);
-		V_2 = (bool)((!(((RuntimeObject*)(RuntimeObject*)L_6) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0);
-		bool L_7 = V_2;
-		if (!L_7)
+		RuntimeObject* L_4;
+		L_4 = VisualElement_get_panel_m44AEFA3041785E57641AA3F895D11215C841BED1((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)__this, NULL);
+		V_1 = (bool)((!(((RuntimeObject*)(RuntimeObject*)L_4) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0);
+		bool L_5 = V_1;
+		if (!L_5)
 		{
-			goto IL_006a;
+			goto IL_006c;
 		}
 	}
 	{
-		bool L_8 = V_1;
+		bool L_6 = __this->___m_Value;
+		V_2 = L_6;
+		bool L_7 = ___0_value;
+		VirtualActionInvoker1< bool >::Invoke(117, __this, L_7);
+		bool L_8 = V_2;
 		bool L_9 = __this->___m_Value;
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 10));
 		ChangeEvent_1_t2AA4161DCA648D276CFE726DD08B0D55FA799D4B* L_10;
@@ -10262,13 +10262,20 @@ IL_0068:
 
 IL_0069:
 	{
+		goto IL_0076;
 	}
 
-IL_006a:
+IL_006c:
+	{
+		bool L_15 = ___0_value;
+		VirtualActionInvoker1< bool >::Invoke(117, __this, L_15);
+	}
+
+IL_0076:
 	{
 	}
 
-IL_006b:
+IL_0077:
 	{
 		return;
 	}
@@ -11778,9 +11785,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaseField_1_set_value_m473EB2EF2011E3822
 		s_Il2CppMethodInitialized = true;
 	}
 	bool V_0 = false;
-	Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 V_1;
-	memset((&V_1), 0, sizeof(V_1));
-	bool V_2 = false;
+	bool V_1 = false;
+	Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 V_2;
+	memset((&V_2), 0, sizeof(V_2));
 	ChangeEvent_1_t7866A81E56DC7A993F61A42AEBB65B82C2693E2C* V_3 = NULL;
 	int32_t G_B3_0 = 0;
 	{
@@ -11810,27 +11817,27 @@ IL_0013:
 		bool L_3 = V_0;
 		if (!L_3)
 		{
-			goto IL_006b;
+			goto IL_0077;
 		}
 	}
 	{
-		Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 L_4 = __this->___m_Value;
-		V_1 = L_4;
-		Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 L_5 = ___0_value;
-		VirtualActionInvoker1< Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 >::Invoke(117, __this, L_5);
-		BaseField_1_set_showMixedValue_mA1573302E3480E8465DA5CF5F70E91BB884071CF(__this, (bool)0, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
+		BaseField_1_set_showMixedValue_mA1573302E3480E8465DA5CF5F70E91BB884071CF(__this, (bool)0, il2cpp_rgctx_method(method->klass->rgctx_data, 7));
 		NullCheck((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)__this);
-		RuntimeObject* L_6;
-		L_6 = VisualElement_get_panel_m44AEFA3041785E57641AA3F895D11215C841BED1((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)__this, NULL);
-		V_2 = (bool)((!(((RuntimeObject*)(RuntimeObject*)L_6) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0);
-		bool L_7 = V_2;
-		if (!L_7)
+		RuntimeObject* L_4;
+		L_4 = VisualElement_get_panel_m44AEFA3041785E57641AA3F895D11215C841BED1((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)__this, NULL);
+		V_1 = (bool)((!(((RuntimeObject*)(RuntimeObject*)L_4) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0);
+		bool L_5 = V_1;
+		if (!L_5)
 		{
-			goto IL_006a;
+			goto IL_006c;
 		}
 	}
 	{
-		Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 L_8 = V_1;
+		Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 L_6 = __this->___m_Value;
+		V_2 = L_6;
+		Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 L_7 = ___0_value;
+		VirtualActionInvoker1< Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 >::Invoke(117, __this, L_7);
+		Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 L_8 = V_2;
 		Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 L_9 = __this->___m_Value;
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 10));
 		ChangeEvent_1_t7866A81E56DC7A993F61A42AEBB65B82C2693E2C* L_10;
@@ -11880,13 +11887,20 @@ IL_0068:
 
 IL_0069:
 	{
+		goto IL_0076;
 	}
 
-IL_006a:
+IL_006c:
+	{
+		Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 L_15 = ___0_value;
+		VirtualActionInvoker1< Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 >::Invoke(117, __this, L_15);
+	}
+
+IL_0076:
 	{
 	}
 
-IL_006b:
+IL_0077:
 	{
 		return;
 	}
@@ -13398,9 +13412,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaseField_1_set_value_m2159D340E848B8B83
 		s_Il2CppMethodInitialized = true;
 	}
 	bool V_0 = false;
-	BoundsInt_t4E757DE5EFF9FCB42000F173360DDC63B5585485 V_1;
-	memset((&V_1), 0, sizeof(V_1));
-	bool V_2 = false;
+	bool V_1 = false;
+	BoundsInt_t4E757DE5EFF9FCB42000F173360DDC63B5585485 V_2;
+	memset((&V_2), 0, sizeof(V_2));
 	ChangeEvent_1_t6C84C4317DE99914C3327E4BB24BCCE7642504AB* V_3 = NULL;
 	int32_t G_B3_0 = 0;
 	{
@@ -13430,27 +13444,27 @@ IL_0013:
 		bool L_3 = V_0;
 		if (!L_3)
 		{
-			goto IL_006b;
+			goto IL_0077;
 		}
 	}
 	{
-		BoundsInt_t4E757DE5EFF9FCB42000F173360DDC63B5585485 L_4 = __this->___m_Value;
-		V_1 = L_4;
-		BoundsInt_t4E757DE5EFF9FCB42000F173360DDC63B5585485 L_5 = ___0_value;
-		VirtualActionInvoker1< BoundsInt_t4E757DE5EFF9FCB42000F173360DDC63B5585485 >::Invoke(117, __this, L_5);
-		BaseField_1_set_showMixedValue_m992609C2D9237CA7BDC719ACFC32AE826B953B7B(__this, (bool)0, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
+		BaseField_1_set_showMixedValue_m992609C2D9237CA7BDC719ACFC32AE826B953B7B(__this, (bool)0, il2cpp_rgctx_method(method->klass->rgctx_data, 7));
 		NullCheck((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)__this);
-		RuntimeObject* L_6;
-		L_6 = VisualElement_get_panel_m44AEFA3041785E57641AA3F895D11215C841BED1((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)__this, NULL);
-		V_2 = (bool)((!(((RuntimeObject*)(RuntimeObject*)L_6) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0);
-		bool L_7 = V_2;
-		if (!L_7)
+		RuntimeObject* L_4;
+		L_4 = VisualElement_get_panel_m44AEFA3041785E57641AA3F895D11215C841BED1((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)__this, NULL);
+		V_1 = (bool)((!(((RuntimeObject*)(RuntimeObject*)L_4) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0);
+		bool L_5 = V_1;
+		if (!L_5)
 		{
-			goto IL_006a;
+			goto IL_006c;
 		}
 	}
 	{
-		BoundsInt_t4E757DE5EFF9FCB42000F173360DDC63B5585485 L_8 = V_1;
+		BoundsInt_t4E757DE5EFF9FCB42000F173360DDC63B5585485 L_6 = __this->___m_Value;
+		V_2 = L_6;
+		BoundsInt_t4E757DE5EFF9FCB42000F173360DDC63B5585485 L_7 = ___0_value;
+		VirtualActionInvoker1< BoundsInt_t4E757DE5EFF9FCB42000F173360DDC63B5585485 >::Invoke(117, __this, L_7);
+		BoundsInt_t4E757DE5EFF9FCB42000F173360DDC63B5585485 L_8 = V_2;
 		BoundsInt_t4E757DE5EFF9FCB42000F173360DDC63B5585485 L_9 = __this->___m_Value;
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 10));
 		ChangeEvent_1_t6C84C4317DE99914C3327E4BB24BCCE7642504AB* L_10;
@@ -13500,13 +13514,20 @@ IL_0068:
 
 IL_0069:
 	{
+		goto IL_0076;
 	}
 
-IL_006a:
+IL_006c:
+	{
+		BoundsInt_t4E757DE5EFF9FCB42000F173360DDC63B5585485 L_15 = ___0_value;
+		VirtualActionInvoker1< BoundsInt_t4E757DE5EFF9FCB42000F173360DDC63B5585485 >::Invoke(117, __this, L_15);
+	}
+
+IL_0076:
 	{
 	}
 
-IL_006b:
+IL_0077:
 	{
 		return;
 	}
@@ -15016,8 +15037,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaseField_1_set_value_m1CC1825CF300A98EF
 		s_Il2CppMethodInitialized = true;
 	}
 	bool V_0 = false;
-	double V_1 = 0.0;
-	bool V_2 = false;
+	bool V_1 = false;
+	double V_2 = 0.0;
 	ChangeEvent_1_tC5BD787DD4D8079687DB096FCC95F8793F8A4173* V_3 = NULL;
 	int32_t G_B3_0 = 0;
 	{
@@ -15047,27 +15068,27 @@ IL_0013:
 		bool L_3 = V_0;
 		if (!L_3)
 		{
-			goto IL_006b;
+			goto IL_0077;
 		}
 	}
 	{
-		double L_4 = __this->___m_Value;
-		V_1 = L_4;
-		double L_5 = ___0_value;
-		VirtualActionInvoker1< double >::Invoke(117, __this, L_5);
-		BaseField_1_set_showMixedValue_m917AD6066F07F9C6D0DBE81CD7BF5E6A62C3A063(__this, (bool)0, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
+		BaseField_1_set_showMixedValue_m917AD6066F07F9C6D0DBE81CD7BF5E6A62C3A063(__this, (bool)0, il2cpp_rgctx_method(method->klass->rgctx_data, 7));
 		NullCheck((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)__this);
-		RuntimeObject* L_6;
-		L_6 = VisualElement_get_panel_m44AEFA3041785E57641AA3F895D11215C841BED1((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)__this, NULL);
-		V_2 = (bool)((!(((RuntimeObject*)(RuntimeObject*)L_6) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0);
-		bool L_7 = V_2;
-		if (!L_7)
+		RuntimeObject* L_4;
+		L_4 = VisualElement_get_panel_m44AEFA3041785E57641AA3F895D11215C841BED1((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)__this, NULL);
+		V_1 = (bool)((!(((RuntimeObject*)(RuntimeObject*)L_4) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0);
+		bool L_5 = V_1;
+		if (!L_5)
 		{
-			goto IL_006a;
+			goto IL_006c;
 		}
 	}
 	{
-		double L_8 = V_1;
+		double L_6 = __this->___m_Value;
+		V_2 = L_6;
+		double L_7 = ___0_value;
+		VirtualActionInvoker1< double >::Invoke(117, __this, L_7);
+		double L_8 = V_2;
 		double L_9 = __this->___m_Value;
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 10));
 		ChangeEvent_1_tC5BD787DD4D8079687DB096FCC95F8793F8A4173* L_10;
@@ -15117,13 +15138,20 @@ IL_0068:
 
 IL_0069:
 	{
+		goto IL_0076;
 	}
 
-IL_006a:
+IL_006c:
+	{
+		double L_15 = ___0_value;
+		VirtualActionInvoker1< double >::Invoke(117, __this, L_15);
+	}
+
+IL_0076:
 	{
 	}
 
-IL_006b:
+IL_0077:
 	{
 		return;
 	}
@@ -16633,9 +16661,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaseField_1_set_value_mEDFE5B48450A14C03
 		s_Il2CppMethodInitialized = true;
 	}
 	bool V_0 = false;
-	Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 V_1;
-	memset((&V_1), 0, sizeof(V_1));
-	bool V_2 = false;
+	bool V_1 = false;
+	Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 V_2;
+	memset((&V_2), 0, sizeof(V_2));
 	ChangeEvent_1_t21778275B33C9750D3CA0134F00ED32A2EAF3006* V_3 = NULL;
 	int32_t G_B3_0 = 0;
 	{
@@ -16665,27 +16693,27 @@ IL_0013:
 		bool L_3 = V_0;
 		if (!L_3)
 		{
-			goto IL_006b;
+			goto IL_0077;
 		}
 	}
 	{
-		Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 L_4 = __this->___m_Value;
-		V_1 = L_4;
-		Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 L_5 = ___0_value;
-		VirtualActionInvoker1< Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 >::Invoke(117, __this, L_5);
-		BaseField_1_set_showMixedValue_m0A2446F2A35B2A4D9514A734AD0E81CE9CB6007F(__this, (bool)0, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
+		BaseField_1_set_showMixedValue_m0A2446F2A35B2A4D9514A734AD0E81CE9CB6007F(__this, (bool)0, il2cpp_rgctx_method(method->klass->rgctx_data, 7));
 		NullCheck((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)__this);
-		RuntimeObject* L_6;
-		L_6 = VisualElement_get_panel_m44AEFA3041785E57641AA3F895D11215C841BED1((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)__this, NULL);
-		V_2 = (bool)((!(((RuntimeObject*)(RuntimeObject*)L_6) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0);
-		bool L_7 = V_2;
-		if (!L_7)
+		RuntimeObject* L_4;
+		L_4 = VisualElement_get_panel_m44AEFA3041785E57641AA3F895D11215C841BED1((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)__this, NULL);
+		V_1 = (bool)((!(((RuntimeObject*)(RuntimeObject*)L_4) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0);
+		bool L_5 = V_1;
+		if (!L_5)
 		{
-			goto IL_006a;
+			goto IL_006c;
 		}
 	}
 	{
-		Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 L_8 = V_1;
+		Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 L_6 = __this->___m_Value;
+		V_2 = L_6;
+		Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 L_7 = ___0_value;
+		VirtualActionInvoker1< Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 >::Invoke(117, __this, L_7);
+		Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 L_8 = V_2;
 		Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 L_9 = __this->___m_Value;
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 10));
 		ChangeEvent_1_t21778275B33C9750D3CA0134F00ED32A2EAF3006* L_10;
@@ -16735,13 +16763,20 @@ IL_0068:
 
 IL_0069:
 	{
+		goto IL_0076;
 	}
 
-IL_006a:
+IL_006c:
+	{
+		Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 L_15 = ___0_value;
+		VirtualActionInvoker1< Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 >::Invoke(117, __this, L_15);
+	}
+
+IL_0076:
 	{
 	}
 
-IL_006b:
+IL_0077:
 	{
 		return;
 	}
@@ -18251,8 +18286,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaseField_1_set_value_m817C752DBF46B3C6D
 		s_Il2CppMethodInitialized = true;
 	}
 	bool V_0 = false;
-	int32_t V_1 = 0;
-	bool V_2 = false;
+	bool V_1 = false;
+	int32_t V_2 = 0;
 	ChangeEvent_1_tC3BB6BA2C838B5ABAB019FFF6BE7FA220D766454* V_3 = NULL;
 	int32_t G_B3_0 = 0;
 	{
@@ -18282,27 +18317,27 @@ IL_0013:
 		bool L_3 = V_0;
 		if (!L_3)
 		{
-			goto IL_006b;
+			goto IL_0077;
 		}
 	}
 	{
-		int32_t L_4 = __this->___m_Value;
-		V_1 = L_4;
-		int32_t L_5 = ___0_value;
-		VirtualActionInvoker1< int32_t >::Invoke(117, __this, L_5);
-		BaseField_1_set_showMixedValue_m7B7A3CF2172AED189EBB98AD7EC9B1360B41FF0B(__this, (bool)0, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
+		BaseField_1_set_showMixedValue_m7B7A3CF2172AED189EBB98AD7EC9B1360B41FF0B(__this, (bool)0, il2cpp_rgctx_method(method->klass->rgctx_data, 7));
 		NullCheck((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)__this);
-		RuntimeObject* L_6;
-		L_6 = VisualElement_get_panel_m44AEFA3041785E57641AA3F895D11215C841BED1((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)__this, NULL);
-		V_2 = (bool)((!(((RuntimeObject*)(RuntimeObject*)L_6) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0);
-		bool L_7 = V_2;
-		if (!L_7)
+		RuntimeObject* L_4;
+		L_4 = VisualElement_get_panel_m44AEFA3041785E57641AA3F895D11215C841BED1((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)__this, NULL);
+		V_1 = (bool)((!(((RuntimeObject*)(RuntimeObject*)L_4) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0);
+		bool L_5 = V_1;
+		if (!L_5)
 		{
-			goto IL_006a;
+			goto IL_006c;
 		}
 	}
 	{
-		int32_t L_8 = V_1;
+		int32_t L_6 = __this->___m_Value;
+		V_2 = L_6;
+		int32_t L_7 = ___0_value;
+		VirtualActionInvoker1< int32_t >::Invoke(117, __this, L_7);
+		int32_t L_8 = V_2;
 		int32_t L_9 = __this->___m_Value;
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 10));
 		ChangeEvent_1_tC3BB6BA2C838B5ABAB019FFF6BE7FA220D766454* L_10;
@@ -18352,13 +18387,20 @@ IL_0068:
 
 IL_0069:
 	{
+		goto IL_0076;
 	}
 
-IL_006a:
+IL_006c:
+	{
+		int32_t L_15 = ___0_value;
+		VirtualActionInvoker1< int32_t >::Invoke(117, __this, L_15);
+	}
+
+IL_0076:
 	{
 	}
 
-IL_006b:
+IL_0077:
 	{
 		return;
 	}
@@ -19866,8 +19908,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaseField_1_set_value_m0FE41C0EC8F436247
 		s_Il2CppMethodInitialized = true;
 	}
 	bool V_0 = false;
-	int64_t V_1 = 0;
-	bool V_2 = false;
+	bool V_1 = false;
+	int64_t V_2 = 0;
 	ChangeEvent_1_tAC72E06A2617BEF85448C64BB874E05173FE1AAB* V_3 = NULL;
 	int32_t G_B3_0 = 0;
 	{
@@ -19897,27 +19939,27 @@ IL_0013:
 		bool L_3 = V_0;
 		if (!L_3)
 		{
-			goto IL_006b;
+			goto IL_0077;
 		}
 	}
 	{
-		int64_t L_4 = __this->___m_Value;
-		V_1 = L_4;
-		int64_t L_5 = ___0_value;
-		VirtualActionInvoker1< int64_t >::Invoke(117, __this, L_5);
-		BaseField_1_set_showMixedValue_mFD91CBC56E10BC3EA0BF2161C8032E60F86D5D84(__this, (bool)0, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
+		BaseField_1_set_showMixedValue_mFD91CBC56E10BC3EA0BF2161C8032E60F86D5D84(__this, (bool)0, il2cpp_rgctx_method(method->klass->rgctx_data, 7));
 		NullCheck((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)__this);
-		RuntimeObject* L_6;
-		L_6 = VisualElement_get_panel_m44AEFA3041785E57641AA3F895D11215C841BED1((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)__this, NULL);
-		V_2 = (bool)((!(((RuntimeObject*)(RuntimeObject*)L_6) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0);
-		bool L_7 = V_2;
-		if (!L_7)
+		RuntimeObject* L_4;
+		L_4 = VisualElement_get_panel_m44AEFA3041785E57641AA3F895D11215C841BED1((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)__this, NULL);
+		V_1 = (bool)((!(((RuntimeObject*)(RuntimeObject*)L_4) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0);
+		bool L_5 = V_1;
+		if (!L_5)
 		{
-			goto IL_006a;
+			goto IL_006c;
 		}
 	}
 	{
-		int64_t L_8 = V_1;
+		int64_t L_6 = __this->___m_Value;
+		V_2 = L_6;
+		int64_t L_7 = ___0_value;
+		VirtualActionInvoker1< int64_t >::Invoke(117, __this, L_7);
+		int64_t L_8 = V_2;
 		int64_t L_9 = __this->___m_Value;
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 10));
 		ChangeEvent_1_tAC72E06A2617BEF85448C64BB874E05173FE1AAB* L_10;
@@ -19967,13 +20009,20 @@ IL_0068:
 
 IL_0069:
 	{
+		goto IL_0076;
 	}
 
-IL_006a:
+IL_006c:
+	{
+		int64_t L_15 = ___0_value;
+		VirtualActionInvoker1< int64_t >::Invoke(117, __this, L_15);
+	}
+
+IL_0076:
 	{
 	}
 
-IL_006b:
+IL_0077:
 	{
 		return;
 	}
@@ -21482,8 +21531,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaseField_1_set_value_mC59AC8A46301F9E49
 		s_Il2CppMethodInitialized = true;
 	}
 	bool V_0 = false;
-	RuntimeObject* V_1 = NULL;
-	bool V_2 = false;
+	bool V_1 = false;
+	RuntimeObject* V_2 = NULL;
 	ChangeEvent_1_t59730190AEEC760B97F416AC38A51AB64D67D371* V_3 = NULL;
 	int32_t G_B3_0 = 0;
 	{
@@ -21513,27 +21562,27 @@ IL_0013:
 		bool L_3 = V_0;
 		if (!L_3)
 		{
-			goto IL_006b;
+			goto IL_0077;
 		}
 	}
 	{
-		RuntimeObject* L_4 = __this->___m_Value;
-		V_1 = L_4;
-		RuntimeObject* L_5 = ___0_value;
-		VirtualActionInvoker1< RuntimeObject* >::Invoke(117, __this, L_5);
-		BaseField_1_set_showMixedValue_mB83CB117AA783A922811064F09EC78C6E27ABDA2(__this, (bool)0, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
+		BaseField_1_set_showMixedValue_mB83CB117AA783A922811064F09EC78C6E27ABDA2(__this, (bool)0, il2cpp_rgctx_method(method->klass->rgctx_data, 7));
 		NullCheck((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)__this);
-		RuntimeObject* L_6;
-		L_6 = VisualElement_get_panel_m44AEFA3041785E57641AA3F895D11215C841BED1((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)__this, NULL);
-		V_2 = (bool)((!(((RuntimeObject*)(RuntimeObject*)L_6) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0);
-		bool L_7 = V_2;
-		if (!L_7)
+		RuntimeObject* L_4;
+		L_4 = VisualElement_get_panel_m44AEFA3041785E57641AA3F895D11215C841BED1((VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*)__this, NULL);
+		V_1 = (bool)((!(((RuntimeObject*)(RuntimeObject*)L_4) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0);
+		bool L_5 = V_1;
+		if (!L_5)
 		{
-			goto IL_006a;
+			goto IL_006c;
 		}
 	}
 	{
-		RuntimeObject* L_8 = V_1;
+		RuntimeObject* L_6 = __this->___m_Value;
+		V_2 = L_6;
+		RuntimeObject* L_7 = ___0_value;
+		VirtualActionInvoker1< RuntimeObject* >::Invoke(117, __this, L_7);
+		RuntimeObject* L_8 = V_2;
 		RuntimeObject* L_9 = __this->___m_Value;
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 10));
 		ChangeEvent_1_t59730190AEEC760B97F416AC38A51AB64D67D371* L_10;
@@ -21583,13 +21632,20 @@ IL_0068:
 
 IL_0069:
 	{
+		goto IL_0076;
 	}
 
-IL_006a:
+IL_006c:
+	{
+		RuntimeObject* L_15 = ___0_value;
+		VirtualActionInvoker1< RuntimeObject* >::Invoke(117, __this, L_15);
+	}
+
+IL_0076:
 	{
 	}
 
-IL_006b:
+IL_0077:
 	{
 		return;
 	}

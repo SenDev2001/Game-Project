@@ -461,8 +461,6 @@ IL2CPP_EXTERN_C RuntimeClass* UnityAction_1_tE32574C71B51DFED36AB235C69E2777243D
 IL2CPP_EXTERN_C RuntimeClass* UpdateMode_tCD49766B755C4CD8E1F2DE8D57798DAC2C5CBF32_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeField* Data_t6043413CF02BCA5D92233B1F6EFF4CD170A397F9____usages_FieldInfo_var;
-IL2CPP_EXTERN_C RuntimeField* Data_tEBB3D708778E8658163A56C2E56F3512738AFE74____usages_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_tF62B85DD2C59D87BA6C8DA02965E1F3203A64E53____BD3331923AE2D87F6296377CB80C86CE12BF445ED38D4485D28FACFEC06BFF5B_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_tF62B85DD2C59D87BA6C8DA02965E1F3203A64E53____D9D05356900CBD90C107CDBD184BC94526EC3F9228772F900FC7C60E3FE82B5A_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_tF62B85DD2C59D87BA6C8DA02965E1F3203A64E53____FFCB0A1E90587D61767DBCE765CBEC8743DC4A67B865900B464ED065E4625BD5_FieldInfo_var;
@@ -934,8 +932,6 @@ IL2CPP_EXTERN_C const RuntimeType* ButtonWithTwoModifiers_tCA30378981527D0F30688
 IL2CPP_EXTERN_C const RuntimeType* ClampProcessor_tF3D734C88BDFC3618BA525B51A0244942A5E1E33_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* CompensateDirectionProcessor_tD37E3634AA6A1D86A67B21CFFFF5BDD0F39183BE_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* CompensateRotationProcessor_t1D14AFF56CF5C0B6615C8448470ABF88F7480D02_0_0_0_var;
-IL2CPP_EXTERN_C const RuntimeType* Data_t6043413CF02BCA5D92233B1F6EFF4CD170A397F9_0_0_0_var;
-IL2CPP_EXTERN_C const RuntimeType* Data_tEBB3D708778E8658163A56C2E56F3512738AFE74_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* DiscreteButtonControl_t3F3349EABF0E553E7E451EF43441B8EAF105813C_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* DoubleControl_t3707A6260424A2F3636669A2BAFF5CB5E91D2486_0_0_0_var;
@@ -12701,26 +12697,12 @@ IL_01a6:
 
 IL2CPP_EXTERN_C void Data_t6043413CF02BCA5D92233B1F6EFF4CD170A397F9_marshal_pinvoke(const Data_t6043413CF02BCA5D92233B1F6EFF4CD170A397F9& unmarshaled, Data_t6043413CF02BCA5D92233B1F6EFF4CD170A397F9_marshaled_pinvoke& marshaled)
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Data_t6043413CF02BCA5D92233B1F6EFF4CD170A397F9_0_0_0_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Data_t6043413CF02BCA5D92233B1F6EFF4CD170A397F9____usages_FieldInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	Exception_t* ___usagesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", Data_t6043413CF02BCA5D92233B1F6EFF4CD170A397F9____usages_FieldInfo_var, Data_t6043413CF02BCA5D92233B1F6EFF4CD170A397F9_0_0_0_var);
+	Exception_t* ___usagesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'usages' of type 'Data'.");
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___usagesException, NULL);
 }
 IL2CPP_EXTERN_C void Data_t6043413CF02BCA5D92233B1F6EFF4CD170A397F9_marshal_pinvoke_back(const Data_t6043413CF02BCA5D92233B1F6EFF4CD170A397F9_marshaled_pinvoke& marshaled, Data_t6043413CF02BCA5D92233B1F6EFF4CD170A397F9& unmarshaled)
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Data_t6043413CF02BCA5D92233B1F6EFF4CD170A397F9_0_0_0_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Data_t6043413CF02BCA5D92233B1F6EFF4CD170A397F9____usages_FieldInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	Exception_t* ___usagesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", Data_t6043413CF02BCA5D92233B1F6EFF4CD170A397F9____usages_FieldInfo_var, Data_t6043413CF02BCA5D92233B1F6EFF4CD170A397F9_0_0_0_var);
+	Exception_t* ___usagesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'usages' of type 'Data'.");
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___usagesException, NULL);
 }
 IL2CPP_EXTERN_C void Data_t6043413CF02BCA5D92233B1F6EFF4CD170A397F9_marshal_pinvoke_cleanup(Data_t6043413CF02BCA5D92233B1F6EFF4CD170A397F9_marshaled_pinvoke& marshaled)
@@ -12730,26 +12712,12 @@ IL2CPP_EXTERN_C void Data_t6043413CF02BCA5D92233B1F6EFF4CD170A397F9_marshal_pinv
 
 IL2CPP_EXTERN_C void Data_t6043413CF02BCA5D92233B1F6EFF4CD170A397F9_marshal_com(const Data_t6043413CF02BCA5D92233B1F6EFF4CD170A397F9& unmarshaled, Data_t6043413CF02BCA5D92233B1F6EFF4CD170A397F9_marshaled_com& marshaled)
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Data_t6043413CF02BCA5D92233B1F6EFF4CD170A397F9_0_0_0_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Data_t6043413CF02BCA5D92233B1F6EFF4CD170A397F9____usages_FieldInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	Exception_t* ___usagesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", Data_t6043413CF02BCA5D92233B1F6EFF4CD170A397F9____usages_FieldInfo_var, Data_t6043413CF02BCA5D92233B1F6EFF4CD170A397F9_0_0_0_var);
+	Exception_t* ___usagesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'usages' of type 'Data'.");
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___usagesException, NULL);
 }
 IL2CPP_EXTERN_C void Data_t6043413CF02BCA5D92233B1F6EFF4CD170A397F9_marshal_com_back(const Data_t6043413CF02BCA5D92233B1F6EFF4CD170A397F9_marshaled_com& marshaled, Data_t6043413CF02BCA5D92233B1F6EFF4CD170A397F9& unmarshaled)
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Data_t6043413CF02BCA5D92233B1F6EFF4CD170A397F9_0_0_0_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Data_t6043413CF02BCA5D92233B1F6EFF4CD170A397F9____usages_FieldInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	Exception_t* ___usagesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", Data_t6043413CF02BCA5D92233B1F6EFF4CD170A397F9____usages_FieldInfo_var, Data_t6043413CF02BCA5D92233B1F6EFF4CD170A397F9_0_0_0_var);
+	Exception_t* ___usagesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'usages' of type 'Data'.");
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___usagesException, NULL);
 }
 IL2CPP_EXTERN_C void Data_t6043413CF02BCA5D92233B1F6EFF4CD170A397F9_marshal_com_cleanup(Data_t6043413CF02BCA5D92233B1F6EFF4CD170A397F9_marshaled_com& marshaled)
@@ -13397,26 +13365,12 @@ IL_00da:
 #endif
 IL2CPP_EXTERN_C void Data_tEBB3D708778E8658163A56C2E56F3512738AFE74_marshal_pinvoke(const Data_tEBB3D708778E8658163A56C2E56F3512738AFE74& unmarshaled, Data_tEBB3D708778E8658163A56C2E56F3512738AFE74_marshaled_pinvoke& marshaled)
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Data_tEBB3D708778E8658163A56C2E56F3512738AFE74_0_0_0_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Data_tEBB3D708778E8658163A56C2E56F3512738AFE74____usages_FieldInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	Exception_t* ___usagesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", Data_tEBB3D708778E8658163A56C2E56F3512738AFE74____usages_FieldInfo_var, Data_tEBB3D708778E8658163A56C2E56F3512738AFE74_0_0_0_var);
+	Exception_t* ___usagesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'usages' of type 'Data'.");
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___usagesException, NULL);
 }
 IL2CPP_EXTERN_C void Data_tEBB3D708778E8658163A56C2E56F3512738AFE74_marshal_pinvoke_back(const Data_tEBB3D708778E8658163A56C2E56F3512738AFE74_marshaled_pinvoke& marshaled, Data_tEBB3D708778E8658163A56C2E56F3512738AFE74& unmarshaled)
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Data_tEBB3D708778E8658163A56C2E56F3512738AFE74_0_0_0_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Data_tEBB3D708778E8658163A56C2E56F3512738AFE74____usages_FieldInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	Exception_t* ___usagesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", Data_tEBB3D708778E8658163A56C2E56F3512738AFE74____usages_FieldInfo_var, Data_tEBB3D708778E8658163A56C2E56F3512738AFE74_0_0_0_var);
+	Exception_t* ___usagesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'usages' of type 'Data'.");
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___usagesException, NULL);
 }
 IL2CPP_EXTERN_C void Data_tEBB3D708778E8658163A56C2E56F3512738AFE74_marshal_pinvoke_cleanup(Data_tEBB3D708778E8658163A56C2E56F3512738AFE74_marshaled_pinvoke& marshaled)
@@ -13424,26 +13378,12 @@ IL2CPP_EXTERN_C void Data_tEBB3D708778E8658163A56C2E56F3512738AFE74_marshal_pinv
 }
 IL2CPP_EXTERN_C void Data_tEBB3D708778E8658163A56C2E56F3512738AFE74_marshal_com(const Data_tEBB3D708778E8658163A56C2E56F3512738AFE74& unmarshaled, Data_tEBB3D708778E8658163A56C2E56F3512738AFE74_marshaled_com& marshaled)
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Data_tEBB3D708778E8658163A56C2E56F3512738AFE74_0_0_0_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Data_tEBB3D708778E8658163A56C2E56F3512738AFE74____usages_FieldInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	Exception_t* ___usagesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", Data_tEBB3D708778E8658163A56C2E56F3512738AFE74____usages_FieldInfo_var, Data_tEBB3D708778E8658163A56C2E56F3512738AFE74_0_0_0_var);
+	Exception_t* ___usagesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'usages' of type 'Data'.");
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___usagesException, NULL);
 }
 IL2CPP_EXTERN_C void Data_tEBB3D708778E8658163A56C2E56F3512738AFE74_marshal_com_back(const Data_tEBB3D708778E8658163A56C2E56F3512738AFE74_marshaled_com& marshaled, Data_tEBB3D708778E8658163A56C2E56F3512738AFE74& unmarshaled)
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Data_tEBB3D708778E8658163A56C2E56F3512738AFE74_0_0_0_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Data_tEBB3D708778E8658163A56C2E56F3512738AFE74____usages_FieldInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	Exception_t* ___usagesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", Data_tEBB3D708778E8658163A56C2E56F3512738AFE74____usages_FieldInfo_var, Data_tEBB3D708778E8658163A56C2E56F3512738AFE74_0_0_0_var);
+	Exception_t* ___usagesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'usages' of type 'Data'.");
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___usagesException, NULL);
 }
 IL2CPP_EXTERN_C void Data_tEBB3D708778E8658163A56C2E56F3512738AFE74_marshal_com_cleanup(Data_tEBB3D708778E8658163A56C2E56F3512738AFE74_marshaled_com& marshaled)

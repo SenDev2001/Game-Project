@@ -222,8 +222,6 @@ IL2CPP_EXTERN_C RuntimeClass* Regex_tE773142C2BE45C5D362B0F815AFF831707A51772_il
 IL2CPP_EXTERN_C RuntimeClass* SingleRangeComparer_t2D299E0E54D7F24BAF67EA65E92B6FCDB806F9D0_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* String_t_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeField* RegexFCD_t696EC897BC155EF1EC7AEC0D97E2CE7717B45ADD_____fcStack_FieldInfo_var;
-IL2CPP_EXTERN_C RuntimeField* RegexWriter_t618A9F9480E99C224DE6D93EEFED48EF0CEFAB12_____emitted_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t56F624E1051A2E261613B6A81CA2333397F49CB3____B849624EC20707184A433E21DAAC963906D4B261A19BD8F139F0E269E59E308C_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral072B29D72AC26D4E83A32232DF8E415C5151E9AA;
 IL2CPP_EXTERN_C String_t* _stringLiteral07624473F417C06C74D59C64840A1532FCE2C626;
@@ -343,8 +341,6 @@ IL2CPP_EXTERN_C const RuntimeMethod* ValueListBuilder_1_get_Item_m5EF2B61BDC18BD
 IL2CPP_EXTERN_C const RuntimeMethod* ValueListBuilder_1_get_Length_mAD606EF0B41D73E52C0B7D4FA09A001E03082F74_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* WeakReference_1_SetTarget_m87BF827B6B3CCB82958155D5DEEC9EA1951272D4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* WeakReference_1_TryGetTarget_mF3D765CD93EDFAF1750A2F4F47CB879B365DD3B8_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeType* RegexFCD_t696EC897BC155EF1EC7AEC0D97E2CE7717B45ADD_0_0_0_var;
-IL2CPP_EXTERN_C const RuntimeType* RegexWriter_t618A9F9480E99C224DE6D93EEFED48EF0CEFAB12_0_0_0_var;
 struct CultureData_tEEFDCF4ECA1BBF6C0C8C94EB3541657245598F9D_marshaled_com;
 struct CultureData_tEEFDCF4ECA1BBF6C0C8C94EB3541657245598F9D_marshaled_pinvoke;
 struct CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_marshaled_com;
@@ -2329,26 +2325,12 @@ IL_00a2:
 #endif
 IL2CPP_EXTERN_C void RegexFCD_t696EC897BC155EF1EC7AEC0D97E2CE7717B45ADD_marshal_pinvoke(const RegexFCD_t696EC897BC155EF1EC7AEC0D97E2CE7717B45ADD& unmarshaled, RegexFCD_t696EC897BC155EF1EC7AEC0D97E2CE7717B45ADD_marshaled_pinvoke& marshaled)
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RegexFCD_t696EC897BC155EF1EC7AEC0D97E2CE7717B45ADD_0_0_0_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RegexFCD_t696EC897BC155EF1EC7AEC0D97E2CE7717B45ADD_____fcStack_FieldInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	Exception_t* ____fcStackException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", RegexFCD_t696EC897BC155EF1EC7AEC0D97E2CE7717B45ADD_____fcStack_FieldInfo_var, RegexFCD_t696EC897BC155EF1EC7AEC0D97E2CE7717B45ADD_0_0_0_var);
+	Exception_t* ____fcStackException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '_fcStack' of type 'RegexFCD'.");
 	IL2CPP_RAISE_MANAGED_EXCEPTION(____fcStackException, NULL);
 }
 IL2CPP_EXTERN_C void RegexFCD_t696EC897BC155EF1EC7AEC0D97E2CE7717B45ADD_marshal_pinvoke_back(const RegexFCD_t696EC897BC155EF1EC7AEC0D97E2CE7717B45ADD_marshaled_pinvoke& marshaled, RegexFCD_t696EC897BC155EF1EC7AEC0D97E2CE7717B45ADD& unmarshaled)
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RegexFCD_t696EC897BC155EF1EC7AEC0D97E2CE7717B45ADD_0_0_0_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RegexFCD_t696EC897BC155EF1EC7AEC0D97E2CE7717B45ADD_____fcStack_FieldInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	Exception_t* ____fcStackException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", RegexFCD_t696EC897BC155EF1EC7AEC0D97E2CE7717B45ADD_____fcStack_FieldInfo_var, RegexFCD_t696EC897BC155EF1EC7AEC0D97E2CE7717B45ADD_0_0_0_var);
+	Exception_t* ____fcStackException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '_fcStack' of type 'RegexFCD'.");
 	IL2CPP_RAISE_MANAGED_EXCEPTION(____fcStackException, NULL);
 }
 IL2CPP_EXTERN_C void RegexFCD_t696EC897BC155EF1EC7AEC0D97E2CE7717B45ADD_marshal_pinvoke_cleanup(RegexFCD_t696EC897BC155EF1EC7AEC0D97E2CE7717B45ADD_marshaled_pinvoke& marshaled)
@@ -2356,26 +2338,12 @@ IL2CPP_EXTERN_C void RegexFCD_t696EC897BC155EF1EC7AEC0D97E2CE7717B45ADD_marshal_
 }
 IL2CPP_EXTERN_C void RegexFCD_t696EC897BC155EF1EC7AEC0D97E2CE7717B45ADD_marshal_com(const RegexFCD_t696EC897BC155EF1EC7AEC0D97E2CE7717B45ADD& unmarshaled, RegexFCD_t696EC897BC155EF1EC7AEC0D97E2CE7717B45ADD_marshaled_com& marshaled)
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RegexFCD_t696EC897BC155EF1EC7AEC0D97E2CE7717B45ADD_0_0_0_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RegexFCD_t696EC897BC155EF1EC7AEC0D97E2CE7717B45ADD_____fcStack_FieldInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	Exception_t* ____fcStackException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", RegexFCD_t696EC897BC155EF1EC7AEC0D97E2CE7717B45ADD_____fcStack_FieldInfo_var, RegexFCD_t696EC897BC155EF1EC7AEC0D97E2CE7717B45ADD_0_0_0_var);
+	Exception_t* ____fcStackException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '_fcStack' of type 'RegexFCD'.");
 	IL2CPP_RAISE_MANAGED_EXCEPTION(____fcStackException, NULL);
 }
 IL2CPP_EXTERN_C void RegexFCD_t696EC897BC155EF1EC7AEC0D97E2CE7717B45ADD_marshal_com_back(const RegexFCD_t696EC897BC155EF1EC7AEC0D97E2CE7717B45ADD_marshaled_com& marshaled, RegexFCD_t696EC897BC155EF1EC7AEC0D97E2CE7717B45ADD& unmarshaled)
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RegexFCD_t696EC897BC155EF1EC7AEC0D97E2CE7717B45ADD_0_0_0_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RegexFCD_t696EC897BC155EF1EC7AEC0D97E2CE7717B45ADD_____fcStack_FieldInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	Exception_t* ____fcStackException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", RegexFCD_t696EC897BC155EF1EC7AEC0D97E2CE7717B45ADD_____fcStack_FieldInfo_var, RegexFCD_t696EC897BC155EF1EC7AEC0D97E2CE7717B45ADD_0_0_0_var);
+	Exception_t* ____fcStackException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '_fcStack' of type 'RegexFCD'.");
 	IL2CPP_RAISE_MANAGED_EXCEPTION(____fcStackException, NULL);
 }
 IL2CPP_EXTERN_C void RegexFCD_t696EC897BC155EF1EC7AEC0D97E2CE7717B45ADD_marshal_com_cleanup(RegexFCD_t696EC897BC155EF1EC7AEC0D97E2CE7717B45ADD_marshaled_com& marshaled)
@@ -15157,7 +15125,7 @@ IL_0031:
 	{
 		int32_t L_9 = __this->____options;
 		int32_t L_10 = V_2;
-		__this->____options = ((int32_t)((int32_t)L_9&((~((int32_t)L_10)))));
+		__this->____options = ((int32_t)((int32_t)L_9&(int32_t)((~L_10))));
 		goto IL_0053;
 	}
 
@@ -20142,26 +20110,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RegexTree__ctor_m89DA1335AAB55B0707774E9
 #endif
 IL2CPP_EXTERN_C void RegexWriter_t618A9F9480E99C224DE6D93EEFED48EF0CEFAB12_marshal_pinvoke(const RegexWriter_t618A9F9480E99C224DE6D93EEFED48EF0CEFAB12& unmarshaled, RegexWriter_t618A9F9480E99C224DE6D93EEFED48EF0CEFAB12_marshaled_pinvoke& marshaled)
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RegexWriter_t618A9F9480E99C224DE6D93EEFED48EF0CEFAB12_0_0_0_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RegexWriter_t618A9F9480E99C224DE6D93EEFED48EF0CEFAB12_____emitted_FieldInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	Exception_t* ____emittedException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", RegexWriter_t618A9F9480E99C224DE6D93EEFED48EF0CEFAB12_____emitted_FieldInfo_var, RegexWriter_t618A9F9480E99C224DE6D93EEFED48EF0CEFAB12_0_0_0_var);
+	Exception_t* ____emittedException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '_emitted' of type 'RegexWriter'.");
 	IL2CPP_RAISE_MANAGED_EXCEPTION(____emittedException, NULL);
 }
 IL2CPP_EXTERN_C void RegexWriter_t618A9F9480E99C224DE6D93EEFED48EF0CEFAB12_marshal_pinvoke_back(const RegexWriter_t618A9F9480E99C224DE6D93EEFED48EF0CEFAB12_marshaled_pinvoke& marshaled, RegexWriter_t618A9F9480E99C224DE6D93EEFED48EF0CEFAB12& unmarshaled)
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RegexWriter_t618A9F9480E99C224DE6D93EEFED48EF0CEFAB12_0_0_0_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RegexWriter_t618A9F9480E99C224DE6D93EEFED48EF0CEFAB12_____emitted_FieldInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	Exception_t* ____emittedException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", RegexWriter_t618A9F9480E99C224DE6D93EEFED48EF0CEFAB12_____emitted_FieldInfo_var, RegexWriter_t618A9F9480E99C224DE6D93EEFED48EF0CEFAB12_0_0_0_var);
+	Exception_t* ____emittedException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '_emitted' of type 'RegexWriter'.");
 	IL2CPP_RAISE_MANAGED_EXCEPTION(____emittedException, NULL);
 }
 IL2CPP_EXTERN_C void RegexWriter_t618A9F9480E99C224DE6D93EEFED48EF0CEFAB12_marshal_pinvoke_cleanup(RegexWriter_t618A9F9480E99C224DE6D93EEFED48EF0CEFAB12_marshaled_pinvoke& marshaled)
@@ -20169,26 +20123,12 @@ IL2CPP_EXTERN_C void RegexWriter_t618A9F9480E99C224DE6D93EEFED48EF0CEFAB12_marsh
 }
 IL2CPP_EXTERN_C void RegexWriter_t618A9F9480E99C224DE6D93EEFED48EF0CEFAB12_marshal_com(const RegexWriter_t618A9F9480E99C224DE6D93EEFED48EF0CEFAB12& unmarshaled, RegexWriter_t618A9F9480E99C224DE6D93EEFED48EF0CEFAB12_marshaled_com& marshaled)
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RegexWriter_t618A9F9480E99C224DE6D93EEFED48EF0CEFAB12_0_0_0_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RegexWriter_t618A9F9480E99C224DE6D93EEFED48EF0CEFAB12_____emitted_FieldInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	Exception_t* ____emittedException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", RegexWriter_t618A9F9480E99C224DE6D93EEFED48EF0CEFAB12_____emitted_FieldInfo_var, RegexWriter_t618A9F9480E99C224DE6D93EEFED48EF0CEFAB12_0_0_0_var);
+	Exception_t* ____emittedException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '_emitted' of type 'RegexWriter'.");
 	IL2CPP_RAISE_MANAGED_EXCEPTION(____emittedException, NULL);
 }
 IL2CPP_EXTERN_C void RegexWriter_t618A9F9480E99C224DE6D93EEFED48EF0CEFAB12_marshal_com_back(const RegexWriter_t618A9F9480E99C224DE6D93EEFED48EF0CEFAB12_marshaled_com& marshaled, RegexWriter_t618A9F9480E99C224DE6D93EEFED48EF0CEFAB12& unmarshaled)
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RegexWriter_t618A9F9480E99C224DE6D93EEFED48EF0CEFAB12_0_0_0_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RegexWriter_t618A9F9480E99C224DE6D93EEFED48EF0CEFAB12_____emitted_FieldInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	Exception_t* ____emittedException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", RegexWriter_t618A9F9480E99C224DE6D93EEFED48EF0CEFAB12_____emitted_FieldInfo_var, RegexWriter_t618A9F9480E99C224DE6D93EEFED48EF0CEFAB12_0_0_0_var);
+	Exception_t* ____emittedException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '_emitted' of type 'RegexWriter'.");
 	IL2CPP_RAISE_MANAGED_EXCEPTION(____emittedException, NULL);
 }
 IL2CPP_EXTERN_C void RegexWriter_t618A9F9480E99C224DE6D93EEFED48EF0CEFAB12_marshal_com_cleanup(RegexWriter_t618A9F9480E99C224DE6D93EEFED48EF0CEFAB12_marshaled_com& marshaled)

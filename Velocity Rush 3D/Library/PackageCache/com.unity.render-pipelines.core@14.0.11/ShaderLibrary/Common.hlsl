@@ -983,7 +983,7 @@ float ComputeTextureLOD(float3 duvw_dx, float3 duvw_dy, float3 duvw_dz, float sc
     return max(0.5f * log2(d * (scale * scale)) - bias, 0.0);
 }
 
-#if defined(SHADER_API_D3D11) || defined(SHADER_API_D3D12) || defined(SHADER_API_D3D11_9X) || defined(SHADER_API_XBOXONE) || defined(SHADER_API_PSSL) || defined(SHADER_API_METAL)
+#if defined(SHADER_API_D3D11) || defined(SHADER_API_D3D12) || defined(SHADER_API_D3D11_9X) || defined(SHADER_API_XBOXONE) || defined(SHADER_API_PSSL)
     #define MIP_COUNT_SUPPORTED 1
 #endif
     // TODO: Bug workaround, switch defines GLCORE when it shouldn't
@@ -1129,32 +1129,25 @@ float3 LatlongToDirectionCoordinate(float2 coord)
 // Z buffer to linear 0..1 depth (0 at near plane, 1 at far plane).
 // Does NOT correctly handle oblique view frustums.
 // Does NOT work with orthographic projection.
-// zBufferParam (UNITY_REVERSED_Z) = { f/n - 1,   1, (1/n - 1/f), 1/f }
-// zBufferParam                    = { 1 - f/n, f/n, (1/f - 1/n), 1/n }
+// zBufferParam = { (f-n)/n, 1, (f-n)/n*f, 1/f }
 float Linear01DepthFromNear(float depth, float4 zBufferParam)
 {
-    #if UNITY_REVERSED_Z
-    return (1.0 - depth) / (zBufferParam.x * depth + zBufferParam.y);
-    #else
-    return depth / (zBufferParam.x * depth + zBufferParam.y);
-    #endif
+    return 1.0 / (zBufferParam.x + zBufferParam.y / depth);
 }
 
 // Z buffer to linear 0..1 depth (0 at camera position, 1 at far plane).
 // Does NOT work with orthographic projections.
 // Does NOT correctly handle oblique view frustums.
-// zBufferParam (UNITY_REVERSED_Z) = { f/n - 1,   1, (1/n - 1/f), 1/f }
-// zBufferParam                    = { 1 - f/n, f/n, (1/f - 1/n), 1/n }
+// zBufferParam = { (f-n)/n, 1, (f-n)/n*f, 1/f }
 float Linear01Depth(float depth, float4 zBufferParam)
 {
     return 1.0 / (zBufferParam.x * depth + zBufferParam.y);
 }
 
-// Z buffer to linear view space (eye) depth.
+// Z buffer to linear depth.
 // Does NOT correctly handle oblique view frustums.
 // Does NOT work with orthographic projection.
-// zBufferParam (UNITY_REVERSED_Z) = { f/n - 1,   1, (1/n - 1/f), 1/f }
-// zBufferParam                    = { 1 - f/n, f/n, (1/f - 1/n), 1/n }
+// zBufferParam = { (f-n)/n, 1, (f-n)/n*f, 1/f }
 float LinearEyeDepth(float depth, float4 zBufferParam)
 {
     return 1.0 / (zBufferParam.z * depth + zBufferParam.w);

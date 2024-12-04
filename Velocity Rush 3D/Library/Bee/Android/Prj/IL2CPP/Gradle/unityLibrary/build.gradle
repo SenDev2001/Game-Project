@@ -7,10 +7,10 @@ dependencies {
 }
 
 android {
-    namespace "com.unity3d.player"
-    ndkPath "D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK"
-    compileSdkVersion 35
-    buildToolsVersion '34.0.0'
+    ndkPath "C:/Program Files/Unity/Hub/Editor/2022.3.33f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK"
+
+    compileSdkVersion 34
+    buildToolsVersion '32.0.0'
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_11
@@ -19,7 +19,7 @@ android {
 
     defaultConfig {
         minSdkVersion 22
-        targetSdkVersion 35
+        targetSdkVersion 34
         ndk {
             abiFilters 'armeabi-v7a', 'arm64-v8a'
         }
@@ -40,9 +40,6 @@ android {
     packagingOptions {
         doNotStrip '*/armeabi-v7a/*.so'
         doNotStrip '*/arm64-v8a/*.so'
-        jniLibs {
-            useLegacyPackaging true
-        }
     }
 }
 

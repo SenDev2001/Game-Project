@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.SenDev.VelocityRush.launcher-mergeReleaseResources-3:/values/values.xml",
+            "outputFile": "D:\\Game-Project\\Velocity Rush 3D\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "D:\\Game-Project\\Velocity Rush 3D\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\src\\main\\res\\values\\strings.xml",

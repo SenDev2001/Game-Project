@@ -11,7 +11,6 @@
         name="D:\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle@@:unityLibrary::release"
         simpleName="Gradle:unityLibrary"/>
     <dependency
-        name="__local_aars__:D:\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\libs\unity-classes.jar:unspecified@jar"
-        simpleName="__local_aars__:D:\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\libs\unity-classes.jar"/>
+        name="__local_aars__:D:\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\libs\unity-classes.jar:unspecified@jar"/>
   </package>
 </dependencies>

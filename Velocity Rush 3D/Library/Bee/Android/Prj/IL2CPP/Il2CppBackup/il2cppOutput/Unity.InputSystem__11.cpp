@@ -154,7 +154,6 @@ IL2CPP_EXTERN_C RuntimeClass* U3CTokenizeU3Ed__8_t974A4A167882F66AC70C15513407BB
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec_t77EE13A2DF0F0EE25274DE8AA8898CF60A1ECEBA_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* UInt16_tF4C148C876015C212FD72652D0B6ED8CC247A455_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeField* TypeTable_tEAC1ECAD849469DEA65DA2FC65B19C2D4739B67E____table_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral007174B876FA7EECC4152046B9308966D3E2B5B8;
 IL2CPP_EXTERN_C String_t* _stringLiteral0BA8CB3B900ECEF5E697192B8CDA6B626EB0CE72;
 IL2CPP_EXTERN_C String_t* _stringLiteral115036F179EA48E7662F9BE55E0E00A42DDE6DA7;
@@ -239,7 +238,6 @@ IL2CPP_EXTERN_C const RuntimeType* Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D971
 IL2CPP_EXTERN_C const RuntimeType* RuntimeObject_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* SByte_tFEFFEF5D2FEBF5207950AE6FAC150FC53B668DB5_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_0_0_0_var;
-IL2CPP_EXTERN_C const RuntimeType* TypeTable_tEAC1ECAD849469DEA65DA2FC65B19C2D4739B67E_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* UInt16_tF4C148C876015C212FD72652D0B6ED8CC247A455_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_0_0_0_var;
@@ -5986,26 +5984,12 @@ IL_00eb:
 #endif
 IL2CPP_EXTERN_C void TypeTable_tEAC1ECAD849469DEA65DA2FC65B19C2D4739B67E_marshal_pinvoke(const TypeTable_tEAC1ECAD849469DEA65DA2FC65B19C2D4739B67E& unmarshaled, TypeTable_tEAC1ECAD849469DEA65DA2FC65B19C2D4739B67E_marshaled_pinvoke& marshaled)
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TypeTable_tEAC1ECAD849469DEA65DA2FC65B19C2D4739B67E_0_0_0_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TypeTable_tEAC1ECAD849469DEA65DA2FC65B19C2D4739B67E____table_FieldInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	Exception_t* ___tableException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", TypeTable_tEAC1ECAD849469DEA65DA2FC65B19C2D4739B67E____table_FieldInfo_var, TypeTable_tEAC1ECAD849469DEA65DA2FC65B19C2D4739B67E_0_0_0_var);
+	Exception_t* ___tableException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'table' of type 'TypeTable'.");
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___tableException, NULL);
 }
 IL2CPP_EXTERN_C void TypeTable_tEAC1ECAD849469DEA65DA2FC65B19C2D4739B67E_marshal_pinvoke_back(const TypeTable_tEAC1ECAD849469DEA65DA2FC65B19C2D4739B67E_marshaled_pinvoke& marshaled, TypeTable_tEAC1ECAD849469DEA65DA2FC65B19C2D4739B67E& unmarshaled)
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TypeTable_tEAC1ECAD849469DEA65DA2FC65B19C2D4739B67E_0_0_0_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TypeTable_tEAC1ECAD849469DEA65DA2FC65B19C2D4739B67E____table_FieldInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	Exception_t* ___tableException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", TypeTable_tEAC1ECAD849469DEA65DA2FC65B19C2D4739B67E____table_FieldInfo_var, TypeTable_tEAC1ECAD849469DEA65DA2FC65B19C2D4739B67E_0_0_0_var);
+	Exception_t* ___tableException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'table' of type 'TypeTable'.");
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___tableException, NULL);
 }
 IL2CPP_EXTERN_C void TypeTable_tEAC1ECAD849469DEA65DA2FC65B19C2D4739B67E_marshal_pinvoke_cleanup(TypeTable_tEAC1ECAD849469DEA65DA2FC65B19C2D4739B67E_marshaled_pinvoke& marshaled)
@@ -6013,26 +5997,12 @@ IL2CPP_EXTERN_C void TypeTable_tEAC1ECAD849469DEA65DA2FC65B19C2D4739B67E_marshal
 }
 IL2CPP_EXTERN_C void TypeTable_tEAC1ECAD849469DEA65DA2FC65B19C2D4739B67E_marshal_com(const TypeTable_tEAC1ECAD849469DEA65DA2FC65B19C2D4739B67E& unmarshaled, TypeTable_tEAC1ECAD849469DEA65DA2FC65B19C2D4739B67E_marshaled_com& marshaled)
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TypeTable_tEAC1ECAD849469DEA65DA2FC65B19C2D4739B67E_0_0_0_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TypeTable_tEAC1ECAD849469DEA65DA2FC65B19C2D4739B67E____table_FieldInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	Exception_t* ___tableException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", TypeTable_tEAC1ECAD849469DEA65DA2FC65B19C2D4739B67E____table_FieldInfo_var, TypeTable_tEAC1ECAD849469DEA65DA2FC65B19C2D4739B67E_0_0_0_var);
+	Exception_t* ___tableException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'table' of type 'TypeTable'.");
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___tableException, NULL);
 }
 IL2CPP_EXTERN_C void TypeTable_tEAC1ECAD849469DEA65DA2FC65B19C2D4739B67E_marshal_com_back(const TypeTable_tEAC1ECAD849469DEA65DA2FC65B19C2D4739B67E_marshaled_com& marshaled, TypeTable_tEAC1ECAD849469DEA65DA2FC65B19C2D4739B67E& unmarshaled)
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TypeTable_tEAC1ECAD849469DEA65DA2FC65B19C2D4739B67E_0_0_0_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TypeTable_tEAC1ECAD849469DEA65DA2FC65B19C2D4739B67E____table_FieldInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	Exception_t* ___tableException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", TypeTable_tEAC1ECAD849469DEA65DA2FC65B19C2D4739B67E____table_FieldInfo_var, TypeTable_tEAC1ECAD849469DEA65DA2FC65B19C2D4739B67E_0_0_0_var);
+	Exception_t* ___tableException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'table' of type 'TypeTable'.");
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___tableException, NULL);
 }
 IL2CPP_EXTERN_C void TypeTable_tEAC1ECAD849469DEA65DA2FC65B19C2D4739B67E_marshal_com_cleanup(TypeTable_tEAC1ECAD849469DEA65DA2FC65B19C2D4739B67E_marshaled_com& marshaled)

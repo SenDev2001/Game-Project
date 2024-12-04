@@ -227,9 +227,6 @@ namespace UnityEngine.Rendering
         /// <seealso cref="Unregister"/>
         public void Register(Volume volume, int layer)
         {
-            if (m_Volumes.Contains(volume))
-                return;
-
             m_Volumes.Add(volume);
 
             // Look for existing cached layer masks and add it there if needed
@@ -253,16 +250,15 @@ namespace UnityEngine.Rendering
         /// <seealso cref="Register"/>
         public void Unregister(Volume volume, int layer)
         {
-            if (m_Volumes.Remove(volume))
-            {
-                foreach (var kvp in m_SortedVolumes)
-                {
-                    // Skip layer masks this volume doesn't belong to
-                    if ((kvp.Key & (1 << layer)) == 0)
-                        continue;
+            m_Volumes.Remove(volume);
 
-                    kvp.Value.Remove(volume);
-                }
+            foreach (var kvp in m_SortedVolumes)
+            {
+                // Skip layer masks this volume doesn't belong to
+                if ((kvp.Key & (1 << layer)) == 0)
+                    continue;
+
+                kvp.Value.Remove(volume);
             }
         }
 

@@ -400,8 +400,6 @@ IL2CPP_EXTERN_C RuntimeClass* ValueTuple_t91D0A108CBFF9751D740C4FFABA381B6E46B07
 IL2CPP_EXTERN_C RuntimeClass* Vector_1_t566D05A9DE75BCD8F12F1E09AC3F8A4BC01BF92A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector_1_tACF5C606E327928B31CCD8E09C9224DCA7065489_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeField* SorterGenericArray_t894488A2B9F4A1ACE408683B71920FA7DBAA47D9____keys_FieldInfo_var;
-IL2CPP_EXTERN_C RuntimeField* SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305____keys_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral009A5235DB722B842116C44501E872B31F8D5CB8;
 IL2CPP_EXTERN_C String_t* _stringLiteral00BA133FF3D84EAB4FB7DB5FB38F235C4E108ED9;
 IL2CPP_EXTERN_C String_t* _stringLiteral042B880B3413F6EA94DF04CBEBE55D46B560D17C;
@@ -827,8 +825,6 @@ IL2CPP_EXTERN_C const RuntimeType* MarshalByRefObject_t8C2F4C5854177FD60439EB1FC
 IL2CPP_EXTERN_C const RuntimeType* OrdinalComparer_tBB06915E213A5D4C8C617ED5478E8BF30C2B2170_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* SByte_tFEFFEF5D2FEBF5207950AE6FAC150FC53B668DB5_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_0_0_0_var;
-IL2CPP_EXTERN_C const RuntimeType* SorterGenericArray_t894488A2B9F4A1ACE408683B71920FA7DBAA47D9_0_0_0_var;
-IL2CPP_EXTERN_C const RuntimeType* SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* String_t_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* UInt16_tF4C148C876015C212FD72652D0B6ED8CC247A455_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_0_0_0_var;
@@ -26201,26 +26197,12 @@ IL2CPP_EXTERN_C void RawData_t37CAF2D3F74B7723974ED7CEEE9B297D8FA64ED0_marshal_c
 #endif
 IL2CPP_EXTERN_C void SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_marshal_pinvoke(const SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305& unmarshaled, SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_marshaled_pinvoke& marshaled)
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_0_0_0_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305____keys_FieldInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	Exception_t* ___keysException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305____keys_FieldInfo_var, SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_0_0_0_var);
+	Exception_t* ___keysException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'keys' of type 'SorterObjectArray'.");
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___keysException, NULL);
 }
 IL2CPP_EXTERN_C void SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_marshal_pinvoke_back(const SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_marshaled_pinvoke& marshaled, SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305& unmarshaled)
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_0_0_0_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305____keys_FieldInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	Exception_t* ___keysException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305____keys_FieldInfo_var, SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_0_0_0_var);
+	Exception_t* ___keysException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'keys' of type 'SorterObjectArray'.");
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___keysException, NULL);
 }
 IL2CPP_EXTERN_C void SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_marshal_pinvoke_cleanup(SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_marshaled_pinvoke& marshaled)
@@ -26228,26 +26210,12 @@ IL2CPP_EXTERN_C void SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305
 }
 IL2CPP_EXTERN_C void SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_marshal_com(const SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305& unmarshaled, SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_marshaled_com& marshaled)
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_0_0_0_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305____keys_FieldInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	Exception_t* ___keysException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305____keys_FieldInfo_var, SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_0_0_0_var);
+	Exception_t* ___keysException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'keys' of type 'SorterObjectArray'.");
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___keysException, NULL);
 }
 IL2CPP_EXTERN_C void SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_marshal_com_back(const SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_marshaled_com& marshaled, SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305& unmarshaled)
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_0_0_0_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305____keys_FieldInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	Exception_t* ___keysException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305____keys_FieldInfo_var, SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_0_0_0_var);
+	Exception_t* ___keysException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'keys' of type 'SorterObjectArray'.");
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___keysException, NULL);
 }
 IL2CPP_EXTERN_C void SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_marshal_com_cleanup(SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_marshaled_com& marshaled)
@@ -27250,26 +27218,12 @@ IL2CPP_EXTERN_C  void SorterObjectArray_InsertionSort_mD801415F2F3DD42C0BC17EF0F
 #endif
 IL2CPP_EXTERN_C void SorterGenericArray_t894488A2B9F4A1ACE408683B71920FA7DBAA47D9_marshal_pinvoke(const SorterGenericArray_t894488A2B9F4A1ACE408683B71920FA7DBAA47D9& unmarshaled, SorterGenericArray_t894488A2B9F4A1ACE408683B71920FA7DBAA47D9_marshaled_pinvoke& marshaled)
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SorterGenericArray_t894488A2B9F4A1ACE408683B71920FA7DBAA47D9_0_0_0_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SorterGenericArray_t894488A2B9F4A1ACE408683B71920FA7DBAA47D9____keys_FieldInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	Exception_t* ___keysException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", SorterGenericArray_t894488A2B9F4A1ACE408683B71920FA7DBAA47D9____keys_FieldInfo_var, SorterGenericArray_t894488A2B9F4A1ACE408683B71920FA7DBAA47D9_0_0_0_var);
+	Exception_t* ___keysException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'keys' of type 'SorterGenericArray': Reference type field marshaling is not supported.");
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___keysException, NULL);
 }
 IL2CPP_EXTERN_C void SorterGenericArray_t894488A2B9F4A1ACE408683B71920FA7DBAA47D9_marshal_pinvoke_back(const SorterGenericArray_t894488A2B9F4A1ACE408683B71920FA7DBAA47D9_marshaled_pinvoke& marshaled, SorterGenericArray_t894488A2B9F4A1ACE408683B71920FA7DBAA47D9& unmarshaled)
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SorterGenericArray_t894488A2B9F4A1ACE408683B71920FA7DBAA47D9_0_0_0_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SorterGenericArray_t894488A2B9F4A1ACE408683B71920FA7DBAA47D9____keys_FieldInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	Exception_t* ___keysException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", SorterGenericArray_t894488A2B9F4A1ACE408683B71920FA7DBAA47D9____keys_FieldInfo_var, SorterGenericArray_t894488A2B9F4A1ACE408683B71920FA7DBAA47D9_0_0_0_var);
+	Exception_t* ___keysException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'keys' of type 'SorterGenericArray': Reference type field marshaling is not supported.");
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___keysException, NULL);
 }
 IL2CPP_EXTERN_C void SorterGenericArray_t894488A2B9F4A1ACE408683B71920FA7DBAA47D9_marshal_pinvoke_cleanup(SorterGenericArray_t894488A2B9F4A1ACE408683B71920FA7DBAA47D9_marshaled_pinvoke& marshaled)
@@ -27277,26 +27231,12 @@ IL2CPP_EXTERN_C void SorterGenericArray_t894488A2B9F4A1ACE408683B71920FA7DBAA47D
 }
 IL2CPP_EXTERN_C void SorterGenericArray_t894488A2B9F4A1ACE408683B71920FA7DBAA47D9_marshal_com(const SorterGenericArray_t894488A2B9F4A1ACE408683B71920FA7DBAA47D9& unmarshaled, SorterGenericArray_t894488A2B9F4A1ACE408683B71920FA7DBAA47D9_marshaled_com& marshaled)
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SorterGenericArray_t894488A2B9F4A1ACE408683B71920FA7DBAA47D9_0_0_0_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SorterGenericArray_t894488A2B9F4A1ACE408683B71920FA7DBAA47D9____keys_FieldInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	Exception_t* ___keysException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", SorterGenericArray_t894488A2B9F4A1ACE408683B71920FA7DBAA47D9____keys_FieldInfo_var, SorterGenericArray_t894488A2B9F4A1ACE408683B71920FA7DBAA47D9_0_0_0_var);
+	Exception_t* ___keysException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'keys' of type 'SorterGenericArray': Reference type field marshaling is not supported.");
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___keysException, NULL);
 }
 IL2CPP_EXTERN_C void SorterGenericArray_t894488A2B9F4A1ACE408683B71920FA7DBAA47D9_marshal_com_back(const SorterGenericArray_t894488A2B9F4A1ACE408683B71920FA7DBAA47D9_marshaled_com& marshaled, SorterGenericArray_t894488A2B9F4A1ACE408683B71920FA7DBAA47D9& unmarshaled)
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SorterGenericArray_t894488A2B9F4A1ACE408683B71920FA7DBAA47D9_0_0_0_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SorterGenericArray_t894488A2B9F4A1ACE408683B71920FA7DBAA47D9____keys_FieldInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	Exception_t* ___keysException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", SorterGenericArray_t894488A2B9F4A1ACE408683B71920FA7DBAA47D9____keys_FieldInfo_var, SorterGenericArray_t894488A2B9F4A1ACE408683B71920FA7DBAA47D9_0_0_0_var);
+	Exception_t* ___keysException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'keys' of type 'SorterGenericArray': Reference type field marshaling is not supported.");
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___keysException, NULL);
 }
 IL2CPP_EXTERN_C void SorterGenericArray_t894488A2B9F4A1ACE408683B71920FA7DBAA47D9_marshal_com_cleanup(SorterGenericArray_t894488A2B9F4A1ACE408683B71920FA7DBAA47D9_marshaled_com& marshaled)

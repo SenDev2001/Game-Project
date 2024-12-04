@@ -4,11 +4,11 @@ ADDED from D:\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradl
 INJECTED from D:\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-25:12
 INJECTED from D:\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-25:12
 	package
+		ADDED from D:\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:70-98
 		INJECTED from D:\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml
-		ADDED from D:\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-25:12
 		INJECTED from D:\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from D:\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:70-116
+		ADDED from D:\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:99-145
 	xmlns:android
 		ADDED from D:\Game-Project\Velocity Rush 3D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET

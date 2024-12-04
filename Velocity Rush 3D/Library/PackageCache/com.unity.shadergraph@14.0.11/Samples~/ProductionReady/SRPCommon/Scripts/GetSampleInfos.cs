@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 
 [ExecuteInEditMode]
-public class PRSGetSampleInfos : MonoBehaviour
+public class GetSampleInfos : MonoBehaviour
 {
     public enum Type
     {
@@ -46,13 +46,13 @@ public class PRSGetSampleInfos : MonoBehaviour
         switch(type)
         {
             case Type.Introduction:
-                TextMeshProComponent.text = PRSSamplesShowcase.GetSanitizedIntroduction();
+                TextMeshProComponent.text = SamplesShowcase.GetSanitizedIntroduction();
                 break;
             case Type.Title:
-                TextMeshProComponent.text = PRSSamplesShowcase.GetSanitizedTitle(prefab.name);
+                TextMeshProComponent.text = SamplesShowcase.GetSanitizedTitle(prefab.name);
                 break;
             case Type.Description:
-                TextMeshProComponent.text = PRSSamplesShowcase.GetSanitizedDescription(prefab.name);
+                TextMeshProComponent.text = SamplesShowcase.GetSanitizedDescription(prefab.name);
                 break;
         }
     }
