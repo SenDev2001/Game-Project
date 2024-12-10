@@ -125,7 +125,7 @@ namespace Gameplay
 
         private void IncreaseSpeed()
         {
-            if (forwardSpeed < 20f) 
+            if (forwardSpeed < 20f)
             {
                 forwardSpeed *= speedIncreaseFactor;
                 Debug.Log("Speed increased! New speed: " + forwardSpeed);

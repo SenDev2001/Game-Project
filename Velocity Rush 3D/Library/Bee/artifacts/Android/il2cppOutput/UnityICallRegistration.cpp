@@ -3446,10 +3446,6 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Quaternion_LookRotation_Injected();
 		Register_UnityEngine_Quaternion_LookRotation_Injected();
 
-		//System.Void UnityEngine.Quaternion::Slerp_Injected(UnityEngine.Quaternion&,UnityEngine.Quaternion&,System.Single,UnityEngine.Quaternion&)
-		void Register_UnityEngine_Quaternion_Slerp_Injected();
-		Register_UnityEngine_Quaternion_Slerp_Injected();
-
 	//End Registrations for type : UnityEngine.Quaternion
 
 	//Start Registrations for type : UnityEngine.Random
@@ -4185,10 +4181,6 @@ void RegisterAllStrippedInternalCalls()
 	//End Registrations for type : UnityEngine.ScalableBufferManager
 
 	//Start Registrations for type : UnityEngine.SceneManagement.Scene
-
-		//System.Int32 UnityEngine.SceneManagement.Scene::GetBuildIndexInternal(System.Int32)
-		void Register_UnityEngine_SceneManagement_Scene_GetBuildIndexInternal();
-		Register_UnityEngine_SceneManagement_Scene_GetBuildIndexInternal();
 
 		//System.String UnityEngine.SceneManagement.Scene::GetGUIDInternal(System.Int32)
 		void Register_UnityEngine_SceneManagement_Scene_GetGUIDInternal();

@@ -767,7 +767,6 @@ UnityEngine.Quaternion::Internal_FromEulerRad_Injected
 UnityEngine.Quaternion::Internal_ToEulerRad_Injected
 UnityEngine.Quaternion::Inverse_Injected
 UnityEngine.Quaternion::LookRotation_Injected
-UnityEngine.Quaternion::Slerp_Injected
 UnityEngine.Random::Range
 UnityEngine.Random::InitState
 UnityEngine.Random::get_state_Injected
@@ -927,7 +926,6 @@ UnityEngine.Rigidbody::set_velocity_Injected
 UnityEngine.ScalableBufferManager::get_heightScaleFactor
 UnityEngine.ScalableBufferManager::get_widthScaleFactor
 UnityEngine.ScalableBufferManager::ResizeBuffers
-UnityEngine.SceneManagement.Scene::GetBuildIndexInternal
 UnityEngine.SceneManagement.Scene::GetGUIDInternal
 UnityEngine.SceneManagement.Scene::GetNameInternal
 UnityEngine.SceneManagement.SceneManager::get_sceneCount

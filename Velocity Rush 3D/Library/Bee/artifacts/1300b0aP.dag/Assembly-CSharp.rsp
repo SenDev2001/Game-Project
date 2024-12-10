@@ -322,6 +322,7 @@
 "Assets/Scripts/Core/M_RoadManager.cs"
 "Assets/Scripts/Core/M_ScoreManager.cs"
 "Assets/Scripts/Core/NewBehaviourScript.cs"
+"Assets/Scripts/Gameplay/BusController.cs"
 "Assets/Scripts/Gameplay/E_Camera.cs"
 "Assets/Scripts/Gameplay/E_Collectable.cs"
 "Assets/Scripts/Gameplay/E_CollectablesRotate.cs"
@@ -332,10 +333,8 @@
 "Assets/Scripts/Gameplay/E_PlayerHealth.cs"
 "Assets/Scripts/Gameplay/E_Slide.cs"
 "Assets/Scripts/Gameplay/GameController.cs"
-"Assets/Scripts/Gameplay/VehicleMovement.cs"
 "Assets/Scripts/Graphics/E_AnimController.cs"
 "Assets/Scripts/Graphics/M_GraphicsManager.cs"
-"Assets/Scripts/MainMenu.cs"
 "Assets/Scripts/MenuController.cs"
 "Assets/Scripts/PlayerInput.cs"
 -langversion:9.0
