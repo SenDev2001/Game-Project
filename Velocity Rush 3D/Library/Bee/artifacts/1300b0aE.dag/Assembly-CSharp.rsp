@@ -389,7 +389,6 @@
 "Assets/Scripts/Gameplay/VehicleMovement.cs"
 "Assets/Scripts/Graphics/E_AnimController.cs"
 "Assets/Scripts/Graphics/M_GraphicsManager.cs"
-"Assets/Scripts/MainMenu.cs"
 "Assets/Scripts/MenuController.cs"
 "Assets/Scripts/PlayerInput.cs"
 -langversion:9.0
