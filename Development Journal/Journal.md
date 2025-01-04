@@ -66,14 +66,48 @@ Velocity Rush is a 3D endless runner game designed for android and webgl and itâ
 The roads and snow are spawned in an Endless Runner game plays a very important role in keeping the player on a continuous journey and creating a lively environment. Spawning roads helps to keep the player on a continuous journey, and adding elements like snow makes the environment look lively and attractive. Together, these two processes help to maintain the great experience in my velocity rush game. Accordingly, the way roads are spawned is a key component of the Endless Runner game, making the game seem like a long and continuous journey.
 
 - Score and Leaderboard manager
-  ```csharp
   
-      public void AddScore(int amount)
+  ```csharp
+  public class ScoreManager : MonoBehaviour
+  {
+    // The current player's score
+    public int Score { get; private set; }
+
+    // UI elements for displaying the score and leaderboard
+    public TMP_Text scoreText;
+    public TMP_Text leaderboardText;
+
+    // URLs for interacting with the backend API
+    private string addScoreUrl = "https://sendev2001.pythonanywhere.com/addscore";
+    private string leaderboardUrl = "https://sendev2001.pythonanywhere.com/leaderboard";
+
+    // Player's name (loaded from PlayerPrefs)
+    private string playerName;
+
+    // Initialize the manager and set up player data
+    private void Start()
+    {
+        // Load player name or default to "Guest"
+        playerName = PlayerPrefs.GetString("PlayerName", "Guest");
+        // Reset the score to start the game fresh
+        ResetScore();
+    }
+
+    // Reset the score to zero and update the display
+    public void ResetScore()
+    {
+        Score = 0;
+        UpdateScoreText();
+    }
+
+    // Add a specified amount to the score and update the display
+    public void AddScore(int amount)
     {
         Score += amount;
         UpdateScoreText();
     }
 
+    // Update the score displayed in the UI
     private void UpdateScoreText()
     {
         if (scoreText != null)
@@ -82,90 +116,139 @@ The roads and snow are spawned in an Endless Runner game plays a very important 
         }
     }
 
+    // Submit the player's score to the backend API
     public void SubmitScore()
     {
+        // Start the coroutine to submit the score to the server
         StartCoroutine(AddScoreToAPI(playerName, Score));
     }
 
-    IEnumerator AddScoreToAPI(string name, int score)
+    // Coroutine to send the score to the backend API
+    private IEnumerator AddScoreToAPI(string name, int score)
     {
-        string json = "{\"name\": \"" + name + "\", \"score\": " + score + "}";
+        string json = BuildScoreJson(name, score);
         Debug.Log("Sending JSON: " + json);
 
-        using (UnityWebRequest request = new UnityWebRequest(addScoreUrl, "POST"))
+        UnityWebRequest request = CreateWebRequest(json);
+        yield return request.SendWebRequest();
+
+        // Handle the response from the server after submitting the score
+        HandleAddScoreResponse(request);
+    }
+
+    // Create a JSON string for the score submission
+    private string BuildScoreJson(string name, int score)
+    {
+        return "{\"name\": \"" + name + "\", \"score\": " + score + "}";
+    }
+
+    // Create the UnityWebRequest for submitting the score
+    private UnityWebRequest CreateWebRequest(string json)
+    {
+        UnityWebRequest request = new UnityWebRequest(addScoreUrl, "POST");
+        byte[] jsonToSend = new System.Text.UTF8Encoding().GetBytes(json);
+        request.uploadHandler = new UploadHandlerRaw(jsonToSend);
+        request.downloadHandler = new DownloadHandlerBuffer();
+        request.SetRequestHeader("Content-Type", "application/json");
+
+        return request;
+    }
+
+    // Handle the response after submitting the score
+    private void HandleAddScoreResponse(UnityWebRequest request)
+    {
+        if (request.result != UnityWebRequest.Result.Success)
         {
-            byte[] jsonToSend = new System.Text.UTF8Encoding().GetBytes(json);
-            request.uploadHandler = new UploadHandlerRaw(jsonToSend);
-            request.downloadHandler = new DownloadHandlerBuffer();
-            request.SetRequestHeader("Content-Type", "application/json");
+            LogError(request);
+            return;
+        }
 
-            yield return request.SendWebRequest();
+        Debug.Log("Score added successfully!");
+        // After adding the score, fetch the leaderboard
+        StartCoroutine(GetLeaderboard());
+    }
 
-            if (request.result == UnityWebRequest.Result.Success)
-            {
-                Debug.Log("Score added successfully!");
-                StartCoroutine(GetLeaderboard());
-            }
-            else
-            {
-                Debug.LogError("Failed to add score: " + request.error);
-                Debug.LogError("Response: " + request.downloadHandler.text);
+    // Log errors if the score submission fails
+    private void LogError(UnityWebRequest request)
+    {
+        Debug.LogError("Failed to add score: " + request.error);
+        Debug.LogError("Response: " + request.downloadHandler.text);
 
-                if (leaderboardText != null)
-                {
-                    leaderboardText.text = "Error submitting score: " + request.error;
-                }
-            }
+        if (leaderboardText != null)
+        {
+            leaderboardText.text = "Error submitting score: " + request.error;
         }
     }
 
-    IEnumerator GetLeaderboard()
+    // Coroutine to fetch the leaderboard data
+    private IEnumerator GetLeaderboard()
     {
-        using (UnityWebRequest request = UnityWebRequest.Get(leaderboardUrl))
+        UnityWebRequest request = UnityWebRequest.Get(leaderboardUrl);
+        yield return request.SendWebRequest();
+
+        // Handle the response for the leaderboard data
+        HandleGetLeaderboardResponse(request);
+    }
+
+    // Handle the response after fetching the leaderboard data
+    private void HandleGetLeaderboardResponse(UnityWebRequest request)
+    {
+        if (request.result != UnityWebRequest.Result.Success)
         {
-            yield return request.SendWebRequest();
+            HandleLeaderboardError(request);
+            return;
+        }
 
-            if (request.result == UnityWebRequest.Result.Success)
-            {
-                string jsonResponse = request.downloadHandler.text;
-                if (jsonResponse.StartsWith("["))
-                {
-                    jsonResponse = "{\"leaderboardEntries\":" + jsonResponse + "}";
-                }
+        // Display the leaderboard if the data was successfully fetched
+        DisplayLeaderboard(request.downloadHandler.text);
+    }
 
-                LeaderboardResponse leaderboardResponse = JsonUtility.FromJson<LeaderboardResponse>(jsonResponse);
-                string leaderboardDisplay = "\n";
-                foreach (LeaderboardEntry entry in leaderboardResponse.leaderboardEntries)
-                {
-                    leaderboardDisplay += entry.name + ": " + entry.score + "\n";
-                }
-
-                if (leaderboardText != null)
-                {
-                    leaderboardText.text = leaderboardDisplay;
-                }
-            }
-            else
-            {
-                if (leaderboardText != null)
-                {
-                    leaderboardText.text = "Error fetching leaderboard: " + request.error;
-                }
-            }
+    // Handle any errors that occur while fetching the leaderboard
+    private void HandleLeaderboardError(UnityWebRequest request)
+    {
+        if (leaderboardText != null)
+        {
+            leaderboardText.text = "Error fetching leaderboard: " + request.error;
         }
     }
 
-    public void RestartGame()
+    // Parse and display the leaderboard from the JSON response
+    private void DisplayLeaderboard(string jsonResponse)
     {
-        SubmitScore();
-        UnityEngine.SceneManagement.SceneManager.LoadScene("GameScene");
+        string formattedResponse = FormatLeaderboardResponse(jsonResponse);
+        LeaderboardResponse leaderboardResponse = JsonUtility.FromJson<LeaderboardResponse>(formattedResponse);
+        string leaderboardDisplay = BuildLeaderboardDisplay(leaderboardResponse);
+
+        if (leaderboardText != null)
+        {
+            leaderboardText.text = leaderboardDisplay;
+        }
     }
-  ```
-  This code snippet the method of managing player scores, sending them to an API over the Internet, and retrieving leaderboard information for an advanced game played on Unity. The process of preserving the player's score information at all times, adding new scores, and then sending them to the API is successfully implemented. This method allows the player to add scores using the "AddScore" method, send them to the API using the "SubmitScore" method, and retrieve leaderboard information from the Internet using the "GetLeaderboard" method. Also, the "RestartGame" method provides a process for updating the player's score and restarting the game. Successfully, this code uses the Unity WebRequest environment to interface with the API, allowing for online scoring and leaderboard display during gameplay, providing a better experience for the player. This approach allows players to save their scores online and get the latest competitive information in game formats like Endless Runner.
 
-## Critical Reflection 
-### Challenges and Area for Improvement 
+    // Ensure the JSON response is in the correct format
+    private string FormatLeaderboardResponse(string jsonResponse)
+    {
+        if (jsonResponse.StartsWith("["))
+        {
+            jsonResponse = "{\"leaderboardEntries\":" + jsonResponse + "}";
+        }
 
+        return jsonResponse;
+    }
+
+    // Build a string to display the leaderboard
+    private string BuildLeaderboardDisplay(LeaderboardResponse leaderboardResponse)
+    {
+        string leaderboardDisplay = "\n";
+        foreach (LeaderboardEntry entry in leaderboardResponse.leaderboardEntries)
+        {
+            leaderboardDisplay += entry.name + ": " + entry.score + "\n";
+        }
+
+        return leaderboardDisplay;
+    }
+  ``` 
+  In this code snippet I use my full code of the ScoreManager. Because this is the hardest part I done. ScoreMAnager is a method designed to implement a player score management and leaderboard system in Unity. Its main function is to control the player's score and send it to the server via API and retrieve the leaderboard. It makes it easy to send and receive data via JSON using UnityWebRequest. This class establishes a live and efficient interaction between the game and the web service, thereby providing the player with a user-friendly experience of manipulating the score and leaderboard system data. And I used chatgpt to create these code comments is its help to understand my code.Also I used chatgpt for get idea for made this.
 ### Future Improvements
 
 ## Bibliography 
