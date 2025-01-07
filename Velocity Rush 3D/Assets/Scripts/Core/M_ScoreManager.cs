@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 using TMPro;
 
-public class ScoreManager : MonoBehaviour
+public class M_ScoreManager : MonoBehaviour
 {
     // The current player's score
     public int Score { get; private set; }
