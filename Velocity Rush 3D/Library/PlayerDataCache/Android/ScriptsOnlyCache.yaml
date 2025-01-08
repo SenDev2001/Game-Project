@@ -18,6 +18,7 @@ ScriptsOnlyBuild:
     - M_RoadManager
     - M_ScoreManager
     - MenuController
+    - PauseMenu
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.InputSettings
     - UnityEngine.InputSystem.InputSystemObject
@@ -73,10 +74,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -202,14 +201,29 @@ ScriptsOnlyBuild:
     fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerPanel
     methodName: ResetDebugManager
   - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
+    methodName: CloseVolumePanel
+  - assembly: Assembly-CSharp
     fullTypeName: M_GameManager
     methodName: quitGame
   - assembly: Assembly-CSharp
     fullTypeName: M_GameManager
     methodName: GoToMenu
   - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
+    methodName: Resume
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
+    methodName: Menu
+  - assembly: Assembly-CSharp
     fullTypeName: M_GameManager
     methodName: RestartGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
+    methodName: Volume
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
+    methodName: Pause
   sceneClasses:
     Assets/Scenes/Game.unity:
     - Class: 1
@@ -277,41 +291,45 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 18998}
     - Class: 114
-      Script: {instanceID: 19346}
+      Script: {instanceID: 19228}
     - Class: 114
-      Script: {instanceID: 19526}
+      Script: {instanceID: 19348}
     - Class: 114
-      Script: {instanceID: 20118}
+      Script: {instanceID: 19528}
     - Class: 114
-      Script: {instanceID: 20172}
+      Script: {instanceID: 20120}
     - Class: 114
-      Script: {instanceID: 20384}
+      Script: {instanceID: 20174}
     - Class: 114
-      Script: {instanceID: 20760}
+      Script: {instanceID: 20386}
     - Class: 114
-      Script: {instanceID: 20928}
+      Script: {instanceID: 20762}
     - Class: 114
-      Script: {instanceID: 21134}
+      Script: {instanceID: 20930}
     - Class: 114
-      Script: {instanceID: 22010}
+      Script: {instanceID: 21136}
     - Class: 114
-      Script: {instanceID: 22240}
+      Script: {instanceID: 21904}
     - Class: 114
-      Script: {instanceID: 22254}
+      Script: {instanceID: 22012}
     - Class: 114
-      Script: {instanceID: 22750}
+      Script: {instanceID: 22242}
     - Class: 114
-      Script: {instanceID: 23104}
+      Script: {instanceID: 22256}
     - Class: 114
-      Script: {instanceID: 23402}
+      Script: {instanceID: 22752}
     - Class: 114
-      Script: {instanceID: 23578}
+      Script: {instanceID: 23106}
     - Class: 114
-      Script: {instanceID: 24182}
+      Script: {instanceID: 23404}
     - Class: 114
-      Script: {instanceID: 24394}
+      Script: {instanceID: 23580}
     - Class: 114
-      Script: {instanceID: 24770}
+      Script: {instanceID: 24184}
+    - Class: 114
+      Script: {instanceID: 24398}
+    - Class: 114
+      Script: {instanceID: 24774}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 136
@@ -396,87 +414,87 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 18590}
     - Class: 114
-      Script: {instanceID: 19264}
+      Script: {instanceID: 19266}
     - Class: 114
-      Script: {instanceID: 19380}
+      Script: {instanceID: 19382}
     - Class: 114
-      Script: {instanceID: 19592}
+      Script: {instanceID: 19594}
     - Class: 114
-      Script: {instanceID: 19652}
+      Script: {instanceID: 19654}
     - Class: 114
-      Script: {instanceID: 19748}
+      Script: {instanceID: 19750}
     - Class: 114
-      Script: {instanceID: 20172}
+      Script: {instanceID: 20174}
     - Class: 114
-      Script: {instanceID: 20344}
+      Script: {instanceID: 20346}
     - Class: 114
-      Script: {instanceID: 20384}
+      Script: {instanceID: 20386}
     - Class: 114
-      Script: {instanceID: 20518}
+      Script: {instanceID: 20520}
     - Class: 114
-      Script: {instanceID: 20538}
+      Script: {instanceID: 20540}
     - Class: 114
-      Script: {instanceID: 20784}
+      Script: {instanceID: 20786}
     - Class: 114
-      Script: {instanceID: 20918}
+      Script: {instanceID: 20920}
     - Class: 114
-      Script: {instanceID: 21722}
+      Script: {instanceID: 21724}
     - Class: 114
-      Script: {instanceID: 21746}
+      Script: {instanceID: 21748}
     - Class: 114
-      Script: {instanceID: 21814}
+      Script: {instanceID: 21816}
     - Class: 114
-      Script: {instanceID: 21902}
+      Script: {instanceID: 21904}
     - Class: 114
-      Script: {instanceID: 21914}
+      Script: {instanceID: 21916}
     - Class: 114
-      Script: {instanceID: 21932}
+      Script: {instanceID: 21934}
     - Class: 114
-      Script: {instanceID: 22010}
+      Script: {instanceID: 22012}
     - Class: 114
-      Script: {instanceID: 22018}
+      Script: {instanceID: 22020}
     - Class: 114
-      Script: {instanceID: 22298}
+      Script: {instanceID: 22300}
     - Class: 114
-      Script: {instanceID: 22302}
+      Script: {instanceID: 22304}
     - Class: 114
-      Script: {instanceID: 22332}
+      Script: {instanceID: 22334}
     - Class: 114
-      Script: {instanceID: 22698}
+      Script: {instanceID: 22700}
     - Class: 114
-      Script: {instanceID: 23090}
+      Script: {instanceID: 23092}
     - Class: 114
-      Script: {instanceID: 23104}
+      Script: {instanceID: 23106}
     - Class: 114
-      Script: {instanceID: 23200}
+      Script: {instanceID: 23202}
     - Class: 114
-      Script: {instanceID: 23208}
+      Script: {instanceID: 23210}
     - Class: 114
-      Script: {instanceID: 23374}
+      Script: {instanceID: 23376}
     - Class: 114
-      Script: {instanceID: 23424}
+      Script: {instanceID: 23426}
     - Class: 114
-      Script: {instanceID: 23488}
+      Script: {instanceID: 23490}
     - Class: 114
-      Script: {instanceID: 23578}
+      Script: {instanceID: 23580}
     - Class: 114
-      Script: {instanceID: 23596}
+      Script: {instanceID: 23598}
     - Class: 114
-      Script: {instanceID: 23738}
+      Script: {instanceID: 23740}
     - Class: 114
-      Script: {instanceID: 23938}
+      Script: {instanceID: 23940}
     - Class: 114
-      Script: {instanceID: 24090}
+      Script: {instanceID: 24092}
     - Class: 114
-      Script: {instanceID: 24144}
+      Script: {instanceID: 24146}
     - Class: 114
-      Script: {instanceID: 24182}
+      Script: {instanceID: 24184}
     - Class: 114
-      Script: {instanceID: 24614}
+      Script: {instanceID: 24618}
     - Class: 114
-      Script: {instanceID: 25526}
+      Script: {instanceID: 25530}
     - Class: 114
-      Script: {instanceID: 25892}
+      Script: {instanceID: 25896}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -962,6 +980,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnScrollMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: b6e031048d8643bcd0c67d3b053b1813
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PauseMenu
   - hash:
       serializedVersion: 2
       Hash: 715f7928b39881049ce8c46350cb8681
@@ -1528,7 +1552,7 @@ ScriptsOnlyBuild:
     className: ProbeVolumeAsset
   - hash:
       serializedVersion: 2
-      Hash: a9be9b02e54225437cab476a2f9f6341
+      Hash: c24a4430050c7daab95a383014b3370c
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: M_GameManager
@@ -2214,4 +2238,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Game.unity
-  playerPath: D:/Velocity Rush.apk
+  playerPath: D:/UCA Projects/Velocity Rush.apk
