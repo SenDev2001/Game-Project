@@ -150,7 +150,7 @@ GameObject:
   - component: {fileID: 4083800020966179440}
   m_Layer: 0
   m_Name: Concrete_Barrier_1 (5)
-  m_TagString: Player
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -239,8 +239,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.67557096, y: 0.8969129, z: 1.7364583}
-  m_Center: {x: 0.000000074505806, y: 0.44845644, z: 0}
+  m_Size: {x: 0.68184984, y: 0.73466796, z: 1.7364584}
+  m_Center: {x: 0.0031395257, y: 0.36733398, z: 1.579149e-17}
 --- !u!114 &4083800020966179440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -540,7 +540,7 @@ GameObject:
   - component: {fileID: 7815017649696420159}
   m_Layer: 0
   m_Name: Concrete_Barrier_1 (2)
-  m_TagString: Player
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -629,8 +629,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.67557096, y: 0.8969129, z: 1.7364583}
-  m_Center: {x: 0.000000074505806, y: 0.44845644, z: 0}
+  m_Size: {x: 0.68458086, y: 0.7692382, z: 1.7364584}
+  m_Center: {x: 0.0045050383, y: 0.3846191, z: 6.0889394e-18}
 --- !u!114 &7815017649696420159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1636,7 +1636,7 @@ GameObject:
   - component: {fileID: 7107460293027409694}
   m_Layer: 0
   m_Name: Bus
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3294,7 +3294,7 @@ GameObject:
   - component: {fileID: 2122982623950873978}
   m_Layer: 0
   m_Name: Concrete_Barrier_1 (4)
-  m_TagString: Player
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3383,8 +3383,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.67557096, y: 0.8969129, z: 1.7364583}
-  m_Center: {x: 0.000000074505806, y: 0.44845644, z: 0}
+  m_Size: {x: 0.6496794, y: 0.74202985, z: 1.7364584}
+  m_Center: {x: -0.012945682, y: 0.37101492, z: -6.0412044e-17}
 --- !u!114 &2122982623950873978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6969,7 +6969,7 @@ GameObject:
   - component: {fileID: 6715691354193133788}
   m_Layer: 0
   m_Name: Concrete_Barrier_1 (3)
-  m_TagString: Player
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7058,8 +7058,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.67557096, y: 0.8969129, z: 1.7364583}
-  m_Center: {x: 0.000000074505806, y: 0.44845644, z: 0}
+  m_Size: {x: 0.688199, y: 0.76032096, z: 1.7364584}
+  m_Center: {x: 0.006314099, y: 0.38016048, z: 3.1333952e-17}
 --- !u!114 &6715691354193133788
 MonoBehaviour:
   m_ObjectHideFlags: 0

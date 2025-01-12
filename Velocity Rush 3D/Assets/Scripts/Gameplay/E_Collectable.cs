@@ -3,15 +3,22 @@ using UnityEngine;
 public class E_Collectable : MonoBehaviour
 {
     public int value = 1; 
-    private M_AudioManager audioManager;  
+    private M_AudioManager audioManager;
+    private M_ScoreManager scoreManager;
 
     void Start()
     {
+        audioManager = FindAnyObjectByType<M_AudioManager>();
+        scoreManager = FindAnyObjectByType<M_ScoreManager>();
    
         audioManager = FindObjectOfType<M_AudioManager>();
         if (audioManager == null)
         {
             Debug.LogError("AM not found.");
+        }
+        if (scoreManager == null)
+        {
+            Debug.LogError("SM not found");
         }
     }
 
@@ -20,19 +27,14 @@ public class E_Collectable : MonoBehaviour
         if (!other.CompareTag("Player"))
         return;
 
-
-        M_ScoreManager scoreManager = FindObjectOfType<M_ScoreManager>();
-        if (scoreManager == null)
+        if (scoreManager != null)
         {
-            Debug.LogError("SM not found ");
-            return;
+            scoreManager.AddScore(value);
         }
-
-        scoreManager.AddScore(value);
 
         if (audioManager != null)
         {
-            audioManager.PlaySound(audioManager.coinCollectClip);
+            audioManager.PlayCoinCollectSound();
         }
 
         Destroy(gameObject);
