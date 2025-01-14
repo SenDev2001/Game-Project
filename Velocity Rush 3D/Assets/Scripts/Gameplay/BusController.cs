@@ -3,7 +3,7 @@ using UnityEngine;
 public class BusMovementTrigger : MonoBehaviour
 {
     public GameObject bus;         
-    public float moveSpeed = -5f;    
+    public float moveSpeed = -8f;    
     private bool shouldMove = false;  
 
     void OnTriggerEnter(Collider other)

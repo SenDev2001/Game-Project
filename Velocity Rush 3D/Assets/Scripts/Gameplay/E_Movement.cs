@@ -11,11 +11,11 @@ namespace Gameplay
 
         public float laneDistance = 3f;
         public float leftrightSpeed = 9.5f;
-        public float forwardSpeed = 10f;
+        public float forwardSpeed = 10.5f;
 
         private int roadCounter = 0;
         public int roadsPerSpeedIncrease = 3;
-        public float speedIncreaseFactor = 1.1f;
+        public float speedIncreaseFactor = 1.2f;
 
        
 

@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using Unity.VisualScripting;
 
 public class M_GameManager : MonoBehaviour
 {
@@ -13,20 +14,22 @@ public class M_GameManager : MonoBehaviour
 
     void Start()
     {
+        // Hide restart UI when the game starts
         if (restartUI != null)
         {
             restartUI.SetActive(false);
             
         }
-
+        // Show the pause button when the game starts
         if (pauseButton != null)
         {
             pauseButton.SetActive(true);
-        }    
+        }
+        //Get player's name from saved data
         playerName = PlayerPrefs.GetString("PlayerName", "Guest");
-
     }
 
+   // restart UI and pauses the game
     public void ShowRestartUI()
     {
 
@@ -35,11 +38,12 @@ public class M_GameManager : MonoBehaviour
             restartUI.SetActive(true);
             Time.timeScale = 0;
         }
+        // Hide pause button when the game is paused
         if (pauseButton != null)
         {
             pauseButton.SetActive(false);
         }
-
+        // Submit the score if the score manager exists
         M_ScoreManager scoreManager = FindObjectOfType<M_ScoreManager>();
         if (scoreManager != null)
         {
@@ -61,6 +65,7 @@ public class M_GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
+    // This adds points to the score
     public void AddScore(int amount)
     {
         score += amount;
