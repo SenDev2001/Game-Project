@@ -227,6 +227,7 @@ UnityEngine.Application::OpenURL
 UnityEngine.Application::Quit
 UnityEngine.Application::get_platform
 UnityEngine.AsyncOperation::InternalDestroy
+UnityEngine.Audio.AudioMixer::SetFloat
 UnityEngine.AudioSettings::StartAudioOutput
 UnityEngine.AudioSettings::StopAudioOutput
 UnityEngine.AudioSource::PlayOneShotHelper
@@ -719,6 +720,7 @@ UnityEngine.Object::FindObjectFromInstanceID
 UnityEngine.Object::Internal_CloneSingle
 UnityEngine.Object::Internal_CloneSingleWithParent
 UnityEngine.Object::Internal_InstantiateSingle_Injected
+UnityEngine.Object::FindObjectsByType
 UnityEngine.Object::FindObjectsOfType
 UnityEngine.ObjectGUIState::Internal_Create
 UnityEngine.ObjectGUIState::Internal_Destroy

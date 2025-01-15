@@ -976,6 +976,14 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.AsyncOperation
 
+	//Start Registrations for type : UnityEngine.Audio.AudioMixer
+
+		//System.Boolean UnityEngine.Audio.AudioMixer::SetFloat(System.String,System.Single)
+		void Register_UnityEngine_Audio_AudioMixer_SetFloat();
+		Register_UnityEngine_Audio_AudioMixer_SetFloat();
+
+	//End Registrations for type : UnityEngine.Audio.AudioMixer
+
 	//Start Registrations for type : UnityEngine.AudioSettings
 
 		//System.Boolean UnityEngine.AudioSettings::StartAudioOutput()
@@ -3197,6 +3205,10 @@ void RegisterAllStrippedInternalCalls()
 		//UnityEngine.Object UnityEngine.Object::Internal_InstantiateSingle_Injected(UnityEngine.Object,UnityEngine.Vector3&,UnityEngine.Quaternion&)
 		void Register_UnityEngine_Object_Internal_InstantiateSingle_Injected();
 		Register_UnityEngine_Object_Internal_InstantiateSingle_Injected();
+
+		//UnityEngine.Object[] UnityEngine.Object::FindObjectsByType(System.Type,UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
+		void Register_UnityEngine_Object_FindObjectsByType();
+		Register_UnityEngine_Object_FindObjectsByType();
 
 		//UnityEngine.Object[] UnityEngine.Object::FindObjectsOfType(System.Type,System.Boolean)
 		void Register_UnityEngine_Object_FindObjectsOfType();

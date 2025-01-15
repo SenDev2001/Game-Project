@@ -366,6 +366,7 @@
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/UnityEngine.UI.ref.dll"
 -analyzer:"D:/Projects/2022.3.48f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"D:/Projects/2022.3.48f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+"Assets/Scripts/Audio/AudioSetting.cs"
 "Assets/Scripts/Audio/M_AudioManager.cs"
 "Assets/Scripts/Audio/M_CollisionAudio.cs"
 "Assets/Scripts/Core/M_GameManager.cs"

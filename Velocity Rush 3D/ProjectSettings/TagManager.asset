@@ -6,6 +6,7 @@ TagManager:
   tags:
   - RoadEnd
   - Obstacle
+  - BusStop
   layers:
   - Default
   - TransparentFX
