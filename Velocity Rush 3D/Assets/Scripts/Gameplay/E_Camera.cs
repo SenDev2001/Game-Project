@@ -8,7 +8,7 @@ namespace Gameplay
     public class E_Camera : MonoBehaviour
     {
         public Transform player;
-        public Vector3 offset = new Vector3(0f, 3.79f, -3.16f);         
+        public Vector3 offset = new Vector3(0f, 4f, -3.9f);         
         public float smoothSpeed = 0.125f;
         public float initialXRotation = 27.5f;
 

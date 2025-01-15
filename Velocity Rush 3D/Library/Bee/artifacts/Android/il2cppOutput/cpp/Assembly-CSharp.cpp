@@ -6728,7 +6728,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void E_Camera__ctor_mC1815F5F563F6907892C3835
 	{
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0;
 		memset((&L_0), 0, sizeof(L_0));
-		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_0), (0.0f), (3.78999996f), (-3.16000009f), NULL);
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_0), (0.0f), (4.0f), (-3.9000001f), NULL);
 		__this->___offset = L_0;
 		__this->___smoothSpeed = (0.125f);
 		__this->___initialXRotation = (27.5f);
