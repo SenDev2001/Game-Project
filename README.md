@@ -22,6 +22,6 @@ Velocity Rush is an endless Runner game available for Android And WebGl Platform
 - Create New Web App
 - Open bash and Install flask (pip install flask)
 - Upload My Flask app (flask.py)
-- Go to this and you can se Result. If u put different name for the web app change it to your given naame(https://sendev2001.pythonanywhere.com/leaderboard";)
+- Go to this and you can se Result. If u put different name for the web app change it to your given name(https://sendev2001.pythonanywhere.com/leaderboard";)
 
   ## Tank You Enjoy My Game !
