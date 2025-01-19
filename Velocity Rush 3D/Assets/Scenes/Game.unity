@@ -692,9 +692,6 @@ GameObject:
   - component: {fileID: 258908432}
   - component: {fileID: 258908431}
   - component: {fileID: 258908435}
-  - component: {fileID: 258908439}
-  - component: {fileID: 258908438}
-  - component: {fileID: 258908436}
   - component: {fileID: 258908443}
   - component: {fileID: 258908440}
   - component: {fileID: 258908442}
@@ -819,50 +816,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &258908436
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 258908429}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdfdc29e8fdf4c846813a45b9b38c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &258908438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 258908429}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fcda7d4f4e70ce4f9e19354150f8724, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpForce: 9
-  gravityScale: 1.5
-  groundCheckDistance: 1
---- !u!114 &258908439
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 258908429}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56396e9b5b501be44bebe39267d688c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  laneDistance: 2.39
-  leftrightSpeed: 10
-  forwardSpeed: 10
-  roadsPerSpeedIncrease: 3
-  speedIncreaseFactor: 1.1
 --- !u!114 &258908440
 MonoBehaviour:
   m_ObjectHideFlags: 0
