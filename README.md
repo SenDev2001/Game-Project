@@ -17,3 +17,11 @@ Velocity Rush is an endless Runner game available for Android And WebGl Platform
 - Left Arrow Key - Move Left
 - Right Arrow Key - Move Right
   
+##### How Set Up Flask Api 
+- Go to pythonanywhere And sign up or Log in
+- Create New Web App
+- Open bash and Install flask (pip install flask)
+- Upload My Flask app (flask.py)
+- Go to this and you can se Result. If u put different name for the web app change it to your given naame(https://sendev2001.pythonanywhere.com/leaderboard";)
+
+  ## Tank You Enjoy My Game !
