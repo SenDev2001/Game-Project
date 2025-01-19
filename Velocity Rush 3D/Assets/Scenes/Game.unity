@@ -692,9 +692,9 @@ GameObject:
   - component: {fileID: 258908432}
   - component: {fileID: 258908431}
   - component: {fileID: 258908435}
-  - component: {fileID: 258908443}
   - component: {fileID: 258908440}
   - component: {fileID: 258908442}
+  - component: {fileID: 258908445}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -841,7 +841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59e07cf8fb9460c4b9cf8cb58832313a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &258908443
+--- !u!114 &258908445
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -850,15 +850,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 258908429}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 245cefd1933b5ed45a0e8e15c28654ee, type: 3}
+  m_Script: {fileID: 11500000, guid: a23f2c01d15ce3140b5111ab392a100a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   laneDistance: 2.39
   leftrightSpeed: 10
   forwardSpeed: 12
-  jumpForce: 9
+  jumpForce: 9.5
   minimumSwipeDistance: 40
-  gravityScale: 1.2
+  gravityScale: 1.96
   groundCheckDistance: 1.1
 --- !u!1 &290045692
 GameObject:

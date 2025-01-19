@@ -379,7 +379,7 @@
 "Assets/Scripts/Gameplay/E_Obstacle.cs"
 "Assets/Scripts/Gameplay/E_PlayerHealth.cs"
 "Assets/Scripts/Gameplay/GameController.cs"
-"Assets/Scripts/Gameplay/SwipeMovementController.cs"
+"Assets/Scripts/Gameplay/PlayerMovementController.cs"
 "Assets/Scripts/Menu/MenuController.cs"
 "Assets/Scripts/Menu/PauseMenu.cs"
 "Assets/Scripts/PlayerInput.cs"

@@ -35,6 +35,15 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Keyboard"",
+                    ""type"": ""Value"",
+                    ""id"": ""606f6088-5f0a-4e45-b322-4fcd2d3e289a"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -48,6 +57,50 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""action"": ""Swipe"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""Arrowcontrols"",
+                    ""id"": ""bc886be0-1e16-4fd2-94f2-e1187684986b"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Keyboard"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""03185bc7-272c-4bb2-b00c-93fcf40cb913"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Keyboard"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""d6b68416-0aa9-420d-8c53-caba4243023b"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Keyboard"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""7dceebfe-7986-4600-851d-31d630d48b58"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Keyboard"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
                 }
             ]
         }
@@ -57,6 +110,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         // Move
         m_Move = asset.FindActionMap("Move", throwIfNotFound: true);
         m_Move_Swipe = m_Move.FindAction("Swipe", throwIfNotFound: true);
+        m_Move_Keyboard = m_Move.FindAction("Keyboard", throwIfNotFound: true);
     }
 
     ~@PlayerInput()
@@ -124,11 +178,13 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Move;
     private List<IMoveActions> m_MoveActionsCallbackInterfaces = new List<IMoveActions>();
     private readonly InputAction m_Move_Swipe;
+    private readonly InputAction m_Move_Keyboard;
     public struct MoveActions
     {
         private @PlayerInput m_Wrapper;
         public MoveActions(@PlayerInput wrapper) { m_Wrapper = wrapper; }
         public InputAction @Swipe => m_Wrapper.m_Move_Swipe;
+        public InputAction @Keyboard => m_Wrapper.m_Move_Keyboard;
         public InputActionMap Get() { return m_Wrapper.m_Move; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -141,6 +197,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @Swipe.started += instance.OnSwipe;
             @Swipe.performed += instance.OnSwipe;
             @Swipe.canceled += instance.OnSwipe;
+            @Keyboard.started += instance.OnKeyboard;
+            @Keyboard.performed += instance.OnKeyboard;
+            @Keyboard.canceled += instance.OnKeyboard;
         }
 
         private void UnregisterCallbacks(IMoveActions instance)
@@ -148,6 +207,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @Swipe.started -= instance.OnSwipe;
             @Swipe.performed -= instance.OnSwipe;
             @Swipe.canceled -= instance.OnSwipe;
+            @Keyboard.started -= instance.OnKeyboard;
+            @Keyboard.performed -= instance.OnKeyboard;
+            @Keyboard.canceled -= instance.OnKeyboard;
         }
 
         public void RemoveCallbacks(IMoveActions instance)
@@ -168,5 +230,6 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
     public interface IMoveActions
     {
         void OnSwipe(InputAction.CallbackContext context);
+        void OnKeyboard(InputAction.CallbackContext context);
     }
 }
