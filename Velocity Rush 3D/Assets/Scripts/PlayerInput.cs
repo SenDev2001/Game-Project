@@ -24,23 +24,14 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
     ""name"": ""PlayerInput"",
     ""maps"": [
         {
-            ""name"": ""GamePlay"",
+            ""name"": ""Move"",
             ""id"": ""14c57bf5-f5d8-4ef4-a4f1-4fc2c192aad6"",
             ""actions"": [
                 {
-                    ""name"": ""Jump"",
+                    ""name"": ""Swipe"",
                     ""type"": ""Value"",
-                    ""id"": ""011b2863-c94f-40ac-9024-63f36ffbccf6"",
+                    ""id"": ""bcb29ea7-dc0a-4e10-ba21-ab1d95f7adbd"",
                     ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""LaneSwitch"",
-                    ""type"": ""Value"",
-                    ""id"": ""0c517419-10a5-4a97-ac59-bd06eef1a0d1"",
-                    ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
@@ -49,62 +40,28 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""78456065-03ae-4045-9842-1ebfc901f9a2"",
-                    ""path"": ""<Touchscreen>/delta/up"",
+                    ""id"": ""c43960e3-a240-4e87-beb0-e0c868605628"",
+                    ""path"": ""<Pointer>/delta"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Jump"",
+                    ""action"": ""Swipe"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""2D Vector"",
-                    ""id"": ""db134358-896d-4560-8cfa-3126b4f664cd"",
-                    ""path"": ""2DVector"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""LaneSwitch"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""left"",
-                    ""id"": ""0c194fdd-bd44-4c58-bac1-667839ca70cd"",
-                    ""path"": ""<Touchscreen>/delta/left"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""LaneSwitch"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""right"",
-                    ""id"": ""9cdda572-76ef-446b-b461-d91a6fc549f4"",
-                    ""path"": ""<Touchscreen>/delta/right"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""LaneSwitch"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
                 }
             ]
         }
     ],
     ""controlSchemes"": []
 }");
-        // GamePlay
-        m_GamePlay = asset.FindActionMap("GamePlay", throwIfNotFound: true);
-        m_GamePlay_Jump = m_GamePlay.FindAction("Jump", throwIfNotFound: true);
-        m_GamePlay_LaneSwitch = m_GamePlay.FindAction("LaneSwitch", throwIfNotFound: true);
+        // Move
+        m_Move = asset.FindActionMap("Move", throwIfNotFound: true);
+        m_Move_Swipe = m_Move.FindAction("Swipe", throwIfNotFound: true);
     }
 
     ~@PlayerInput()
     {
-        UnityEngine.Debug.Assert(!m_GamePlay.enabled, "This will cause a leak and performance issues, PlayerInput.GamePlay.Disable() has not been called.");
+        UnityEngine.Debug.Assert(!m_Move.enabled, "This will cause a leak and performance issues, PlayerInput.Move.Disable() has not been called.");
     }
 
     public void Dispose()
@@ -163,62 +120,53 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         return asset.FindBinding(bindingMask, out action);
     }
 
-    // GamePlay
-    private readonly InputActionMap m_GamePlay;
-    private List<IGamePlayActions> m_GamePlayActionsCallbackInterfaces = new List<IGamePlayActions>();
-    private readonly InputAction m_GamePlay_Jump;
-    private readonly InputAction m_GamePlay_LaneSwitch;
-    public struct GamePlayActions
+    // Move
+    private readonly InputActionMap m_Move;
+    private List<IMoveActions> m_MoveActionsCallbackInterfaces = new List<IMoveActions>();
+    private readonly InputAction m_Move_Swipe;
+    public struct MoveActions
     {
         private @PlayerInput m_Wrapper;
-        public GamePlayActions(@PlayerInput wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Jump => m_Wrapper.m_GamePlay_Jump;
-        public InputAction @LaneSwitch => m_Wrapper.m_GamePlay_LaneSwitch;
-        public InputActionMap Get() { return m_Wrapper.m_GamePlay; }
+        public MoveActions(@PlayerInput wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Swipe => m_Wrapper.m_Move_Swipe;
+        public InputActionMap Get() { return m_Wrapper.m_Move; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
         public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(GamePlayActions set) { return set.Get(); }
-        public void AddCallbacks(IGamePlayActions instance)
+        public static implicit operator InputActionMap(MoveActions set) { return set.Get(); }
+        public void AddCallbacks(IMoveActions instance)
         {
-            if (instance == null || m_Wrapper.m_GamePlayActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_GamePlayActionsCallbackInterfaces.Add(instance);
-            @Jump.started += instance.OnJump;
-            @Jump.performed += instance.OnJump;
-            @Jump.canceled += instance.OnJump;
-            @LaneSwitch.started += instance.OnLaneSwitch;
-            @LaneSwitch.performed += instance.OnLaneSwitch;
-            @LaneSwitch.canceled += instance.OnLaneSwitch;
+            if (instance == null || m_Wrapper.m_MoveActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_MoveActionsCallbackInterfaces.Add(instance);
+            @Swipe.started += instance.OnSwipe;
+            @Swipe.performed += instance.OnSwipe;
+            @Swipe.canceled += instance.OnSwipe;
         }
 
-        private void UnregisterCallbacks(IGamePlayActions instance)
+        private void UnregisterCallbacks(IMoveActions instance)
         {
-            @Jump.started -= instance.OnJump;
-            @Jump.performed -= instance.OnJump;
-            @Jump.canceled -= instance.OnJump;
-            @LaneSwitch.started -= instance.OnLaneSwitch;
-            @LaneSwitch.performed -= instance.OnLaneSwitch;
-            @LaneSwitch.canceled -= instance.OnLaneSwitch;
+            @Swipe.started -= instance.OnSwipe;
+            @Swipe.performed -= instance.OnSwipe;
+            @Swipe.canceled -= instance.OnSwipe;
         }
 
-        public void RemoveCallbacks(IGamePlayActions instance)
+        public void RemoveCallbacks(IMoveActions instance)
         {
-            if (m_Wrapper.m_GamePlayActionsCallbackInterfaces.Remove(instance))
+            if (m_Wrapper.m_MoveActionsCallbackInterfaces.Remove(instance))
                 UnregisterCallbacks(instance);
         }
 
-        public void SetCallbacks(IGamePlayActions instance)
+        public void SetCallbacks(IMoveActions instance)
         {
-            foreach (var item in m_Wrapper.m_GamePlayActionsCallbackInterfaces)
+            foreach (var item in m_Wrapper.m_MoveActionsCallbackInterfaces)
                 UnregisterCallbacks(item);
-            m_Wrapper.m_GamePlayActionsCallbackInterfaces.Clear();
+            m_Wrapper.m_MoveActionsCallbackInterfaces.Clear();
             AddCallbacks(instance);
         }
     }
-    public GamePlayActions @GamePlay => new GamePlayActions(this);
-    public interface IGamePlayActions
+    public MoveActions @Move => new MoveActions(this);
+    public interface IMoveActions
     {
-        void OnJump(InputAction.CallbackContext context);
-        void OnLaneSwitch(InputAction.CallbackContext context);
+        void OnSwipe(InputAction.CallbackContext context);
     }
 }

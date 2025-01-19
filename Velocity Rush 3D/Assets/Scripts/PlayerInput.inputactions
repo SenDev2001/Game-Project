@@ -2,23 +2,14 @@
     "name": "PlayerInput",
     "maps": [
         {
-            "name": "GamePlay",
+            "name": "Move",
             "id": "14c57bf5-f5d8-4ef4-a4f1-4fc2c192aad6",
             "actions": [
                 {
-                    "name": "Jump",
+                    "name": "Swipe",
                     "type": "Value",
-                    "id": "011b2863-c94f-40ac-9024-63f36ffbccf6",
+                    "id": "bcb29ea7-dc0a-4e10-ba21-ab1d95f7adbd",
                     "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                },
-                {
-                    "name": "LaneSwitch",
-                    "type": "Value",
-                    "id": "0c517419-10a5-4a97-ac59-bd06eef1a0d1",
-                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -27,47 +18,14 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "78456065-03ae-4045-9842-1ebfc901f9a2",
-                    "path": "<Touchscreen>/delta/up",
+                    "id": "c43960e3-a240-4e87-beb0-e0c868605628",
+                    "path": "<Pointer>/delta",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Jump",
+                    "action": "Swipe",
                     "isComposite": false,
                     "isPartOfComposite": false
-                },
-                {
-                    "name": "2D Vector",
-                    "id": "db134358-896d-4560-8cfa-3126b4f664cd",
-                    "path": "2DVector",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "LaneSwitch",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "left",
-                    "id": "0c194fdd-bd44-4c58-bac1-667839ca70cd",
-                    "path": "<Touchscreen>/delta/left",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "LaneSwitch",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "right",
-                    "id": "9cdda572-76ef-446b-b461-d91a6fc549f4",
-                    "path": "<Touchscreen>/delta/right",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "LaneSwitch",
-                    "isComposite": false,
-                    "isPartOfComposite": true
                 }
             ]
         }
