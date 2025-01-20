@@ -376,6 +376,7 @@ UnityEngine.HDROutputSettings::GetMinToneMapLuminance
 UnityEngine.HDROutputSettings::GetPaperWhiteNits
 UnityEngine.HDROutputSettings::GetDisplayColorGamut
 UnityEngine.Input::CheckDisabled
+UnityEngine.Input::GetKeyDownInt
 UnityEngine.Input::GetMouseButton
 UnityEngine.Input::GetMouseButtonDown
 UnityEngine.Input::GetMouseButtonUp

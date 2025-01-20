@@ -14,7 +14,7 @@ namespace Gameplay
         public float leftrightSpeed = 10f;
         public float forwardSpeed = 12f;
         public float jumpForce = 7f;
-        public float minimumSwipeDistance = 40f; // Adjust based on your swipe requirements
+        public float minimumSwipeDistance = 40f; 
         public float gravityScale = 1.2f;
         public float groundCheckDistance = 1.1f;
 
@@ -27,31 +27,45 @@ namespace Gameplay
         private Vector2 swipeDelta;
         private float lastSwipeTime;
         private float swipeCooldown = 0.1f;
-        private float lastKeyboardTime; // For keyboard cooldown
-        private float keyboardCooldown = 0.1f; // Cooldown time for keyboard control
+        private float lastKeyboardTime;
+        private float keyboardCooldown = 0.1f; 
 
         private void Awake()
         {
             var inputActions = new PlayerInput();
 
-            // Initialize both swipe and keyboard actions
             swipeAction = inputActions.Move.Swipe;
             keyboardAction = inputActions.Move.Keyboard;
-
-            swipeAction.Enable();
-            keyboardAction.Enable();
         }
 
         private void Start()
         {
             _rb = GetComponent<Rigidbody>();
             _rb.constraints = RigidbodyConstraints.FreezeRotation;
+
+            //  swipe and keyboard are enabled/disabled based on platform
+            SwitchInputMethod();
         }
 
         private void Update()
         {
-            DetectSwipe(); // Handle swipe control
-            HandleKeyboardInput(); // Handle keyboard control
+           
+            if (Application.platform == RuntimePlatform.Android)
+            {
+            
+                DetectSwipe();
+                HandleKeyboardInput(false); 
+            }
+            else if (Application.platform == RuntimePlatform.WebGLPlayer)
+            {
+                DetectSwipe(false);
+                HandleKeyboardInput(true);
+            }
+            else
+            {
+                DetectSwipe(true);
+                HandleKeyboardInput(true);
+            }
 
             MoveForward();
             MoveSideToSide();
@@ -65,11 +79,19 @@ namespace Gameplay
             keyboardAction.Disable();
         }
 
-        private void DetectSwipe()
+        private void DetectSwipe(bool enable = true)
         {
+            if (!enable)
+            {
+                swipeAction.Disable();
+                return;
+            }
+            swipeAction.Enable(); 
+
             if (Time.time - lastSwipeTime < swipeCooldown) return;
 
             swipeDelta = swipeAction.ReadValue<Vector2>();
+
             if (swipeDelta.magnitude >= minimumSwipeDistance)
             {
                 ProcessSwipe(swipeDelta);
@@ -77,46 +99,49 @@ namespace Gameplay
                 lastSwipeTime = Time.time;
             }
         }
-
         private void ProcessSwipe(Vector2 delta)
         {
-            if (Mathf.Abs(delta.x) > Mathf.Abs(delta.y)) // Horizontal swipe (left-right)
+            if (Mathf.Abs(delta.x) > Mathf.Abs(delta.y))
             {
                 if (delta.x > 0) MoveRight();
                 else MoveLeft();
             }
-            else if (delta.y > 0) // Vertical swipe (up)
+            else if (delta.y > 0) 
             {
                 Jump();
             }
         }
-
-        private void HandleKeyboardInput()
+        private void HandleKeyboardInput(bool enable = true)
         {
-            // Ensure cooldown between keyboard inputs
+            if (!enable)
+            {
+                keyboardAction.Disable(); 
+                return;
+            }
+
+            keyboardAction.Enable(); 
+
+           
             if (Time.time - lastKeyboardTime < keyboardCooldown) return;
 
             Vector2 input = keyboardAction.ReadValue<Vector2>();
 
-            if (input.y > 0) Jump(); // Jump on up arrow key
-            if (input.x < 0) MoveLeft(); // Move left on left arrow key
-            if (input.x > 0) MoveRight(); // Move right on right arrow key
+            if (input.y > 0) Jump(); 
+            if (input.x < 0) MoveLeft(); 
+            if (input.x > 0) MoveRight(); 
 
-            lastKeyboardTime = Time.time; // Update the last keyboard input time
+            lastKeyboardTime = Time.time; 
         }
-
         private void MoveForward()
         {
             transform.Translate(Vector3.forward * forwardSpeed * Time.deltaTime);
         }
-
         private void MoveSideToSide()
         {
             float targetX = (_targetLane - 1) * laneDistance;
             _targetPosition = new Vector3(targetX, transform.position.y, transform.position.z);
             transform.position = Vector3.MoveTowards(transform.position, _targetPosition, leftrightSpeed * Time.deltaTime);
         }
-
         private void Jump()
         {
             if (_isGrounded && _canJump)
@@ -126,13 +151,11 @@ namespace Gameplay
                 _canJump = false;
             }
         }
-
         private void CheckGroundStatus()
         {
             _isGrounded = Physics.Raycast(transform.position, Vector3.down, groundCheckDistance);
             if (_isGrounded) _canJump = true;
         }
-
         private void ApplyCustomGravity()
         {
             if (!_isGrounded)
@@ -140,15 +163,32 @@ namespace Gameplay
                 _rb.AddForce(Physics.gravity * gravityScale, ForceMode.Acceleration);
             }
         }
-
         public void MoveLeft()
         {
             if (_targetLane > 0) _targetLane--;
         }
-
         public void MoveRight()
         {
             if (_targetLane < 2) _targetLane++;
+        }
+        private void SwitchInputMethod()
+        {
+           
+            if (Application.platform == RuntimePlatform.Android)
+            {
+                swipeAction.Enable();  
+                keyboardAction.Disable();
+            }
+            else if (Application.platform == RuntimePlatform.WebGLPlayer)
+            {
+                swipeAction.Disable();  
+                keyboardAction.Enable();  
+            }
+            else
+            {
+                swipeAction.Enable();  
+                keyboardAction.Enable();
+            }
         }
     }
 }

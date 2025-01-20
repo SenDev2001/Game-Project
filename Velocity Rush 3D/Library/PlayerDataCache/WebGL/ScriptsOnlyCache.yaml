@@ -17,6 +17,7 @@ ScriptsOnlyBuild:
     - MenuController
     - PauseMenu
     Unity.InputSystem.dll:
+    - UnityEngine.InputSystem.InputActionAsset
     - UnityEngine.InputSystem.InputSettings
     - UnityEngine.InputSystem.InputSystemObject
     - UnityEngine.InputSystem.RemoteInputPlayerConnection
@@ -71,10 +72,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -204,7 +203,7 @@ ScriptsOnlyBuild:
     methodName: CloseVolumePanel
   - assembly: Assembly-CSharp
     fullTypeName: M_GameManager
-    methodName: quitGame
+    methodName: QuitGame
   - assembly: Assembly-CSharp
     fullTypeName: M_GameManager
     methodName: GoToMenu

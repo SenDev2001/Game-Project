@@ -1,16 +1,13 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using TMPro;
-using Unity.VisualScripting;
 
 public class M_GameManager : MonoBehaviour
 {
     public GameObject restartUI;
     public GameObject pauseButton;
-    
+
     private int score = 0;
     private string playerName;
-    
 
     void Start()
     {
@@ -18,31 +15,33 @@ public class M_GameManager : MonoBehaviour
         if (restartUI != null)
         {
             restartUI.SetActive(false);
-            
         }
+
         // Show the pause button when the game starts
         if (pauseButton != null)
         {
             pauseButton.SetActive(true);
         }
-        //Get player's name from saved data
+
+        // Get player's name from saved data
         playerName = PlayerPrefs.GetString("PlayerName", "Guest");
     }
 
-   // restart UI and pauses the game
+    // Show restart UI and pause the game
     public void ShowRestartUI()
     {
-
         if (restartUI != null)
         {
             restartUI.SetActive(true);
             Time.timeScale = 0;
         }
+
         // Hide pause button when the game is paused
         if (pauseButton != null)
         {
             pauseButton.SetActive(false);
         }
+
         // Submit the score if the score manager exists
         M_ScoreManager scoreManager = FindObjectOfType<M_ScoreManager>();
         if (scoreManager != null)
@@ -61,16 +60,14 @@ public class M_GameManager : MonoBehaviour
             scoreManager.ResetScore();
         }
 
-
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    // This adds points to the score
+    // Adds points to the score
     public void AddScore(int amount)
     {
         score += amount;
     }
-
 
     public void GoToMenu()
     {
@@ -81,20 +78,24 @@ public class M_GameManager : MonoBehaviour
         {
             scoreManager.ResetScore();
         }
+
         SceneManager.LoadScene("Menu");
     }
 
-    public void quitGame()
+    // Quit button handler
+    public void QuitGame()
     {
-
-        {
-            Debug.Log("Quitting the game...");
-            Application.Quit();
+        Debug.Log("Quit button pressed.");
 
 #if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
+        // Stop play mode in the Unity Editor
+        UnityEditor.EditorApplication.isPlaying = false;
+#elif UNITY_WEBGL
+        // Reload the current page for WebGL
+        Application.OpenURL(Application.absoluteURL); 
+#elif UNITY_ANDROID
+        // Quit the app on Android
+        Application.Quit();
 #endif
-
-        }
     }
 }
