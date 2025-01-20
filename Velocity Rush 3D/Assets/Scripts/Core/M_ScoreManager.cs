@@ -111,7 +111,15 @@ public class M_ScoreManager : MonoBehaviour
 
         if (leaderboardText != null)
         {
-            leaderboardText.text = "Error submitting score: " + request.error;
+            if (request.error.Contains("HTTP"))
+            {
+                leaderboardText.text = "No Coins Collected! Try Again!";
+            }
+            else
+            {
+
+                leaderboardText.text = "Error: " + request.error + "\nPlease try again!";
+            }
         }
     }
 

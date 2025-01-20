@@ -13,9 +13,9 @@ namespace Gameplay
         public float laneDistance = 2.39f;
         public float leftrightSpeed = 10f;
         public float forwardSpeed = 12f;
-        public float jumpForce = 6f;
+        public float jumpForce = 7f;
         public float minimumSwipeDistance = 40f; // Adjust based on your swipe requirements
-        public float gravityScale = 1.5f;
+        public float gravityScale = 1.2f;
         public float groundCheckDistance = 1.1f;
 
         private bool _isGrounded;

@@ -856,9 +856,9 @@ MonoBehaviour:
   laneDistance: 2.39
   leftrightSpeed: 10
   forwardSpeed: 12
-  jumpForce: 9.5
+  jumpForce: 7
   minimumSwipeDistance: 40
-  gravityScale: 1.96
+  gravityScale: 1.2
   groundCheckDistance: 1.1
 --- !u!1 &290045692
 GameObject:
