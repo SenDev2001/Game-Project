@@ -16,14 +16,6 @@ namespace Gameplay
             currentHealth = maxHealth;
         }
 
-        /*private void OnCollisionEnter(Collision collision)
-        {
-            if (collision.gameObject.CompareTag("Obstacle"))
-            {
-                Die();
-            }
-        }*/
-
         public void Die()
         {
             Debug.Log("Player Died");
@@ -37,10 +29,6 @@ namespace Gameplay
                 Debug.LogError(" not found in the scene.");
             }
         }
-        // obstacle script
-
-        // triggerenter
-        // if gameobject.comparetag(Player)
-        // player.Die
+       
     }
 }
