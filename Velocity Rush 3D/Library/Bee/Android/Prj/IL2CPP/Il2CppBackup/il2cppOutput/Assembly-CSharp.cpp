@@ -273,9 +273,11 @@ IL2CPP_EXTERN_C String_t* _stringLiteral3E538D25AD88E153C305B95581F14918239F2431
 IL2CPP_EXTERN_C String_t* _stringLiteral4A7D471A05BA784866A9CFDA2C4E15EF7E2907D0;
 IL2CPP_EXTERN_C String_t* _stringLiteral4D8D9C94AC5DA5FCED2EC8A64E10E714A2515C30;
 IL2CPP_EXTERN_C String_t* _stringLiteral54A25F3859F28EE37AFA4EABA1E398457711A3A9;
+IL2CPP_EXTERN_C String_t* _stringLiteral5966356BBA5D3A9F97EEB2249C5554A7735CE702;
 IL2CPP_EXTERN_C String_t* _stringLiteral5B58EBE31E594BF8FA4BEA3CD075473149322B18;
 IL2CPP_EXTERN_C String_t* _stringLiteral5D49C1F0F480CC79EEE784BFC4FADBEB586EDC6E;
 IL2CPP_EXTERN_C String_t* _stringLiteral6253C4D47C1E1AA5C3D214924EDB2471FB59CCF6;
+IL2CPP_EXTERN_C String_t* _stringLiteral63309136EE172137197E301DD8EFA7CAAD968FA4;
 IL2CPP_EXTERN_C String_t* _stringLiteral64058CC688A96A90239811EF06C9D20DB0499C3E;
 IL2CPP_EXTERN_C String_t* _stringLiteral70F1769C72FCAF144F53009F7DA60ED467C29635;
 IL2CPP_EXTERN_C String_t* _stringLiteral73ED92A2DE5120A5716646E377BB552B3B4E51AF;
@@ -304,7 +306,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteralE489DEEAA853698F8CA5CE5948DE2D915037BB85
 IL2CPP_EXTERN_C String_t* _stringLiteralEB43D4E12342BC5058226775E88C810245970E0C;
 IL2CPP_EXTERN_C String_t* _stringLiteralEFCFEFB614C8D88B63FC92B3898652E80FF52742;
 IL2CPP_EXTERN_C String_t* _stringLiteralF905AF27CDCF93C0B29B996AADF6487B117C544B;
-IL2CPP_EXTERN_C String_t* _stringLiteralFEF3E5B4AD6A13F531165BF8376F137948761171;
 IL2CPP_EXTERN_C String_t* _stringLiteralFF65A8D879B479115AAE37FF0FF49490230F3483;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisE_PlayerHealth_tAE90A456CAD02D98F80F8F4E9F4B3E2C406E2E59_m2B85664220FD17292642679CF151060A20E6DFD0_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m4B5CAD64B52D153BEA96432633CA9A45FA523DD8_RuntimeMethod_var;
@@ -1219,6 +1220,10 @@ struct InputActionType_t7E3615BDDF3C84F39712E5889559D3AD8E773108
 {
 	int32_t ___value__;
 };
+struct KeyCode_t75B9ECCC26D858F55040DDFF9523681E996D17E9 
+{
+	int32_t ___value__;
+};
 struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C  : public RuntimeObject
 {
 	intptr_t ___m_CachedPtr;
@@ -1242,6 +1247,10 @@ struct RigidbodyConstraints_tE93C9173FB4F24EF4D38166A288214D28D8E85C8
 struct RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 
 {
 	intptr_t ___value;
+};
+struct RuntimePlatform_t9A8AAF204603076FCAAECCCC05DA386AEE7BF66E 
+{
+	int32_t ___value__;
 };
 struct Space_tF043E93E06B702DD05199C28C6F779049B38A969 
 {
@@ -1984,6 +1993,7 @@ struct PauseMenu_t36539DEACE8377BD498A235C80769301799E1985  : public MonoBehavio
 {
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___pauseMenu;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___volumePanel;
+	bool ___isPaused;
 };
 struct PlayerMovementController_tE184A9A6D964A483C07A20728D44D2566B1697D6  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -2892,6 +2902,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEvent_AddListener_m8AA4287C16628486
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478 (String_t* ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerPrefs_SetString_mF4F457C81BB75F0213547C6287BA36E15E1F0256 (String_t* ___0_key, String_t* ___1_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEventBase_RemoveAllListeners_m6E68297189537543B0C72FE38804646CA204D076 (UnityEventBase_t4968A4C72559F35C0923E4BD9C042C3A842E1DB8* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetKeyDown_mB237DEA6244132670D38990BAB77D813FBB028D2 (int32_t ___0_key, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PauseMenu_Resume_mA45D6E4F27172EF775FC2D3F694BE90882DBE831 (PauseMenu_t36539DEACE8377BD498A235C80769301799E1985* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PauseMenu_Pause_m5C6B949CB19184E7227C891FF3C8AF707689AAF0 (PauseMenu_t36539DEACE8377BD498A235C80769301799E1985* __this, const RuntimeMethod* method) ;
 inline void List_1__ctor_m354352943048BC595E462E5902E56238BB8A19DB (List_1_tEB8517BFD88C1E2429D82939406A478989D06E3C* __this, const RuntimeMethod* method)
 {
 	((  void (*) (List_1_tEB8517BFD88C1E2429D82939406A478989D06E3C*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
@@ -2986,19 +2999,21 @@ inline M_GameManager_tA53B92D8172FBEE994CBF12CEF0765ED81E6655F* Object_FindObjec
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void M_GameManager_ShowRestartUI_mEB049996C0B050190E02C16B23DF8251AE2E7B39 (M_GameManager_tA53B92D8172FBEE994CBF12CEF0765ED81E6655F* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerInput__ctor_m24FD924FB39A9A023CDEA8F6916EEC47B471B3A8 (PlayerInput_tBE96AF5A43484D32C39A7F108EE081D6425059EE* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MoveActions_tF7BF88B346BA0EAEA79A2BC1FA4AF90FCD359DAD PlayerInput_get_Move_m2517554DD37B777F75C6E9BD16233ECD57FDE486 (PlayerInput_tBE96AF5A43484D32C39A7F108EE081D6425059EE* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAction_Enable_mB3897C0741409C033656E4566EC49135C3C8BC68 (InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* __this, const RuntimeMethod* method) ;
 inline Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* Component_GetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m4B5CAD64B52D153BEA96432633CA9A45FA523DD8 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
 {
 	return ((  Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_set_constraints_mE81BF0DAEB980E320538231E092CA4663885A9A3 (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* __this, int32_t ___0_value, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerMovementController_DetectSwipe_m1D7A875AC42E088F391A6389AC9BF9D06AA4C44F (PlayerMovementController_tE184A9A6D964A483C07A20728D44D2566B1697D6* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerMovementController_HandleKeyboardInput_mA860DD719821EAA88B0FBD1E11E6010D553FB5BD (PlayerMovementController_tE184A9A6D964A483C07A20728D44D2566B1697D6* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerMovementController_SwitchInputMethod_m7EAD4084B239282EA03308735753FA59AFE16D46 (PlayerMovementController_tE184A9A6D964A483C07A20728D44D2566B1697D6* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Application_get_platform_m59EF7D6155D18891B24767F83F388160B1FF2138 (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerMovementController_DetectSwipe_mB000E62C1D2DEA5C9557312DEAE5EED07A6E4923 (PlayerMovementController_tE184A9A6D964A483C07A20728D44D2566B1697D6* __this, bool ___0_enable, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerMovementController_HandleKeyboardInput_mF8A2951127ED895DF56B1B531ACC77E160F5D50B (PlayerMovementController_tE184A9A6D964A483C07A20728D44D2566B1697D6* __this, bool ___0_enable, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerMovementController_MoveForward_mF638E5E02B29CB5EB9B641C1692962A778E0346D (PlayerMovementController_tE184A9A6D964A483C07A20728D44D2566B1697D6* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerMovementController_MoveSideToSide_m3A0E8DCEB3C94486526C757DA465E7C6513678ED (PlayerMovementController_tE184A9A6D964A483C07A20728D44D2566B1697D6* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerMovementController_CheckGroundStatus_m16C202F03ED4E8012A79DEA1063DD58F9AEDC0D8 (PlayerMovementController_tE184A9A6D964A483C07A20728D44D2566B1697D6* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerMovementController_ApplyCustomGravity_m52CD85958BC9101AC2A28FD07B0DAE1C97DC926B (PlayerMovementController_tE184A9A6D964A483C07A20728D44D2566B1697D6* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAction_Disable_m72D1982F82457C6E003440BADD06989D399BDE50 (InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAction_Enable_mB3897C0741409C033656E4566EC49135C3C8BC68 (InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B (const RuntimeMethod* method) ;
 inline Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 InputAction_ReadValue_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m8D02BA85303ABD48D9963369E106B0C83A393FBF (InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* __this, const RuntimeMethod* method)
 {
@@ -3574,19 +3589,19 @@ IL_001f:
 		return;
 	}
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void M_GameManager_quitGame_m85B10F0CB88B45EC2C29521F218EB642C29EAFC4 (M_GameManager_tA53B92D8172FBEE994CBF12CEF0765ED81E6655F* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void M_GameManager_QuitGame_m6E610C4D544D2CBA8716D33B2B2DEDBF78C7F701 (M_GameManager_tA53B92D8172FBEE994CBF12CEF0765ED81E6655F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9A3AA33EBCCE7182D97921567410E1C998634CF9);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral63309136EE172137197E301DD8EFA7CAAD968FA4);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral9A3AA33EBCCE7182D97921567410E1C998634CF9, NULL);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral63309136EE172137197E301DD8EFA7CAAD968FA4, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var);
 		Application_Quit_mE304382DB9A6455C2A474C8F364C7387F37E9281(NULL);
 		return;
@@ -5593,6 +5608,38 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MenuController__ctor_m3E178AC64181BB1DB9
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PauseMenu_Update_m5097E74BFD4385B73BA9EF7198886DCEC7DF9A83 (PauseMenu_t36539DEACE8377BD498A235C80769301799E1985* __this, const RuntimeMethod* method) 
+{
+	{
+		bool L_0;
+		L_0 = Input_GetKeyDown_mB237DEA6244132670D38990BAB77D813FBB028D2(((int32_t)32), NULL);
+		if (!L_0)
+		{
+			goto IL_001e;
+		}
+	}
+	{
+		bool L_1 = __this->___isPaused;
+		if (!L_1)
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		PauseMenu_Resume_mA45D6E4F27172EF775FC2D3F694BE90882DBE831(__this, NULL);
+		return;
+	}
+
+IL_0018:
+	{
+		PauseMenu_Pause_m5C6B949CB19184E7227C891FF3C8AF707689AAF0(__this, NULL);
+	}
+
+IL_001e:
+	{
+		return;
+	}
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PauseMenu_Pause_m5C6B949CB19184E7227C891FF3C8AF707689AAF0 (PauseMenu_t36539DEACE8377BD498A235C80769301799E1985* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5600,6 +5647,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PauseMenu_Pause_m5C6B949CB19184E7227C891
 		NullCheck(L_0);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)1, NULL);
 		Time_set_timeScale_mEF84EE4B2376A458387648079B426B267862D331((0.0f), NULL);
+		__this->___isPaused = (bool)1;
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PauseMenu_Resume_mA45D6E4F27172EF775FC2D3F694BE90882DBE831 (PauseMenu_t36539DEACE8377BD498A235C80769301799E1985* __this, const RuntimeMethod* method) 
+{
+	{
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___pauseMenu;
+		NullCheck(L_0);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)0, NULL);
+		Time_set_timeScale_mEF84EE4B2376A458387648079B426B267862D331((1.0f), NULL);
+		__this->___isPaused = (bool)0;
 		return;
 	}
 }
@@ -5615,16 +5674,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PauseMenu_Menu_m13496C75FFCD8179064893A4
 	{
 		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
 		SceneManager_LoadScene_mBB3DBC1601A21F8F4E8A5D68FED30EA9412F218E(_stringLiteral0C10E47675493434D04CD8025C8303AF94F7BA5A, NULL);
-		Time_set_timeScale_mEF84EE4B2376A458387648079B426B267862D331((1.0f), NULL);
-		return;
-	}
-}
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PauseMenu_Resume_mA45D6E4F27172EF775FC2D3F694BE90882DBE831 (PauseMenu_t36539DEACE8377BD498A235C80769301799E1985* __this, const RuntimeMethod* method) 
-{
-	{
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___pauseMenu;
-		NullCheck(L_0);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)0, NULL);
 		Time_set_timeScale_mEF84EE4B2376A458387648079B426B267862D331((1.0f), NULL);
 		return;
 	}
@@ -5684,9 +5733,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerInput__ctor_m24FD924FB39A9A023CDEA
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_m354352943048BC595E462E5902E56238BB8A19DB_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_tEB8517BFD88C1E2429D82939406A478989D06E3C_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral378F2A2277727E3F33599E270749A10E7C2B55E1);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5966356BBA5D3A9F97EEB2249C5554A7735CE702);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC068740B1398F61F47B7773BB27A4A828FA47A6F);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC8BC34ACE98A26F112496A510E34CE10A5665B8E);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFEF3E5B4AD6A13F531165BF8376F137948761171);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
@@ -5696,7 +5745,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerInput__ctor_m24FD924FB39A9A023CDEA
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_MoveActionsCallbackInterfaces), (void*)L_0);
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		InputActionAsset_tF217AC5223B4AAA46EBCB44B33E9259FB117417D* L_1;
-		L_1 = InputActionAsset_FromJson_m8F7212EB013EF4D853836228D393C0D15BD0433C(_stringLiteralFEF3E5B4AD6A13F531165BF8376F137948761171, NULL);
+		L_1 = InputActionAsset_FromJson_m8F7212EB013EF4D853836228D393C0D15BD0433C(_stringLiteral5966356BBA5D3A9F97EEB2249C5554A7735CE702, NULL);
 		__this->___U3CassetU3Ek__BackingField = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CassetU3Ek__BackingField), (void*)L_1);
 		InputActionAsset_tF217AC5223B4AAA46EBCB44B33E9259FB117417D* L_2;
@@ -6768,12 +6817,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerMovementController_Awake_mDE3B8FC6
 		L_6 = MoveActions_get_Keyboard_mBCB050898F0957A10ACD142B6C13A44F5EA0063D((&V_1), NULL);
 		__this->___keyboardAction = L_6;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___keyboardAction), (void*)L_6);
-		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_7 = __this->___swipeAction;
-		NullCheck(L_7);
-		InputAction_Enable_mB3897C0741409C033656E4566EC49135C3C8BC68(L_7, NULL);
-		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_8 = __this->___keyboardAction;
-		NullCheck(L_8);
-		InputAction_Enable_mB3897C0741409C033656E4566EC49135C3C8BC68(L_8, NULL);
 		return;
 	}
 }
@@ -6793,14 +6836,57 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerMovementController_Start_mBED2D5BF
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_1 = __this->____rb;
 		NullCheck(L_1);
 		Rigidbody_set_constraints_mE81BF0DAEB980E320538231E092CA4663885A9A3(L_1, ((int32_t)112), NULL);
+		PlayerMovementController_SwitchInputMethod_m7EAD4084B239282EA03308735753FA59AFE16D46(__this, NULL);
 		return;
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerMovementController_Update_mA22837A8F44F7A8C4EB98316CF8509081CEBF57D (PlayerMovementController_tE184A9A6D964A483C07A20728D44D2566B1697D6* __this, const RuntimeMethod* method) 
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
 	{
-		PlayerMovementController_DetectSwipe_m1D7A875AC42E088F391A6389AC9BF9D06AA4C44F(__this, NULL);
-		PlayerMovementController_HandleKeyboardInput_mA860DD719821EAA88B0FBD1E11E6010D553FB5BD(__this, NULL);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var);
+		int32_t L_0;
+		L_0 = Application_get_platform_m59EF7D6155D18891B24767F83F388160B1FF2138(NULL);
+		if ((!(((uint32_t)L_0) == ((uint32_t)((int32_t)11)))))
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		PlayerMovementController_DetectSwipe_mB000E62C1D2DEA5C9557312DEAE5EED07A6E4923(__this, (bool)1, NULL);
+		PlayerMovementController_HandleKeyboardInput_mF8A2951127ED895DF56B1B531ACC77E160F5D50B(__this, (bool)0, NULL);
+		goto IL_0040;
+	}
+
+IL_0019:
+	{
+		il2cpp_codegen_runtime_class_init_inline(Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var);
+		int32_t L_1;
+		L_1 = Application_get_platform_m59EF7D6155D18891B24767F83F388160B1FF2138(NULL);
+		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)17)))))
+		{
+			goto IL_0032;
+		}
+	}
+	{
+		PlayerMovementController_DetectSwipe_mB000E62C1D2DEA5C9557312DEAE5EED07A6E4923(__this, (bool)0, NULL);
+		PlayerMovementController_HandleKeyboardInput_mF8A2951127ED895DF56B1B531ACC77E160F5D50B(__this, (bool)1, NULL);
+		goto IL_0040;
+	}
+
+IL_0032:
+	{
+		PlayerMovementController_DetectSwipe_mB000E62C1D2DEA5C9557312DEAE5EED07A6E4923(__this, (bool)1, NULL);
+		PlayerMovementController_HandleKeyboardInput_mF8A2951127ED895DF56B1B531ACC77E160F5D50B(__this, (bool)1, NULL);
+	}
+
+IL_0040:
+	{
 		PlayerMovementController_MoveForward_mF638E5E02B29CB5EB9B641C1692962A778E0346D(__this, NULL);
 		PlayerMovementController_MoveSideToSide_m3A0E8DCEB3C94486526C757DA465E7C6513678ED(__this, NULL);
 		PlayerMovementController_CheckGroundStatus_m16C202F03ED4E8012A79DEA1063DD58F9AEDC0D8(__this, NULL);
@@ -6820,7 +6906,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerMovementController_OnDisable_mE8F6
 		return;
 	}
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerMovementController_DetectSwipe_m1D7A875AC42E088F391A6389AC9BF9D06AA4C44F (PlayerMovementController_tE184A9A6D964A483C07A20728D44D2566B1697D6* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerMovementController_DetectSwipe_mB000E62C1D2DEA5C9557312DEAE5EED07A6E4923 (PlayerMovementController_tE184A9A6D964A483C07A20728D44D2566B1697D6* __this, bool ___0_enable, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -6829,47 +6915,65 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerMovementController_DetectSwipe_m1D
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		float L_0;
-		L_0 = Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B(NULL);
-		float L_1 = __this->___lastSwipeTime;
-		float L_2 = __this->___swipeCooldown;
-		if ((!(((float)((float)il2cpp_codegen_subtract(L_0, L_1))) < ((float)L_2))))
+		bool L_0 = ___0_enable;
+		if (L_0)
 		{
-			goto IL_0015;
+			goto IL_000f;
+		}
+	}
+	{
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_1 = __this->___swipeAction;
+		NullCheck(L_1);
+		InputAction_Disable_m72D1982F82457C6E003440BADD06989D399BDE50(L_1, NULL);
+		return;
+	}
+
+IL_000f:
+	{
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_2 = __this->___swipeAction;
+		NullCheck(L_2);
+		InputAction_Enable_mB3897C0741409C033656E4566EC49135C3C8BC68(L_2, NULL);
+		float L_3;
+		L_3 = Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B(NULL);
+		float L_4 = __this->___lastSwipeTime;
+		float L_5 = __this->___swipeCooldown;
+		if ((!(((float)((float)il2cpp_codegen_subtract(L_3, L_4))) < ((float)L_5))))
+		{
+			goto IL_002f;
 		}
 	}
 	{
 		return;
 	}
 
-IL_0015:
+IL_002f:
 	{
-		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_3 = __this->___swipeAction;
-		NullCheck(L_3);
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_4;
-		L_4 = InputAction_ReadValue_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m8D02BA85303ABD48D9963369E106B0C83A393FBF(L_3, InputAction_ReadValue_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m8D02BA85303ABD48D9963369E106B0C83A393FBF_RuntimeMethod_var);
-		__this->___swipeDelta = L_4;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_5 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->___swipeDelta);
-		float L_6;
-		L_6 = Vector2_get_magnitude_m5C59B4056420AEFDB291AD0914A3F675330A75CE_inline(L_5, NULL);
-		float L_7 = __this->___minimumSwipeDistance;
-		if ((!(((float)L_6) >= ((float)L_7))))
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_6 = __this->___swipeAction;
+		NullCheck(L_6);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_7;
+		L_7 = InputAction_ReadValue_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m8D02BA85303ABD48D9963369E106B0C83A393FBF(L_6, InputAction_ReadValue_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m8D02BA85303ABD48D9963369E106B0C83A393FBF_RuntimeMethod_var);
+		__this->___swipeDelta = L_7;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_8 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->___swipeDelta);
+		float L_9;
+		L_9 = Vector2_get_magnitude_m5C59B4056420AEFDB291AD0914A3F675330A75CE_inline(L_8, NULL);
+		float L_10 = __this->___minimumSwipeDistance;
+		if ((!(((float)L_9) >= ((float)L_10))))
 		{
-			goto IL_005b;
+			goto IL_0075;
 		}
 	}
 	{
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_8 = __this->___swipeDelta;
-		PlayerMovementController_ProcessSwipe_mC2872FBFEA962DD4190A7AC8E82E76353424B6E4(__this, L_8, NULL);
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_9;
-		L_9 = Vector2_get_zero_m32506C40EC2EE7D5D4410BF40D3EE683A3D5F32C_inline(NULL);
-		__this->___swipeDelta = L_9;
-		float L_10;
-		L_10 = Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B(NULL);
-		__this->___lastSwipeTime = L_10;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_11 = __this->___swipeDelta;
+		PlayerMovementController_ProcessSwipe_mC2872FBFEA962DD4190A7AC8E82E76353424B6E4(__this, L_11, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_12;
+		L_12 = Vector2_get_zero_m32506C40EC2EE7D5D4410BF40D3EE683A3D5F32C_inline(NULL);
+		__this->___swipeDelta = L_12;
+		float L_13;
+		L_13 = Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B(NULL);
+		__this->___lastSwipeTime = L_13;
 	}
 
-IL_005b:
+IL_0075:
 	{
 		return;
 	}
@@ -6927,7 +7031,7 @@ IL_0046:
 		return;
 	}
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerMovementController_HandleKeyboardInput_mA860DD719821EAA88B0FBD1E11E6010D553FB5BD (PlayerMovementController_tE184A9A6D964A483C07A20728D44D2566B1697D6* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerMovementController_HandleKeyboardInput_mF8A2951127ED895DF56B1B531ACC77E160F5D50B (PlayerMovementController_tE184A9A6D964A483C07A20728D44D2566B1697D6* __this, bool ___0_enable, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -6935,81 +7039,99 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerMovementController_HandleKeyboardI
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InputAction_ReadValue_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m8D02BA85303ABD48D9963369E106B0C83A393FBF_RuntimeMethod_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 G_B4_0;
-	memset((&G_B4_0), 0, sizeof(G_B4_0));
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 G_B3_0;
-	memset((&G_B3_0), 0, sizeof(G_B3_0));
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 G_B6_0;
 	memset((&G_B6_0), 0, sizeof(G_B6_0));
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 G_B5_0;
 	memset((&G_B5_0), 0, sizeof(G_B5_0));
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 G_B8_0;
+	memset((&G_B8_0), 0, sizeof(G_B8_0));
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 G_B7_0;
+	memset((&G_B7_0), 0, sizeof(G_B7_0));
 	{
-		float L_0;
-		L_0 = Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B(NULL);
-		float L_1 = __this->___lastKeyboardTime;
-		float L_2 = __this->___keyboardCooldown;
-		if ((!(((float)((float)il2cpp_codegen_subtract(L_0, L_1))) < ((float)L_2))))
+		bool L_0 = ___0_enable;
+		if (L_0)
 		{
-			goto IL_0015;
+			goto IL_000f;
+		}
+	}
+	{
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_1 = __this->___keyboardAction;
+		NullCheck(L_1);
+		InputAction_Disable_m72D1982F82457C6E003440BADD06989D399BDE50(L_1, NULL);
+		return;
+	}
+
+IL_000f:
+	{
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_2 = __this->___keyboardAction;
+		NullCheck(L_2);
+		InputAction_Enable_mB3897C0741409C033656E4566EC49135C3C8BC68(L_2, NULL);
+		float L_3;
+		L_3 = Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B(NULL);
+		float L_4 = __this->___lastKeyboardTime;
+		float L_5 = __this->___keyboardCooldown;
+		if ((!(((float)((float)il2cpp_codegen_subtract(L_3, L_4))) < ((float)L_5))))
+		{
+			goto IL_002f;
 		}
 	}
 	{
 		return;
 	}
 
-IL_0015:
+IL_002f:
 	{
-		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_3 = __this->___keyboardAction;
-		NullCheck(L_3);
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_4;
-		L_4 = InputAction_ReadValue_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m8D02BA85303ABD48D9963369E106B0C83A393FBF(L_3, InputAction_ReadValue_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m8D02BA85303ABD48D9963369E106B0C83A393FBF_RuntimeMethod_var);
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_5 = L_4;
-		float L_6 = L_5.___y;
-		if ((!(((float)L_6) > ((float)(0.0f)))))
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_6 = __this->___keyboardAction;
+		NullCheck(L_6);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_7;
+		L_7 = InputAction_ReadValue_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m8D02BA85303ABD48D9963369E106B0C83A393FBF(L_6, InputAction_ReadValue_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m8D02BA85303ABD48D9963369E106B0C83A393FBF_RuntimeMethod_var);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_8 = L_7;
+		float L_9 = L_8.___y;
+		if ((!(((float)L_9) > ((float)(0.0f)))))
 		{
-			G_B4_0 = L_5;
-			goto IL_0033;
+			G_B6_0 = L_8;
+			goto IL_004d;
 		}
-		G_B3_0 = L_5;
+		G_B5_0 = L_8;
 	}
 	{
 		PlayerMovementController_Jump_mA67A30BDD70AA7ABCD4222962E5B528C37EB3C21(__this, NULL);
-		G_B4_0 = G_B3_0;
-	}
-
-IL_0033:
-	{
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_7 = G_B4_0;
-		float L_8 = L_7.___x;
-		if ((!(((float)L_8) < ((float)(0.0f)))))
-		{
-			G_B6_0 = L_7;
-			goto IL_0046;
-		}
-		G_B5_0 = L_7;
-	}
-	{
-		PlayerMovementController_MoveLeft_m59C72245313773472753AD45FFFF68F891AF1EFD(__this, NULL);
 		G_B6_0 = G_B5_0;
 	}
 
-IL_0046:
+IL_004d:
 	{
-		float L_9 = G_B6_0.___x;
-		if ((!(((float)L_9) > ((float)(0.0f)))))
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_10 = G_B6_0;
+		float L_11 = L_10.___x;
+		if ((!(((float)L_11) < ((float)(0.0f)))))
 		{
-			goto IL_0058;
+			G_B8_0 = L_10;
+			goto IL_0060;
+		}
+		G_B7_0 = L_10;
+	}
+	{
+		PlayerMovementController_MoveLeft_m59C72245313773472753AD45FFFF68F891AF1EFD(__this, NULL);
+		G_B8_0 = G_B7_0;
+	}
+
+IL_0060:
+	{
+		float L_12 = G_B8_0.___x;
+		if ((!(((float)L_12) > ((float)(0.0f)))))
+		{
+			goto IL_0072;
 		}
 	}
 	{
 		PlayerMovementController_MoveRight_m995D01D581B975E13F02E4616BAB749644892584(__this, NULL);
 	}
 
-IL_0058:
+IL_0072:
 	{
-		float L_10;
-		L_10 = Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B(NULL);
-		__this->___lastKeyboardTime = L_10;
+		float L_13;
+		L_13 = Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B(NULL);
+		__this->___lastKeyboardTime = L_13;
 		return;
 	}
 }
@@ -7226,6 +7348,64 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerMovementController_MoveRight_m995D
 
 IL_0017:
 	{
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerMovementController_SwitchInputMethod_m7EAD4084B239282EA03308735753FA59AFE16D46 (PlayerMovementController_tE184A9A6D964A483C07A20728D44D2566B1697D6* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var);
+		int32_t L_0;
+		L_0 = Application_get_platform_m59EF7D6155D18891B24767F83F388160B1FF2138(NULL);
+		if ((!(((uint32_t)L_0) == ((uint32_t)((int32_t)11)))))
+		{
+			goto IL_0020;
+		}
+	}
+	{
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_1 = __this->___swipeAction;
+		NullCheck(L_1);
+		InputAction_Enable_mB3897C0741409C033656E4566EC49135C3C8BC68(L_1, NULL);
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_2 = __this->___keyboardAction;
+		NullCheck(L_2);
+		InputAction_Disable_m72D1982F82457C6E003440BADD06989D399BDE50(L_2, NULL);
+		return;
+	}
+
+IL_0020:
+	{
+		il2cpp_codegen_runtime_class_init_inline(Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var);
+		int32_t L_3;
+		L_3 = Application_get_platform_m59EF7D6155D18891B24767F83F388160B1FF2138(NULL);
+		if ((!(((uint32_t)L_3) == ((uint32_t)((int32_t)17)))))
+		{
+			goto IL_0040;
+		}
+	}
+	{
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_4 = __this->___swipeAction;
+		NullCheck(L_4);
+		InputAction_Disable_m72D1982F82457C6E003440BADD06989D399BDE50(L_4, NULL);
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_5 = __this->___keyboardAction;
+		NullCheck(L_5);
+		InputAction_Enable_mB3897C0741409C033656E4566EC49135C3C8BC68(L_5, NULL);
+		return;
+	}
+
+IL_0040:
+	{
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_6 = __this->___swipeAction;
+		NullCheck(L_6);
+		InputAction_Enable_mB3897C0741409C033656E4566EC49135C3C8BC68(L_6, NULL);
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_7 = __this->___keyboardAction;
+		NullCheck(L_7);
+		InputAction_Enable_mB3897C0741409C033656E4566EC49135C3C8BC68(L_7, NULL);
 		return;
 	}
 }
