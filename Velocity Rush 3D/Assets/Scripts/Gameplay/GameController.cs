@@ -44,7 +44,7 @@ public class GameController : MonoBehaviour
 
     private IEnumerator SendScoreToAPI(string name, int score)
     {
-        string url = API_URL + "/addscore";
+        string url = API_URL + "/addscore?timestamp=" + Time.time;  // Added timestamp for cache busting
         string json = JsonUtility.ToJson(new PlayerScore(name, score));
 
         UnityWebRequest request = UnityWebRequest.Put(url, json);

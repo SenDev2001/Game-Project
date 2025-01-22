@@ -171,8 +171,10 @@ extern void PlayerMovementController_ApplyCustomGravity_m52CD85958BC9101AC2A28FD
 extern void PlayerMovementController_MoveLeft_m59C72245313773472753AD45FFFF68F891AF1EFD (void);
 extern void PlayerMovementController_MoveRight_m995D01D581B975E13F02E4616BAB749644892584 (void);
 extern void PlayerMovementController_SwitchInputMethod_m7EAD4084B239282EA03308735753FA59AFE16D46 (void);
+extern void PlayerMovementController_OnTriggerEnter_m15279046145678032CC2DA27BC33C1CB93AD3E01 (void);
+extern void PlayerMovementController_IncreaseSpeed_mC051864477DA40248D4EE6E0A89ED99FB9D631E5 (void);
 extern void PlayerMovementController__ctor_m73D094A3E7DBD5D47EBA9EDF410B3CA332702B3C (void);
-static Il2CppMethodPointer s_methodPointers[162] = 
+static Il2CppMethodPointer s_methodPointers[164] = 
 {
 	AudioSetting_Start_mAAB8FFCBE7EB994AC128AF248B8C534638769FE7,
 	AudioSetting_SetMasterVolume_m4BBFF0A974211DF014736D5E8AAC7BDBBA2A7BB1,
@@ -335,6 +337,8 @@ static Il2CppMethodPointer s_methodPointers[162] =
 	PlayerMovementController_MoveLeft_m59C72245313773472753AD45FFFF68F891AF1EFD,
 	PlayerMovementController_MoveRight_m995D01D581B975E13F02E4616BAB749644892584,
 	PlayerMovementController_SwitchInputMethod_m7EAD4084B239282EA03308735753FA59AFE16D46,
+	PlayerMovementController_OnTriggerEnter_m15279046145678032CC2DA27BC33C1CB93AD3E01,
+	PlayerMovementController_IncreaseSpeed_mC051864477DA40248D4EE6E0A89ED99FB9D631E5,
 	PlayerMovementController__ctor_m73D094A3E7DBD5D47EBA9EDF410B3CA332702B3C,
 };
 extern void MoveActions__ctor_m8874B1234E5078DE22BE588F84A157A144C1672F_AdjustorThunk (void);
@@ -362,7 +366,7 @@ static Il2CppTokenAdjustorThunkPair s_adjustorThunks[11] =
 	{ 0x06000085, MoveActions_RemoveCallbacks_m49AC4C9240409110C19FEEE8BA2A7401C8D9D2AF_AdjustorThunk },
 	{ 0x06000086, MoveActions_SetCallbacks_m6A72350C8CB622746C100F336978DFAF755C66E3_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[162] = 
+static const int32_t s_InvokerIndices[164] = 
 {
 	6535,
 	6535,
@@ -525,13 +529,15 @@ static const int32_t s_InvokerIndices[162] =
 	6535,
 	6535,
 	6535,
+	5163,
+	6535,
 	6535,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	162,
+	164,
 	s_methodPointers,
 	11,
 	s_adjustorThunks,

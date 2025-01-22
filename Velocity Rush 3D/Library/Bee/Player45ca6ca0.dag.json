@@ -486,13 +486,7 @@
         478,
         479,
         480,
-        481,
-        482,
-        483,
-        484,
-        485,
-        486,
-        487
+        481
       ],
       "OverwriteOutputs": false,
       "DebugActionIndex": 0
@@ -23477,15 +23471,14 @@
       "DebugActionIndex": 458
     },
     {
-      "Annotation": "7z Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js.unmarked",
-      "DisplayName": "7z build.framework.js",
-      "Action": "cd \"D:/Game-Project/Velocity Rush 3D/Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm\" && \"D:/Projects/2022.3.48f1/Editor/Data/Tools/7z.exe\" a -tgzip \"D:/Game-Project/Velocity Rush 3D/Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js.unmarked\" \"build.framework.js\"",
+      "Annotation": "Brotli D:/UCA Projects/Builds/Webgl/Velocity rush/Build/Velocity rush.framework.js.br",
+      "DisplayName": "Brotli Velocity rush.framework.js",
+      "Action": "\"D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Brotli/win_x86_64/brotli.exe\" -o \"D:/UCA Projects/Builds/Webgl/Velocity rush/Build/Velocity rush.framework.js.br\" -i \"Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js\" --comment \"UnityWeb Compressed Content (brotli)\"",
       "Inputs": [
-        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js",
-        "D:/Projects/2022.3.48f1/Editor/Data/Tools/7z.exe"
+        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js"
       ],
       "Outputs": [
-        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js.unmarked"
+        "D:/UCA Projects/Builds/Webgl/Velocity rush/Build/Velocity rush.framework.js.br"
       ],
       "ToBuildDependencies": [
         458
@@ -23496,52 +23489,14 @@
       "DebugActionIndex": 459
     },
     {
-      "Annotation": "WriteText Library/Bee/artifacts/csharpactions/Velocity rush.framework.js.gz_ttnn.info",
-      "DisplayName": "Writing Velocity rush.framework.js.gz_ttnn.info",
-      "ActionType": "WriteFile",
-      "PayloadOffset": 159741,
-      "PayloadLength": 478,
-      "PayloadDebugContentSnippet": "{\"System.Object\":null,\"Bee.Tun",
-      "Inputs": [],
-      "Outputs": [
-        "Library/Bee/artifacts/csharpactions/Velocity rush.framework.js.gz_ttnn.info"
-      ],
-      "DebugActionIndex": 460
-    },
-    {
-      "Annotation": "GzipMarker D:/UCA Projects/Builds/Webgl/Velocity rush/Build/Velocity rush.framework.js.gz",
-      "DisplayName": "GzipMarker Velocity rush.framework.js",
-      "Action": "\"D:\\Projects\\2022.3.48f1\\Editor\\Data\\Tools\\netcorerun\\netcorerun.exe\" \"D:\\Projects\\2022.3.48f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\WebGLPlayerBuildProgram.exe\" \"D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/Bee;D:/Projects/2022.3.48f1/Editor/Data/Tools/BuildPipeline\" invoke_static_method \"Library\\Bee\\artifacts\\csharpactions\\Velocity rush.framework.js.gz_ttnn.info\"",
+      "Annotation": "Brotli D:/UCA Projects/Builds/Webgl/Velocity rush/Build/Velocity rush.wasm.br",
+      "DisplayName": "Brotli Velocity rush.wasm",
+      "Action": "\"D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Brotli/win_x86_64/brotli.exe\" -o \"D:/UCA Projects/Builds/Webgl/Velocity rush/Build/Velocity rush.wasm.br\" -i \"Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm\" --comment \"UnityWeb Compressed Content (brotli)\"",
       "Inputs": [
-        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js.unmarked",
-        "Library/Bee/artifacts/csharpactions/Velocity rush.framework.js.gz_ttnn.info",
-        "D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/modules.asset",
-        "D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll",
-        "D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.Data.dll",
-        "D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.exe"
+        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm"
       ],
       "Outputs": [
-        "D:/UCA Projects/Builds/Webgl/Velocity rush/Build/Velocity rush.framework.js.gz"
-      ],
-      "ToBuildDependencies": [
-        459,
-        460
-      ],
-      "OverwriteOutputs": false,
-      "AllowUnexpectedOutput": true,
-      "Env": [],
-      "DebugActionIndex": 461
-    },
-    {
-      "Annotation": "7z Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm.unmarked",
-      "DisplayName": "7z build.wasm",
-      "Action": "cd \"D:/Game-Project/Velocity Rush 3D/Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm\" && \"D:/Projects/2022.3.48f1/Editor/Data/Tools/7z.exe\" a -tgzip \"D:/Game-Project/Velocity Rush 3D/Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm.unmarked\" \"build.wasm\"",
-      "Inputs": [
-        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm",
-        "D:/Projects/2022.3.48f1/Editor/Data/Tools/7z.exe"
-      ],
-      "Outputs": [
-        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm.unmarked"
+        "D:/UCA Projects/Builds/Webgl/Velocity rush/Build/Velocity rush.wasm.br"
       ],
       "ToBuildDependencies": [
         456
@@ -23549,44 +23504,7 @@
       "OverwriteOutputs": false,
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 462
-    },
-    {
-      "Annotation": "WriteText Library/Bee/artifacts/csharpactions/Velocity rush.wasm.gz_a7b8.info",
-      "DisplayName": "Writing Velocity rush.wasm.gz_a7b8.info",
-      "ActionType": "WriteFile",
-      "PayloadOffset": 160318,
-      "PayloadLength": 462,
-      "PayloadDebugContentSnippet": "{\"System.Object\":null,\"Bee.Tun",
-      "Inputs": [],
-      "Outputs": [
-        "Library/Bee/artifacts/csharpactions/Velocity rush.wasm.gz_a7b8.info"
-      ],
-      "DebugActionIndex": 463
-    },
-    {
-      "Annotation": "GzipMarker D:/UCA Projects/Builds/Webgl/Velocity rush/Build/Velocity rush.wasm.gz",
-      "DisplayName": "GzipMarker Velocity rush.wasm",
-      "Action": "\"D:\\Projects\\2022.3.48f1\\Editor\\Data\\Tools\\netcorerun\\netcorerun.exe\" \"D:\\Projects\\2022.3.48f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\WebGLPlayerBuildProgram.exe\" \"D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/Bee;D:/Projects/2022.3.48f1/Editor/Data/Tools/BuildPipeline\" invoke_static_method \"Library\\Bee\\artifacts\\csharpactions\\Velocity rush.wasm.gz_a7b8.info\"",
-      "Inputs": [
-        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm.unmarked",
-        "Library/Bee/artifacts/csharpactions/Velocity rush.wasm.gz_a7b8.info",
-        "D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/modules.asset",
-        "D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll",
-        "D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.Data.dll",
-        "D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.exe"
-      ],
-      "Outputs": [
-        "D:/UCA Projects/Builds/Webgl/Velocity rush/Build/Velocity rush.wasm.gz"
-      ],
-      "ToBuildDependencies": [
-        462,
-        463
-      ],
-      "OverwriteOutputs": false,
-      "AllowUnexpectedOutput": true,
-      "Env": [],
-      "DebugActionIndex": 464
+      "DebugActionIndex": 460
     },
     {
       "Annotation": "CopyFiles Temp/EditorBuildOutput/UnityLinkerToEditorData.json",
@@ -23601,7 +23519,7 @@
       "ToBuildDependencies": [
         4
       ],
-      "DebugActionIndex": 465
+      "DebugActionIndex": 461
     },
     {
       "Annotation": "CopyFiles Temp/EditorBuildOutput/MethodMap.tsv",
@@ -23616,20 +23534,20 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 466
+      "DebugActionIndex": 462
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/webgl.data_qnm2.info",
       "DisplayName": "Writing webgl.data_qnm2.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 160868,
+      "PayloadOffset": 159722,
       "PayloadLength": 1930,
       "PayloadDebugContentSnippet": "{\"System.Collections.Generic.D",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/csharpactions/webgl.data_qnm2.info"
       ],
-      "DebugActionIndex": 467
+      "DebugActionIndex": 463
     },
     {
       "Annotation": "Assemble WebGL Data Library/Bee/artifacts/WebGL/webgl.data",
@@ -23656,73 +23574,35 @@
       "ToBuildDependencies": [
         2,
         5,
-        467
+        463
       ],
       "OverwriteOutputs": false,
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 468
+      "DebugActionIndex": 464
     },
     {
-      "Annotation": "7z Library/Bee/artifacts/WebGL/webgl.data.unmarked",
-      "DisplayName": "7z webgl.data",
-      "Action": "cd \"D:/Game-Project/Velocity Rush 3D/Library/Bee/artifacts/WebGL\" && \"D:/Projects/2022.3.48f1/Editor/Data/Tools/7z.exe\" a -tgzip \"D:/Game-Project/Velocity Rush 3D/Library/Bee/artifacts/WebGL/webgl.data.unmarked\" \"webgl.data\"",
+      "Annotation": "Brotli D:/UCA Projects/Builds/Webgl/Velocity rush/Build/Velocity rush.data.br",
+      "DisplayName": "Brotli Velocity rush.data",
+      "Action": "\"D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Brotli/win_x86_64/brotli.exe\" -o \"D:/UCA Projects/Builds/Webgl/Velocity rush/Build/Velocity rush.data.br\" -i \"Library/Bee/artifacts/WebGL/webgl.data\" --comment \"UnityWeb Compressed Content (brotli)\"",
       "Inputs": [
-        "Library/Bee/artifacts/WebGL/webgl.data",
-        "D:/Projects/2022.3.48f1/Editor/Data/Tools/7z.exe"
+        "Library/Bee/artifacts/WebGL/webgl.data"
       ],
       "Outputs": [
-        "Library/Bee/artifacts/WebGL/webgl.data.unmarked"
+        "D:/UCA Projects/Builds/Webgl/Velocity rush/Build/Velocity rush.data.br"
       ],
       "ToBuildDependencies": [
-        468
+        464
       ],
       "OverwriteOutputs": false,
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 469
-    },
-    {
-      "Annotation": "WriteText Library/Bee/artifacts/csharpactions/Velocity rush.data.gz_8ted.info",
-      "DisplayName": "Writing Velocity rush.data.gz_8ted.info",
-      "ActionType": "WriteFile",
-      "PayloadOffset": 162897,
-      "PayloadLength": 439,
-      "PayloadDebugContentSnippet": "{\"System.Object\":null,\"Bee.Tun",
-      "Inputs": [],
-      "Outputs": [
-        "Library/Bee/artifacts/csharpactions/Velocity rush.data.gz_8ted.info"
-      ],
-      "DebugActionIndex": 470
-    },
-    {
-      "Annotation": "GzipMarker D:/UCA Projects/Builds/Webgl/Velocity rush/Build/Velocity rush.data.gz",
-      "DisplayName": "GzipMarker Velocity rush.data",
-      "Action": "\"D:\\Projects\\2022.3.48f1\\Editor\\Data\\Tools\\netcorerun\\netcorerun.exe\" \"D:\\Projects\\2022.3.48f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\WebGLPlayerBuildProgram.exe\" \"D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/Bee;D:/Projects/2022.3.48f1/Editor/Data/Tools/BuildPipeline\" invoke_static_method \"Library\\Bee\\artifacts\\csharpactions\\Velocity rush.data.gz_8ted.info\"",
-      "Inputs": [
-        "Library/Bee/artifacts/WebGL/webgl.data.unmarked",
-        "Library/Bee/artifacts/csharpactions/Velocity rush.data.gz_8ted.info",
-        "D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/modules.asset",
-        "D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll",
-        "D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.Data.dll",
-        "D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.exe"
-      ],
-      "Outputs": [
-        "D:/UCA Projects/Builds/Webgl/Velocity rush/Build/Velocity rush.data.gz"
-      ],
-      "ToBuildDependencies": [
-        469,
-        470
-      ],
-      "OverwriteOutputs": false,
-      "AllowUnexpectedOutput": true,
-      "Env": [],
-      "DebugActionIndex": 471
+      "DebugActionIndex": 465
     },
     {
       "Annotation": "PreprocessJS Library/Bee/artifacts/WebGLVelocity rush.loader.js",
       "DisplayName": "PreprocessJS WebGLVelocity rush.loader",
-      "Action": "cd /d \"D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='D\\x3a/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='UnityLoader/UnityLoader.js'\"  \"locals.outputPath='D\\x3a/Game\\x2dProject/Velocity Rush 3D/Library/Bee/artifacts/WebGLVelocity rush.loader.js'\"  \"locals.webglIncludes='D\\x3a/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=true\"  \"PRODUCT_DESCRIPTION=''\" \"COMPANY_NAME='SenDev'\" \"PRODUCT_NAME='Velocity Rush'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=600\" \"HEIGHT=960\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='Velocity rush.data.gz'\" \"FRAMEWORK_FILENAME='Velocity rush.framework.js.gz'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='Velocity rush.wasm.gz'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.48f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\"",
+      "Action": "cd /d \"D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='D\\x3a/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='UnityLoader/UnityLoader.js'\"  \"locals.outputPath='D\\x3a/Game\\x2dProject/Velocity Rush 3D/Library/Bee/artifacts/WebGLVelocity rush.loader.js'\"  \"locals.webglIncludes='D\\x3a/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=true\"  \"PRODUCT_DESCRIPTION=''\" \"COMPANY_NAME='SenDev Studios'\" \"PRODUCT_NAME='Velocity Rush'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=600\" \"HEIGHT=960\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='Velocity rush.data.br'\" \"FRAMEWORK_FILENAME='Velocity rush.framework.js.br'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='Velocity rush.wasm.br'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.48f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\"",
       "Inputs": [
         "UnityLoader/UnityLoader.js"
       ],
@@ -23731,7 +23611,7 @@
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 472
+      "DebugActionIndex": 466
     },
     {
       "Annotation": "CopyFiles D:/UCA Projects/Builds/Webgl/Velocity rush/Build/Velocity rush.loader.js",
@@ -23744,14 +23624,14 @@
         "D:/UCA Projects/Builds/Webgl/Velocity rush/Build/Velocity rush.loader.js"
       ],
       "ToBuildDependencies": [
-        472
+        466
       ],
-      "DebugActionIndex": 473
+      "DebugActionIndex": 467
     },
     {
       "Annotation": "PreprocessJS D:/UCA Projects/Builds/Webgl/Velocity rush/index.html",
       "DisplayName": "PreprocessJS index",
-      "Action": "cd /d \"D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='D\\x3a/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='D\\x3a/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/PWA/index.html'\"  \"locals.outputPath='D\\x3a/UCA Projects/Builds/Webgl/Velocity rush/index.html'\"  \"locals.webglIncludes='D\\x3a/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=false\"  \"PRODUCT_DESCRIPTION=''\" \"COMPANY_NAME='SenDev'\" \"PRODUCT_NAME='Velocity Rush'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=600\" \"HEIGHT=960\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='Velocity rush.data.gz'\" \"FRAMEWORK_FILENAME='Velocity rush.framework.js.gz'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='Velocity rush.wasm.gz'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.48f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"LOADER_FILENAME='Velocity rush.loader.js'\"",
+      "Action": "cd /d \"D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='D\\x3a/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='D\\x3a/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/PWA/index.html'\"  \"locals.outputPath='D\\x3a/UCA Projects/Builds/Webgl/Velocity rush/index.html'\"  \"locals.webglIncludes='D\\x3a/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=false\"  \"PRODUCT_DESCRIPTION=''\" \"COMPANY_NAME='SenDev Studios'\" \"PRODUCT_NAME='Velocity Rush'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=600\" \"HEIGHT=960\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='Velocity rush.data.br'\" \"FRAMEWORK_FILENAME='Velocity rush.framework.js.br'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='Velocity rush.wasm.br'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.48f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"LOADER_FILENAME='Velocity rush.loader.js'\"",
       "Inputs": [
         "D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/PWA/index.html"
       ],
@@ -23760,12 +23640,12 @@
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 474
+      "DebugActionIndex": 468
     },
     {
       "Annotation": "PreprocessJS D:/UCA Projects/Builds/Webgl/Velocity rush/manifest.webmanifest",
       "DisplayName": "PreprocessJS manifest",
-      "Action": "cd /d \"D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='D\\x3a/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='D\\x3a/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/PWA/manifest.webmanifest'\"  \"locals.outputPath='D\\x3a/UCA Projects/Builds/Webgl/Velocity rush/manifest.webmanifest'\"  \"locals.webglIncludes='D\\x3a/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=false\"  \"PRODUCT_DESCRIPTION=''\" \"COMPANY_NAME='SenDev'\" \"PRODUCT_NAME='Velocity Rush'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=600\" \"HEIGHT=960\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='Velocity rush.data.gz'\" \"FRAMEWORK_FILENAME='Velocity rush.framework.js.gz'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='Velocity rush.wasm.gz'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.48f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"LOADER_FILENAME='Velocity rush.loader.js'\"",
+      "Action": "cd /d \"D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='D\\x3a/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='D\\x3a/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/PWA/manifest.webmanifest'\"  \"locals.outputPath='D\\x3a/UCA Projects/Builds/Webgl/Velocity rush/manifest.webmanifest'\"  \"locals.webglIncludes='D\\x3a/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=false\"  \"PRODUCT_DESCRIPTION=''\" \"COMPANY_NAME='SenDev Studios'\" \"PRODUCT_NAME='Velocity Rush'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=600\" \"HEIGHT=960\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='Velocity rush.data.br'\" \"FRAMEWORK_FILENAME='Velocity rush.framework.js.br'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='Velocity rush.wasm.br'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.48f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"LOADER_FILENAME='Velocity rush.loader.js'\"",
       "Inputs": [
         "D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/PWA/manifest.webmanifest"
       ],
@@ -23774,12 +23654,12 @@
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 475
+      "DebugActionIndex": 469
     },
     {
       "Annotation": "PreprocessJS D:/UCA Projects/Builds/Webgl/Velocity rush/ServiceWorker.js",
       "DisplayName": "PreprocessJS ServiceWorker",
-      "Action": "cd /d \"D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='D\\x3a/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='D\\x3a/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/PWA/ServiceWorker.js'\"  \"locals.outputPath='D\\x3a/UCA Projects/Builds/Webgl/Velocity rush/ServiceWorker.js'\"  \"locals.webglIncludes='D\\x3a/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=false\"  \"PRODUCT_DESCRIPTION=''\" \"COMPANY_NAME='SenDev'\" \"PRODUCT_NAME='Velocity Rush'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=600\" \"HEIGHT=960\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='Velocity rush.data.gz'\" \"FRAMEWORK_FILENAME='Velocity rush.framework.js.gz'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='Velocity rush.wasm.gz'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.48f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"LOADER_FILENAME='Velocity rush.loader.js'\"",
+      "Action": "cd /d \"D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='D\\x3a/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='D\\x3a/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/PWA/ServiceWorker.js'\"  \"locals.outputPath='D\\x3a/UCA Projects/Builds/Webgl/Velocity rush/ServiceWorker.js'\"  \"locals.webglIncludes='D\\x3a/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=false\"  \"PRODUCT_DESCRIPTION=''\" \"COMPANY_NAME='SenDev Studios'\" \"PRODUCT_NAME='Velocity Rush'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=600\" \"HEIGHT=960\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='Velocity rush.data.br'\" \"FRAMEWORK_FILENAME='Velocity rush.framework.js.br'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='Velocity rush.wasm.br'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.48f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"LOADER_FILENAME='Velocity rush.loader.js'\"",
       "Inputs": [
         "D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/PWA/ServiceWorker.js"
       ],
@@ -23788,7 +23668,7 @@
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 476
+      "DebugActionIndex": 470
     },
     {
       "Annotation": "CopyFiles D:/UCA Projects/Builds/Webgl/Velocity rush/TemplateData/favicon.ico",
@@ -23800,7 +23680,7 @@
       "Outputs": [
         "D:/UCA Projects/Builds/Webgl/Velocity rush/TemplateData/favicon.ico"
       ],
-      "DebugActionIndex": 477
+      "DebugActionIndex": 471
     },
     {
       "Annotation": "CopyFiles D:/UCA Projects/Builds/Webgl/Velocity rush/TemplateData/icons/unity-logo-dark.png",
@@ -23812,7 +23692,7 @@
       "Outputs": [
         "D:/UCA Projects/Builds/Webgl/Velocity rush/TemplateData/icons/unity-logo-dark.png"
       ],
-      "DebugActionIndex": 478
+      "DebugActionIndex": 472
     },
     {
       "Annotation": "CopyFiles D:/UCA Projects/Builds/Webgl/Velocity rush/TemplateData/icons/unity-logo-light.png",
@@ -23824,7 +23704,7 @@
       "Outputs": [
         "D:/UCA Projects/Builds/Webgl/Velocity rush/TemplateData/icons/unity-logo-light.png"
       ],
-      "DebugActionIndex": 479
+      "DebugActionIndex": 473
     },
     {
       "Annotation": "CopyFiles D:/UCA Projects/Builds/Webgl/Velocity rush/TemplateData/progress-bar-empty-dark.png",
@@ -23836,7 +23716,7 @@
       "Outputs": [
         "D:/UCA Projects/Builds/Webgl/Velocity rush/TemplateData/progress-bar-empty-dark.png"
       ],
-      "DebugActionIndex": 480
+      "DebugActionIndex": 474
     },
     {
       "Annotation": "CopyFiles D:/UCA Projects/Builds/Webgl/Velocity rush/TemplateData/progress-bar-empty-light.png",
@@ -23848,7 +23728,7 @@
       "Outputs": [
         "D:/UCA Projects/Builds/Webgl/Velocity rush/TemplateData/progress-bar-empty-light.png"
       ],
-      "DebugActionIndex": 481
+      "DebugActionIndex": 475
     },
     {
       "Annotation": "CopyFiles D:/UCA Projects/Builds/Webgl/Velocity rush/TemplateData/progress-bar-full-dark.png",
@@ -23860,7 +23740,7 @@
       "Outputs": [
         "D:/UCA Projects/Builds/Webgl/Velocity rush/TemplateData/progress-bar-full-dark.png"
       ],
-      "DebugActionIndex": 482
+      "DebugActionIndex": 476
     },
     {
       "Annotation": "CopyFiles D:/UCA Projects/Builds/Webgl/Velocity rush/TemplateData/progress-bar-full-light.png",
@@ -23872,12 +23752,12 @@
       "Outputs": [
         "D:/UCA Projects/Builds/Webgl/Velocity rush/TemplateData/progress-bar-full-light.png"
       ],
-      "DebugActionIndex": 483
+      "DebugActionIndex": 477
     },
     {
       "Annotation": "PreprocessJS D:/UCA Projects/Builds/Webgl/Velocity rush/TemplateData/style.css",
       "DisplayName": "PreprocessJS style",
-      "Action": "cd /d \"D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='D\\x3a/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='D\\x3a/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/PWA/TemplateData/style.css'\"  \"locals.outputPath='D\\x3a/UCA Projects/Builds/Webgl/Velocity rush/TemplateData/style.css'\"  \"locals.webglIncludes='D\\x3a/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=false\"  \"PRODUCT_DESCRIPTION=''\" \"COMPANY_NAME='SenDev'\" \"PRODUCT_NAME='Velocity Rush'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=600\" \"HEIGHT=960\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='Velocity rush.data.gz'\" \"FRAMEWORK_FILENAME='Velocity rush.framework.js.gz'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='Velocity rush.wasm.gz'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.48f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"LOADER_FILENAME='Velocity rush.loader.js'\"",
+      "Action": "cd /d \"D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='D\\x3a/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='D\\x3a/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/PWA/TemplateData/style.css'\"  \"locals.outputPath='D\\x3a/UCA Projects/Builds/Webgl/Velocity rush/TemplateData/style.css'\"  \"locals.webglIncludes='D\\x3a/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=false\"  \"PRODUCT_DESCRIPTION=''\" \"COMPANY_NAME='SenDev Studios'\" \"PRODUCT_NAME='Velocity Rush'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=600\" \"HEIGHT=960\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='Velocity rush.data.br'\" \"FRAMEWORK_FILENAME='Velocity rush.framework.js.br'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='Velocity rush.wasm.br'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.48f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"LOADER_FILENAME='Velocity rush.loader.js'\"",
       "Inputs": [
         "D:/Projects/2022.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/PWA/TemplateData/style.css"
       ],
@@ -23886,7 +23766,7 @@
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 484
+      "DebugActionIndex": 478
     },
     {
       "Annotation": "CopyFiles D:/UCA Projects/Builds/Webgl/Velocity rush/TemplateData/unity-logo-dark.png",
@@ -23898,7 +23778,7 @@
       "Outputs": [
         "D:/UCA Projects/Builds/Webgl/Velocity rush/TemplateData/unity-logo-dark.png"
       ],
-      "DebugActionIndex": 485
+      "DebugActionIndex": 479
     },
     {
       "Annotation": "CopyFiles D:/UCA Projects/Builds/Webgl/Velocity rush/TemplateData/unity-logo-light.png",
@@ -23910,7 +23790,7 @@
       "Outputs": [
         "D:/UCA Projects/Builds/Webgl/Velocity rush/TemplateData/unity-logo-light.png"
       ],
-      "DebugActionIndex": 486
+      "DebugActionIndex": 480
     },
     {
       "Annotation": "Player",
@@ -23920,11 +23800,17 @@
       "ToBuildDependencies": [
         4,
         452,
+        459,
+        460,
         461,
-        464,
+        462,
         465,
-        466,
+        467,
+        468,
+        469,
+        470,
         471,
+        472,
         473,
         474,
         475,
@@ -23932,16 +23818,10 @@
         477,
         478,
         479,
-        480,
-        481,
-        482,
-        483,
-        484,
-        485,
-        486
+        480
       ],
       "OverwriteOutputs": false,
-      "DebugActionIndex": 487
+      "DebugActionIndex": 481
     }
   ],
   "FileSignatures": [
@@ -24309,7 +24189,7 @@
   ],
         "NamedNodes": {
           "all_tundra_nodes": 0,
-          "Player": 487
+          "Player": 481
         }
 ,  "DefaultNodes": [
     0
